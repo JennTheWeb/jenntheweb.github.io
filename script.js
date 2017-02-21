@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	
+	var contentWrap = '#content';
 	var content;
 	var overlay;
+	var triggerWrap = '#trigger';
 	var openTrigger = '.item';
 	var closeTrigger = '.close'; 
 	var nextTrigger = '.next';
@@ -9,9 +11,10 @@ $(document).ready(function() {
 	
 	createOverlay();
 	
-	$('.item').on('click', function() {
-		//TODO: make content value more automatic and scalable
-		content = '#content-' + this.id;
+	$(openTrigger).on('click', function() {
+		var id = '#' + $(this).attr('id');
+		var n = id.split(triggerWrap).join('');
+		content = contentWrap + n;
 		openContent();
 	});
 	$(closeTrigger).on('click', function() {
@@ -41,17 +44,15 @@ $(document).ready(function() {
 	
 	function showPrevOrNext(action) {
 		$(content).hide();
-		var change;
 		if (action == 'prev') {
-			change = -1;
+			var change = -1;
 		} else {
-			change = 1;
+			var change = 1;
 		}
-		//TODO: make content.split scalable, not specific to #content-item
 		var n = parseInt(
-			content.split('#content-item').join('')
+			content.split(contentWrap).join('')
 		) + change;
-		content = '#content-item' + n;
+		content = contentWrap + n;
 		$(content).show();
 	}
 });
