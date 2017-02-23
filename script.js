@@ -1,77 +1,85 @@
 $(document).ready(function() {
 	
-	var contentWrap = '#content';
-	var content;
-	var overlay;
-	var triggerId = 'trigger';
-	var openTrigger = '.galleryItem';
-	var closeClass = 'close'; 
-	var nextTrigger = '.next';
-	var prevTrigger = '.prev';
+// CREATE GALLERY ITEMS
+
+	var item = '.galleryItem';
+	var itemIdPrefix = 'item';
+	var itemContent = 'article';
 	var numItems = 0;
 	
-	createOverlay();
-	addItemIds();
+	createGalleryItems();
+	
+	// add ID to each gallery item
+	// each ID ends with a number which is used to display the correct content
+	// when navigating between gallery items 
+	function createGalleryItems() {
+		var n = 0;
+		$(item).each(function() {
+			n++;
+			$(this).attr('id', itemIdPrefix + n);
+			$(this).attr('itemNumber', n);
+		});
+		numItems = n;
+	}	
+	
+// CREATE GALLERY NAV
+
 	addNav();
 	
-	$(openTrigger).on('click', function() {
-		var id = '#' + $(this).attr('id');
-		openContent(id);
+	function addNav() {		
+		for (n = 1; n <= numItems; n++) {
+			var itemId = '#' + itemIdPrefix + n;
+			var content = itemId + ' ' + itemContent;
+			if (n != 1) {					
+				$(content).append(
+					'<button class="prev">Previous</button>'
+				);
+			}
+			if (n != numItems) {
+				$(content).append(
+					'<button class="next">Next</button>'
+				);	
+			}
+			$(content).append(
+				'<button class="close">Close</button>'
+			);
+		};
+	}
+	
+// OPEN CONTENT
+
+	var currentItem;
+	
+	$(item + ' .trigger').on('click', function() {
+		currentItem = '#' + $(this).parent(item).attr('id');
+		openContent();
 	});
-	$('.' + closeClass).on('click', function() {
+	
+	function openContent() {
+		$(currentItem + ' ' + itemContent).show();
+		$(overlay).show();
+	}
+	
+// CLOSE CONTENT
+	
+	$(item + ' .close').on('click', function() {
 		closeContent();
 	});
-	$(nextTrigger + ',' + prevTrigger).on('click', function() {
+
+	function closeContent() {
+		$(currentItem + ' ' + itemContent).hide();
+		$(overlay).hide();
+	}
+	
+// SHOW NEXT AND PREVIOUS CONTENT
+	
+	$('.next, .prev').on('click', function() {
 		var action = $(this).attr('class');
 		showPrevOrNext(action);
 	});
 	
-	function createOverlay() {
-		var overlayClass = 'overlay';
-		$('body').append(
-			'<div class="' + overlayClass + ' ' + closeClass + 
-			'" style="display: none;"></div>'
-		);
-		overlay = '.' + overlayClass;
-	}
-	
-	
-	// add ID to each gallery item
-	// each ID ends with a number which is used to display the correct content
-	// when navigating between previous and next items
-	function addItemIds() {
-		var n = 1;
-		$(openTrigger).each(function() {
-			$(this).attr('id', triggerId + n);
-			n++;
-		});
-		numItems = n - 1;
-	}
-	
-	function addNav() {		
-		for (var n = 1; n <= numItems; n++) {
-			if (n != numItems) {
-				appendBtn('<button class="next">Next</button>',n);
-				
-			}
-			if (n != 1) {					
-				appendBtn('<button class="prev">Previous</button>', n);
-			}
-			appendBtn('<button class="close">Close</button>', n);
-		};
-	}
-	function appendBtn(btn, n) {
-		$('article' + n).append(btn);
-	}
-
-	function openContent(id) {
-		var n = id.split('#' + triggerId).join('');
-		content = contentWrap + n;
-		$(content).show();
-		$(overlay).show();
-	}
 	function showPrevOrNext(action) {
-		$(content).hide();
+		$(currentItem + ' article').hide();
 		
 		if (action == 'prev') {
 			var change = -1;
@@ -79,14 +87,28 @@ $(document).ready(function() {
 			var change = 1;
 		}
 		var n = parseInt(
-			content.split(contentWrap).join('')
+			$(currentItem).attr('itemNumber')
 		) + change;
 		
-		content = contentWrap + n;
-		$(content).show();
+		currentItem = '#' + itemIdPrefix + n;
+		$(currentItem + ' article').show();
 	}
-	function closeContent() {
-		$(content).hide();
-		$(overlay).hide();
+	
+// CREATE BACKGROUND OVERLAY
+	
+	var overlay = '.overlay';
+	createOverlay();
+	
+	$(overlay).on('click', function() {
+		closeContent();
+	});
+	
+	function createOverlay() {
+		$('body').append(
+			'<div class="overlay" style="display: none;"></div>'
+		);
 	}
+	
+	
 });
+
