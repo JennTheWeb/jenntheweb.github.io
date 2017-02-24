@@ -3,26 +3,24 @@ $(document).ready(function() {
 // CREATE GALLERY ITEMS
 
 	var item = '.galleryItem';
-	var itemIdPrefix = 'item';
+	var itemIdPrefix = 'item-';
 	var itemContent = 'article';
 	var numItems = 0;
 	
 	createGalleryItems();
 	
-	// add ID to each gallery item
-	// each ID ends with a number which is used to display the correct content
-	// when navigating between gallery items 
 	function createGalleryItems() {
 		var n = 0;
 		$(item).each(function() {
 			n++;
 			$(this).attr('id', itemIdPrefix + n);
-			$(this).attr('itemNumber', n);
+			$(this).attr('prevItem', '#' + itemIdPrefix + (n - 1));
+			$(this).attr('nextItem', '#' + itemIdPrefix + (n + 1));
 		});
 		numItems = n;
 	}	
 	
-// CREATE GALLERY NAV
+// ADD NAV TO GALLERY ITEMS
 
 	addNav();
 	
@@ -30,7 +28,7 @@ $(document).ready(function() {
 		for (n = 1; n <= numItems; n++) {
 			var itemId = '#' + itemIdPrefix + n;
 			var content = itemId + ' ' + itemContent;
-			if (n != 1) {					
+			if (n != 1) {		
 				$(content).append(
 					'<button class="prev">Previous</button>'
 				);
@@ -52,24 +50,17 @@ $(document).ready(function() {
 	
 	$(item + ' .trigger').on('click', function() {
 		currentItem = '#' + $(this).parent(item).attr('id');
-		openContent();
-	});
-	
-	function openContent() {
-		$(currentItem + ' ' + itemContent).show();
+		currentItemContent = currentItem + ' ' + itemContent;
+		$(currentItemContent).show();
 		$(overlay).show();
-	}
+	});
 	
 // CLOSE CONTENT
 	
 	$(item + ' .close').on('click', function() {
-		closeContent();
-	});
-
-	function closeContent() {
-		$(currentItem + ' ' + itemContent).hide();
+		$(currentItemContent).hide();
 		$(overlay).hide();
-	}
+	});
 	
 // SHOW NEXT AND PREVIOUS CONTENT
 	
@@ -79,19 +70,12 @@ $(document).ready(function() {
 	});
 	
 	function showPrevOrNext(action) {
-		$(currentItem + ' article').hide();
+		$(currentItemContent).hide();
 		
-		if (action == 'prev') {
-			var change = -1;
-		} else {
-			var change = 1;
-		}
-		var n = parseInt(
-			$(currentItem).attr('itemNumber')
-		) + change;
+		currentItem = $(currentItem).attr(action + 'Item');
+		currentItemContent = currentItem + ' ' + itemContent;
 		
-		currentItem = '#' + itemIdPrefix + n;
-		$(currentItem + ' article').show();
+		$(currentItemContent).show();
 	}
 	
 // CREATE BACKGROUND OVERLAY
@@ -100,7 +84,8 @@ $(document).ready(function() {
 	createOverlay();
 	
 	$(overlay).on('click', function() {
-		closeContent();
+		$(currentItemContent).hide();
+		$(overlay).hide();
 	});
 	
 	function createOverlay() {
@@ -108,7 +93,6 @@ $(document).ready(function() {
 			'<div class="overlay" style="display: none;"></div>'
 		);
 	}
-	
 	
 });
 
