@@ -28,23 +28,23 @@ $(document).ready(function() {
 		for (n = 1; n <= numItems; n++) {
 			var itemId = '#' + itemIdPrefix + n;
 			var content = itemId + ' ' + itemContent;
-			if (n != 1) {		
-				$(content).append(
-					'<button class="prev">Previous</button>'
-				);
-			}
 			if (n != numItems) {
-				$(content).append(
+				$(content).prepend(
 					'<button class="next">Next</button>'
 				);	
 			}
-			$(content).append(
+			if (n != 1) {		
+				$(content).prepend(
+					'<button class="prev">Previous</button>'
+				);
+			}
+			$(content).prepend(
 				'<button class="close">Close</button>'
 			);
 		};
 	}
 	
-// OPEN CONTENT
+// OPEN AND CLOSE CONTENT
 
 	var currentItem;
 	
@@ -54,8 +54,6 @@ $(document).ready(function() {
 		$(currentItemContent).show();
 		$(overlay).show();
 	});
-	
-// CLOSE CONTENT
 	
 	$(item + ' .close').on('click', function() {
 		$(currentItemContent).hide();
