@@ -3,8 +3,11 @@
 }
 body {
 	background: url("images/bg.png") repeat fixed;
+	color: #444;
 	font-family: 'Crimson Text', Arial, serif;
+	font-size: 14px;
 	font-weight: normal;
+	line-height: 1.3em;
 }
 h1, h2, h3, h4 {
 	font-family: 'Julius Sans One', sans-serif;
@@ -19,6 +22,19 @@ img {
 	max-width: 100%;
 }
 
+button {
+	display: inline-block;
+	font-size: 1em;
+	line-height: 1.3em;
+	padding: 2px;
+	vertical-align: middle;
+}
+button svg {
+	float: left;
+	height: 1.3em;
+	width: 1.3em;
+}
+
 .overlay {
 	background: #000;
 	content: ' ';
@@ -31,6 +47,9 @@ img {
 	z-index: 10; /* above page content, below .lightboxGallery-item */
 }
 
+/* ---------------------------- */
+/* ----- lightbox gallery ----- */
+
 .gallery {
 	display: block;
 	margin: 0 auto;
@@ -41,6 +60,8 @@ img {
 	content: " ";
 	display: block;
 }
+
+/* thumbnails */
 
 .galleryItem {
 	float: left;
@@ -64,9 +85,11 @@ img {
 	transform: scale(1.05);
 }
 
+/* lightwindow content */
+
 .galleryItem article {
 	background: #fff;
-	border: solid 12px #f4f4f4;
+	border: solid 12px #fff;
 	box-shadow: 0 0 20px #333;
 	display: none; /* revealed via js */
 	left: 12.5%; /* ((100% - width) / 2) */
@@ -75,4 +98,13 @@ img {
 	top: 0;
 	width: 75%;
 	z-index: 20; /* above .has-overlay */
+}
+
+.galleryItem button {
+	background: #ccc;
+	border: none;
+}
+.galleryItem .prev,
+.galleryItem .next {
+	font-size: 2em;
 }

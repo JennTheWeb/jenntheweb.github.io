@@ -30,12 +30,16 @@ $(document).ready(function() {
 			var content = itemId + ' ' + itemContent;
 			if (n != numItems) {
 				$(content).prepend(
-					'<button class="next">Next</button>'
+					'<button class="next" aria-label="Next">' + 
+					'	<svg aria-hidden="true"><use xlink:href="#icon-arrow-R"/></svg>' + 
+					'</button>'
 				);	
 			}
 			if (n != 1) {		
 				$(content).prepend(
-					'<button class="prev">Previous</button>'
+					'<button class="prev" aria-label="Prev">' + 
+					'	<svg aria-hidden="true"><use xlink:href="#icon-arrow-L"/></svg>' + 
+					'</button>'
 				);
 			}
 			$(content).prepend(
