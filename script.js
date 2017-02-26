@@ -30,20 +30,22 @@ $(document).ready(function() {
 			var content = itemId + ' ' + itemContent;
 			if (n != numItems) {
 				$(content).prepend(
-					'<button class="next" aria-label="Next">' + 
-					'	<svg aria-hidden="true"><use xlink:href="#icon-arrow-R"/></svg>' + 
+					'<button id="next" class="slideNext">' + 
+					'	<svg><use xlink:href="#icon-arrow-R"/></svg>' + 
 					'</button>'
 				);	
 			}
 			if (n != 1) {		
 				$(content).prepend(
-					'<button class="prev" aria-label="Prev">' + 
-					'	<svg aria-hidden="true"><use xlink:href="#icon-arrow-L"/></svg>' + 
+					'<button id="prev" class="slidePrev">' + 
+					'	<svg><use xlink:href="#icon-arrow-L"/></svg>' + 
 					'</button>'
 				);
 			}
 			$(content).prepend(
-				'<button class="close">Close</button>'
+				'<button id="close" class="closeWindow" aria-label="Close">' + 
+				'	<svg><use xlink:href="#icon-close"/></svg>' +
+				'</button>'
 			);
 		};
 	}
@@ -59,15 +61,15 @@ $(document).ready(function() {
 		$(overlay).show();
 	});
 	
-	$(item + ' .close').on('click', function() {
+	$(item + ' #close').on('click', function() {
 		$(currentItemContent).hide();
 		$(overlay).hide();
 	});
 	
 // SHOW NEXT AND PREVIOUS CONTENT
 	
-	$('.next, .prev').on('click', function() {
-		var action = $(this).attr('class');
+	$('#next, #prev').on('click', function() {
+		var action = $(this).attr('id');
 		showPrevOrNext(action);
 	});
 	
@@ -82,7 +84,7 @@ $(document).ready(function() {
 	
 // CREATE BACKGROUND OVERLAY
 	
-	var overlay = '.overlay';
+	var overlay = '#overlay';
 	createOverlay();
 	
 	$(overlay).on('click', function() {
@@ -92,7 +94,7 @@ $(document).ready(function() {
 	
 	function createOverlay() {
 		$('body').append(
-			'<div class="overlay" style="display: none;"></div>'
+			'<div class="overlay" id="overlay" style="display: none;"></div>'
 		);
 	}
 	
