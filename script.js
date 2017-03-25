@@ -1,10 +1,13 @@
+// LIGHTBOX GALLERY
+
 $(document).ready(function() {
 	
-// CREATE GALLERY ITEMS
+	// CREATE GALLERY ITEMS
 
 	var item = '.galleryItem';
+	var content = '.galleryContent';
 	var itemIdPrefix = 'item-';
-	var itemContent = 'article';
+	var contentSuffix = '-content';
 	var numItems = 0;
 	
 	createGalleryItems();
@@ -17,17 +20,22 @@ $(document).ready(function() {
 			$(this).attr('prevItem', '#' + itemIdPrefix + (n - 1));
 			$(this).attr('nextItem', '#' + itemIdPrefix + (n + 1));
 		});
+		n = 0;
+		$(content).each(function() {
+			n++;
+			$(this).attr('id', itemIdPrefix + n + contentSuffix);
+		})
 		numItems = n;
 	}	
 	
-// ADD NAV TO GALLERY ITEMS
+	// ADD NAV TO GALLERY ITEMS
 
 	addNav();
 	
 	function addNav() {		
 		for (n = 1; n <= numItems; n++) {
 			var itemId = '#' + itemIdPrefix + n;
-			var content = itemId + ' ' + itemContent;
+			var content = itemId + contentSuffix;
 			if (n != numItems) {
 				$(content).prepend(
 					'<button id="next" class="slideNext">' + 
@@ -50,23 +58,30 @@ $(document).ready(function() {
 		};
 	}
 	
-// OPEN AND CLOSE CONTENT
+	// OPEN AND CLOSE CONTENT
 
 	var currentItem;
 	
 	$(item + ' .trigger').on('click', function() {
 		currentItem = '#' + $(this).parent(item).attr('id');
-		currentItemContent = currentItem + ' ' + itemContent;
+		currentItemContent = currentItem + contentSuffix;
 		$(currentItemContent).show();
 		$(overlay).show();
+		$('body').css(
+			'overflow', 'hidden'
+		);
 	});
 	
-	$(item + ' #close').on('click', function() {
+	$(content + ' #close').on('click', function() {
+		//TODO: create function to use for close button and overlay
 		$(currentItemContent).hide();
 		$(overlay).hide();
+		$('body').css(
+			'overflow', 'auto'
+		);
 	});
 	
-// SHOW NEXT AND PREVIOUS CONTENT
+	// SHOW NEXT AND PREVIOUS CONTENT
 	
 	$('#next, #prev').on('click', function() {
 		var action = $(this).attr('id');
@@ -77,12 +92,12 @@ $(document).ready(function() {
 		$(currentItemContent).hide();
 		
 		currentItem = $(currentItem).attr(action + 'Item');
-		currentItemContent = currentItem + ' ' + itemContent;
+		currentItemContent = currentItem + contentSuffix;
 		
 		$(currentItemContent).show();
 	}
 	
-// CREATE BACKGROUND OVERLAY
+	// CREATE BACKGROUND OVERLAY
 	
 	var overlay = '#overlay';
 	createOverlay();
@@ -90,6 +105,9 @@ $(document).ready(function() {
 	$(overlay).on('click', function() {
 		$(currentItemContent).hide();
 		$(overlay).hide();
+		$('body').css(
+			'overflow', 'auto'
+		);
 	});
 	
 	function createOverlay() {
@@ -100,3 +118,71 @@ $(document).ready(function() {
 	
 });
 
+// PASSWORD PROTECTION
+
+	function testResults(form) {
+		var password = 'pass';
+		var testVar = form.inputbox.value;
+
+		if(testVar == password) {
+			$('.public').hide();
+			$('.protected').show();
+		}
+	}
+
+// SLIDER
+
+$(document).ready(function() {
+
+	var numItems = 0;
+	var gridSize = 2;
+
+	// SET UP SLIDER DIMENSIONS
+
+	sliderSetup();
+	function sliderSetup() {	
+		$('.js-item').each(function() {
+			numItems++;
+		});
+		$('.js-item').outerWidth(
+			$('#sliderViewport').width() / gridSize
+		);
+		$('#sliderContent').width(
+			$('.js-item').outerWidth() * numItems
+		);
+		$('#sliderViewport').height(
+			$('.js-item').outerHeight()
+		);
+	}
+
+	// SLIDER NAVIGATION
+
+	sliderNav();
+	function sliderNav() {
+		var n = 0;
+		$('#sliderNext').click(function() {
+			if (n < numItems - gridSize) {
+				$(this).addClass('is-active');
+				$('#sliderContent').animate({
+					left: '+=-' + $('.js-item').outerWidth()
+				});
+				n++;
+				if (n == numItems - gridSize) {
+					$(this).removeClass('is-active');
+				}
+			}
+		});
+		$('#sliderPrev').click(function() {
+			if (n > 0) {
+				$(this).addClass('is-active');
+				$('#sliderContent').animate({
+					left: '+=' + $('.js-item').outerWidth()
+				});
+				n--;
+				if (n == 0) {
+					$(this).removeClass('is-active');
+				}
+			}
+		});
+	};
+});

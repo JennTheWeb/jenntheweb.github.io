@@ -25,28 +25,63 @@
 	</svg>
 	
 	<h1>UX/UI Design and Frontend Development</h1>
-	
-	<section class="gallery">
-		<div class="galleryItem">
-			<a class="trigger">
-				<img src="images/portfolio-loomAndMill.jpg" />
-			</a>
-			<article>
+	<form name="login" action="" method="get">
+		Enter something in the box:
+		<input type="text" name="inputbox" value="">
+		<input type="button" name="button" value="click" onClick="testResults(this.form)">
+	</form>
+
+	<div class="gallery gallery-slider" id="slider">
+
+		<div id="sliderViewport">
+			<div class="sliderContent" id="sliderContent">
+				<div class="galleryItem js-item">
+					<a class="trigger">
+						<img src="images/portfolio-loomAndMill.jpg" />
+					</a>
+				</div>
+				<div class="galleryItem js-item">
+					<a class="trigger">
+						<img src="images/portfolio-lot76NYC.jpg" />
+					</a>
+				</div><!--
+				<div class="galleryItem js-item">
+					<a class="trigger">
+						<img class="public" src="images/portfolio-wileyx-blurred.jpg" />
+						<img class="protected" src="images/portfolio-wileyx.jpg" />
+					</a>
+				</div>-->
+			</div><!-- .sliderContent -->
+		</div><!-- .sliderViewport -->
+
+		<article class="galleryContent">
+			<div class="galleryContentWrap">
 				<h1>Web/UI Design and Magento HTML and CSS Integration for Loom & Mill</h1>
 				<img src="images/portfolio-loomAndMill.jpg" />
-			</article>
-		</div>
-			
-		<div class="galleryItem">
-			<a class="trigger">
-				<img src="images/portfolio-lot76NYC.jpg" />
-			</a>
-			<article>
+			</div>
+		</article>
+		<article class="galleryContent">
+			<div class="galleryContentWrap">
 				<h1>Web/UI Design and custom Wordpress Theme Development for Lot 76 NYC</h1>
 				<img src="images/portfolio-lot76NYC.jpg" />
-			</article>
+			</div>
+		</article>
+		<!--
+		<article class="galleryContent">
+			<div class="galleryContentWrap">
+				<h1>Web/UI Design, Development, and Project Management <span class="protected">for WileyX</span></h1>
+				<img class="public" src="images/portfolio-wileyx-blurred.jpg" />
+				<img class="protected" src="images/portfolio-wileyx.jpg" />
+			</div>
+		</article>
+		-->
+
+		<div id="sliderNav">
+			<a id="sliderPrev"><svg><use xlink:href="#icon-arrow-L"/></svg></a>
+			<a id="sliderNext" class="is-active"><svg><use xlink:href="#icon-arrow-R"/></svg></a>
 		</div>
-	</section>
+
+	</div><!-- .slider -->
 
 	
 	<h2>Career Timeline</h2>
@@ -132,7 +167,7 @@
 			</li>
 			<li class="tl-right">
 				<div class="tl-content">
-					New challenge: responsive design! The most fun challenge yet. I became the go-to-gal for converting a regular website to a responsive one. 
+					New challenge: responsive design! The most fun challenge yet. Introduced responsive design to the agency I worked with and I became the go-to-gal for converting a regular website to a responsive one. 
 				</div>
 			</li>
 			<li class="tl-right">

@@ -42,6 +42,10 @@ button svg {
 	width: 1.3em;
 }
 
+.protected {
+	display: none;
+}
+
 /* -------------------- */
 /* ----- lightbox ----- */
 
@@ -105,6 +109,9 @@ button svg {
 	margin: 0 auto;
 	width: 90%;
 }
+.gallery-slider {
+	width: auto;
+}
 .gallery:after {
 	clear: both;
 	content: " ";
@@ -115,18 +122,15 @@ button svg {
 
 .galleryItem {
 	float: left;
-	height: 200px;
-	width: 50%;
+	padding: 10px;
 }
-
 .galleryItem .trigger {
 	border: solid 8px #fff;
 	box-shadow: 0 0 4px #999;
 	cursor: pointer;
 	display: block;
-	height: 100%;
+	height: 225px;
 	overflow: hidden;
-	margin: 10px;
 	text-decoration: none;
 	transition: all .25s ease;
 }
@@ -137,25 +141,92 @@ button svg {
 
 /* lightwindow content */
 
-.galleryItem article {
-	background: #fff;
-	border: solid 12px #fff;
-	box-shadow: 0 0 20px #333;
+.galleryContent {
 	display: none; /* revealed via js */
 	left: 12.5%; /* ((100% - width) / 2) */
-	padding: 1px;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 75%;
 	z-index: 20; /* above .has-overlay */
 }
+.galleryContentWrap {
+	background: #fff;
+	border: solid 12px #fff;
+	box-shadow: 0 0 20px #333;
+	max-height: 100vh;
+	overflow-x: auto;
+	overflow-y: scroll;
+	padding: 1px;
+}
 
-.galleryItem article button {
+.galleryContent button {
 	border: none;
 }
 
+/* ------------------ */
+/* ----- slider ----- */
+
+#slider {
+	position: relative;
+}
+#sliderViewport {
+	left: 5%;
+	overflow: hidden;
+
+	/* padding needs to be large enough that the scaled hover effect is not cut off but still
+	less than the padding between galleryItems to prevent box-shadow overflow appearing */
+	padding: 7px;
+	
+	position: relative;
+	width: 90%;
+}
+.sliderContent {
+	left: 7px; /* same as sliderviewport padding */
+	position: absolute;
+}
+.sliderContent::after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+#sliderNav {
+	display: block;
+	left: 5%;
+	position: absolute;
+	top: 50%;
+	width: 90%;
+}
+#sliderPrev,
+#sliderNext {
+	height: 3rem;
+	margin-top: -1.5rem;
+	opacity: .3;
+	position: absolute;
+	width: 3rem;
+	}
+	#sliderPrev.is-active,
+	#sliderNext.is-active {
+		cursor: pointer;
+		opacity: .5;
+	}
+	#sliderPrev.is-active:hover,
+	#sliderNext.is-active:hover {
+		opacity: 1;
+	}
+#sliderPrev {
+	left: -3rem;
+}
+#sliderNext {
+	right: -3rem;
+}
+#sliderNav svg {
+	height: 100%;
+	width: 100%;
+}
+
 /* -------------------- */
-/* ----- tl- ----- */
+/* ----- timeline ----- */
 
 .timeline {
 	display: block;
