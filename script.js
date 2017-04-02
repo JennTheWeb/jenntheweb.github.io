@@ -118,17 +118,72 @@ $(document).ready(function() {
 	
 });
 
+// LOAD GALLERY CONTENT FROM OBJECT
+
+function loadThumbContent() {
+	let thumb = '';
+	for (var i = 0; i < portfolio.length; ++i) {
+		thumb = portfolio[i].thumbPublic;
+		$('#gallery').append(
+			'<div class="galleryItem js-sliderItem">' +
+				'<a class="trigger"' + 'id="thumb-' + i + '">' +  
+					'<img src="images/portfolio/' +
+						thumb +
+					'" />' +
+				'</a>' +
+			'</div>'
+		);
+	}
+}
+
+function loadContent() {
+	let content = '';
+	for (var i = 0; i < portfolio.length; ++i) {
+		content = portfolio[i].contentPublic;
+		$('#gallery').append(
+			'<div class="galleryContent">' + 
+				'<div class="galleryContentWrap" id="content-' + i + '">' + 
+					content + 
+				'</div>' +
+			'</div>'
+		);
+	}
+}
+
 // PASSWORD PROTECTION
 
-	function testResults(form) {
-		var password = 'pass';
-		var testVar = form.inputbox.value;
+function testResults(form) {
+	var password = 'pass';
+	var testVar = form.inputbox.value;
 
-		if(testVar == password) {
-			$('.public').hide();
-			$('.protected').show();
-		}
+	if(testVar == password) {
+		showProtectedThumbContent();
+		showProtectedContent();
 	}
+}
+
+function showProtectedThumbContent() {
+	for (var i = 0; i < portfolio.length; ++i) {
+		let thumb = '';
+		if ('thumbProtected' in portfolio[i]) {
+			thumb = 
+				'<img src="images/portfolio/' + 
+					portfolio[i].thumbProtected + 
+				'" />';
+			$('#thumb-' + i).html(thumb);
+		}	
+	}
+}
+
+function showProtectedContent() {
+	for (var i = 0; i < portfolio.length; ++i) {
+		let content = '';
+		if ('contentProtected' in portfolio[i]) {
+			content = portfolio[i].contentProtected;
+			$('#content-' + i).html(content);
+		}	
+	}
+}
 
 // SLIDER
 

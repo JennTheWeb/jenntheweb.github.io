@@ -24,28 +24,32 @@
 	<script type="text/javascript">
 		let portfolio = [];
 		portfolio.push ({
-			thumb: 'inkedList-pricingTable.jpg',
-			content: 
+			thumbPublic: 'inkedList-pricingTable.jpg',
+			contentPublic: 
 				'<h1>Web Design</h1>' + 
 				'<img src="images/portfolio/inkedList-pricingTable.jpg" />'
 		});
 		portfolio.push ({
-			thumb: 'loomAndMill.jpg',
-			content:
+			thumbPublic: 'loomAndMill.jpg',
+			contentPublic:
 				'<h1>Web Design</h1>' +
 				'<img src="images/portfolio/loomAndMill.jpg" />'
 		});
 		portfolio.push ({
-			thumb: 'LOT76NYC.jpg',
-			content:
+			thumbPublic: 'LOT76NYC.jpg',
+			contentPublic:
 				'<h1>Web Design</h1>' +
 				'<img src="images/portfolio/LOT76NYC.jpg" />'
 		});
 		portfolio.push ({
-			thumb: 'LOT76NYC.jpg',
-			content:
+			thumbPublic: 'CS/p1-blurred.jpg',
+			thumbProtected: 'CS/p1.jpg',
+			contentPublic:
 				'<h1>Web Design</h1>' +
-				'<img src="images/portfolio/LOT76NYC.jpg" />'
+				'<img src="images/portfolio/CS/p1-blurred.jpg" />',
+			contentProtected:
+				'<h1>Web Design for WileyX</h1>' +
+				'<img src="images/portfolio/CS/p1.jpg" />',
 		});
 	</script>
 	
@@ -61,28 +65,12 @@
 		<div id="sliderViewport">
 			<div class="sliderContent" id="sliderContent">
 				<div id="gallery">
-		<!--
-				<div class="galleryItem js-item">
-					<a class="trigger">
-						<img class="public" src="images/portfolio-wileyx-blurred.jpg" />
-						<img class="protected" src="images/portfolio-wileyx.jpg" />
-					</a>
-				</div>
-		-->	
-				<script type="text/javascript">
-					$(document).ready(function() {
-						for (var i = 0; i < portfolio.length; ++i) {
-							let thumb = '<img src="images/portfolio/' + portfolio[i].thumb + '" />';
-							$('#gallery').append(
-								'<div class="galleryItem js-sliderItem">' +
-									'<a class="trigger">' + 
-										 thumb + 
-									'</a>' +
-								'</div>'
-							);
-						}
-					});
-				</script>
+
+					<script type="text/javascript">
+						$(document).ready(function() {
+							loadThumbContent();
+						});
+					</script>
 
 				</div><!-- #gallery -->
 			</div><!-- .sliderContent -->
@@ -100,15 +88,7 @@
 
 		<script type="text/javascript">
 			$(document).ready(function() {
-				for (var i = 0; i < portfolio.length; ++i) {
-					$('#gallery').append(
-						'<div class="galleryContent">' + 
-							'<div class="galleryContentWrap">' + 
-								portfolio[i].content + 
-							'</div>' +
-						'</div>'
-					);
-				}
+				loadContent();
 			});
 		</script>
 
