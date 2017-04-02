@@ -5,15 +5,18 @@ $(document).ready(function() {
 	// FIND ALL GALLERY ITEMS AND LINK THEM TOGETHER
 
 	var item = '.galleryItem';
-	var content = '.galleryContent';
+	var content = '.js-galleryContent';
 	var itemIdPrefix = 'item-';
 	var contentSuffix = '-content';
 	var numItems = 0;
 
-	linkPrevAndNext();
-	linkTriggerToContent();
+	$('.js-gallery').each(function() {
+		linkPrevAndNext();
+		linkTriggerToContent();
+	});
 
-	function linkPrevAndNext() {
+	function linkPrevAndNext() {	
+		numItems = 0;
 		$(item).each(function() {	
 			numItems++;
 			$(this).attr('id', itemIdPrefix + numItems);
@@ -122,7 +125,12 @@ $(document).ready(function() {
 
 function loadThumbContent() {
 	let thumb = '';
+	let login = '';
 	for (var i = 0; i < portfolio.length; ++i) {
+		if('thumbProtected' in portfolio[i]) {
+			login = '<a class="js-authentication-trigger">login to view</a>';
+		}
+
 		thumb = portfolio[i].thumbPublic;
 		$('#gallery').append(
 			'<div class="galleryItem js-sliderItem">' +
@@ -131,6 +139,7 @@ function loadThumbContent() {
 						thumb +
 					'" />' +
 				'</a>' +
+				login +
 			'</div>'
 		);
 	}
@@ -141,7 +150,7 @@ function loadContent() {
 	for (var i = 0; i < portfolio.length; ++i) {
 		content = portfolio[i].contentPublic;
 		$('#gallery').append(
-			'<div class="galleryContent">' + 
+			'<div class="galleryContent js-galleryContent">' + 
 				'<div class="galleryContentWrap" id="content-' + i + '">' + 
 					content + 
 				'</div>' +
@@ -156,9 +165,18 @@ function testResults(form) {
 	var password = 'pass';
 	var testVar = form.inputbox.value;
 
+	var content = '#authentication';
+	var trigger = '.js-authentication-trigger';
+	var overlay = '#overlay2';
+
 	if(testVar == password) {
 		showProtectedThumbContent();
 		showProtectedContent();
+		$(content).hide();
+		$(overlay).hide();
+		$('body').css(
+			'overflow', 'auto'
+		);
 	}
 }
 
@@ -183,7 +201,37 @@ function showProtectedContent() {
 			$('#content-' + i).html(content);
 		}	
 	}
-}
+} 
+
+// LOGIN FORM LIGHTWINDOW
+
+$(document).ready(function() {
+	var content = '#authentication';
+	var trigger = '.js-authentication-trigger';
+	var overlay = '#overlay2';
+	createOverlay();
+
+	$(trigger).on('click', function() {
+		$(content).show();
+		$(overlay).show();
+		$('body').css(
+			'overflow', 'hidden'
+		);
+	});
+	$(overlay).on('click', function() {
+		$(content).hide();
+		$(overlay).hide();
+		$('body').css(
+			'overflow', 'auto'
+		);
+	});	
+	
+	function createOverlay() {
+		$('body').append(
+			'<div class="galleryOverlay" id="overlay2" style="display: none;"></div>'
+		);
+	}
+});
 
 // SLIDER
 

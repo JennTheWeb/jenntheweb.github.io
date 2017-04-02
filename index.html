@@ -55,42 +55,21 @@
 	
 	<h1>UX/UI Design and Frontend Development</h1>
 
-	<form name="login" action="" method="get">
-		Enter something in the box:
-		<input type="text" name="inputbox" value="">
-		<input type="button" name="button" value="click" onClick="testResults(this.form)">
-	</form>
-
 	<div class="gallery gallery-slider" id="slider">
 		<div id="sliderViewport">
 			<div class="sliderContent" id="sliderContent">
-				<div id="gallery">
+				<div class="js-gallery" id="gallery">
 
 					<script type="text/javascript">
 						$(document).ready(function() {
 							loadThumbContent();
+							loadContent();
 						});
 					</script>
 
 				</div><!-- #gallery -->
 			</div><!-- .sliderContent -->
 		</div><!-- .sliderViewport -->
-
-<!--
-		<article class="galleryContent">
-			<div class="galleryContentWrap">
-				<h1>Web/UI Design, Development, and Project Management <span class="protected">for WileyX</span></h1>
-				<img class="public" src="images/portfolio-wileyx-blurred.jpg" />
-				<img class="protected" src="images/portfolio-wileyx.jpg" />
-			</div>
-		</article>
--->
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-				loadContent();
-			});
-		</script>
 
 		<div id="sliderNav">
 			<a id="sliderPrev"><svg><use xlink:href="#icon-arrow-L"></use></svg></a>
@@ -99,7 +78,18 @@
 
 	</div><!-- .slider -->
 
-
+	<div class="galleryContent" id="authentication">
+		<div class="galleryContentWrap">
+			<form action="" method="get" name="login">
+				Enter something in the box:
+				<input type="text" name="inputbox" value="">
+				<input type="button" name="button" value="click" onClick="testResults(this.form)">
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#authentication').hide();
+	</script>
 	
 	<h2>Career Timeline</h2>
 	<section class="timeline">
