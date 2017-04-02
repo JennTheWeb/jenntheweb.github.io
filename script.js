@@ -2,63 +2,63 @@
 
 $(document).ready(function() {
 	
-	// CREATE GALLERY ITEMS
+	// FIND ALL GALLERY ITEMS AND LINK THEM TOGETHER
 
 	var item = '.galleryItem';
 	var content = '.galleryContent';
 	var itemIdPrefix = 'item-';
 	var contentSuffix = '-content';
 	var numItems = 0;
-	
-	createGalleryItems();
-	
-	function createGalleryItems() {
-		var n = 0;
-		$(item).each(function() {
-			n++;
-			$(this).attr('id', itemIdPrefix + n);
-			$(this).attr('prevItem', '#' + itemIdPrefix + (n - 1));
-			$(this).attr('nextItem', '#' + itemIdPrefix + (n + 1));
+
+	linkPrevAndNext();
+	linkTriggerToContent();
+
+	function linkPrevAndNext() {
+		$(item).each(function() {	
+			numItems++;
+			$(this).attr('id', itemIdPrefix + numItems);
+			$(this).attr('prevItem', '#' + itemIdPrefix + (numItems - 1));
+			$(this).attr('nextItem', '#' + itemIdPrefix + (numItems + 1));
 		});
-		n = 0;
+	}
+	function linkTriggerToContent() {
+		numItems = 0;
 		$(content).each(function() {
-			n++;
-			$(this).attr('id', itemIdPrefix + n + contentSuffix);
-		})
-		numItems = n;
-	}	
+			numItems++;
+			$(this).attr('id', itemIdPrefix + numItems + contentSuffix);	
+		});	
+	}
 	
-	// ADD NAV TO GALLERY ITEMS
+	// ADD NAV TO LIGHTWINDOW GALLERY ITEMS
 
 	addNav();
-	
 	function addNav() {		
 		for (n = 1; n <= numItems; n++) {
 			var itemId = '#' + itemIdPrefix + n;
 			var content = itemId + contentSuffix;
 			if (n != numItems) {
 				$(content).prepend(
-					'<button id="next" class="slideNext">' + 
+					'<button id="next" class="galleryNext">' + 
 					'	<svg><use xlink:href="#icon-arrow-R"/></svg>' + 
 					'</button>'
 				);	
 			}
 			if (n != 1) {		
 				$(content).prepend(
-					'<button id="prev" class="slidePrev">' + 
+					'<button id="prev" class="galleryPrev">' + 
 					'	<svg><use xlink:href="#icon-arrow-L"/></svg>' + 
 					'</button>'
 				);
 			}
 			$(content).prepend(
-				'<button id="close" class="closeWindow" aria-label="Close">' + 
+				'<button id="close" class="galleryClose" aria-label="Close">' + 
 				'	<svg><use xlink:href="#icon-close"/></svg>' +
 				'</button>'
 			);
 		};
 	}
 	
-	// OPEN AND CLOSE CONTENT
+	// OPEN AND CLOSE LIGHTWINDOW CONTENT
 
 	var currentItem;
 	
@@ -81,13 +81,13 @@ $(document).ready(function() {
 		);
 	});
 	
-	// SHOW NEXT AND PREVIOUS CONTENT
+	// SHOW NEXT AND PREVIOUS LIGHTWINDOW CONTENT
 	
 	$('#next, #prev').on('click', function() {
 		var action = $(this).attr('id');
 		showPrevOrNext(action);
 	});
-	
+
 	function showPrevOrNext(action) {
 		$(currentItemContent).hide();
 		
@@ -112,7 +112,7 @@ $(document).ready(function() {
 	
 	function createOverlay() {
 		$('body').append(
-			'<div class="overlay" id="overlay" style="display: none;"></div>'
+			'<div class="galleryOverlay" id="overlay" style="display: none;"></div>'
 		);
 	}
 	
@@ -141,17 +141,17 @@ $(document).ready(function() {
 
 	sliderSetup();
 	function sliderSetup() {	
-		$('.js-item').each(function() {
+		$('.js-sliderItem').each(function() {
 			numItems++;
 		});
-		$('.js-item').outerWidth(
+		$('.js-sliderItem').outerWidth(
 			$('#sliderViewport').width() / gridSize
 		);
 		$('#sliderContent').width(
-			$('.js-item').outerWidth() * numItems
+			$('.js-sliderItem').outerWidth() * numItems
 		);
 		$('#sliderViewport').height(
-			$('.js-item').outerHeight()
+			$('.js-sliderItem').outerHeight()
 		);
 	}
 
@@ -163,8 +163,9 @@ $(document).ready(function() {
 		$('#sliderNext').click(function() {
 			if (n < numItems - gridSize) {
 				$(this).addClass('is-active');
+				$('#sliderPrev').addClass('is-active');
 				$('#sliderContent').animate({
-					left: '+=-' + $('.js-item').outerWidth()
+					left: '+=-' + $('.js-sliderItem').outerWidth()
 				});
 				n++;
 				if (n == numItems - gridSize) {
@@ -175,8 +176,9 @@ $(document).ready(function() {
 		$('#sliderPrev').click(function() {
 			if (n > 0) {
 				$(this).addClass('is-active');
+				$('#sliderNext').addClass('is-active');
 				$('#sliderContent').animate({
-					left: '+=' + $('.js-item').outerWidth()
+					left: '+=' + $('.js-sliderItem').outerWidth()
 				});
 				n--;
 				if (n == 0) {

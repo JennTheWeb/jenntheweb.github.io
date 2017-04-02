@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="script.js"></script>
-	
 	<link href="styles.css" rel="stylesheet" type="text/css" />
-	
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet" /> 
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" /> 
 </head>
@@ -12,63 +9,86 @@
 	<svg aria-hidden="true" style="display:none">
 		<symbol id="icon-arrow-R" viewBox="0 0 34.12 48">
 			<title>arrow-R</title>
-			<path d="M8,49L26.46,25,8,1H23.66L42.12,25,23.66,49H8Z" transform="translate(-8 -1)"/>
+			<path d="M8,49L26.46,25,8,1H23.66L42.12,25,23.66,49H8Z" transform="translate(-8 -1)"></path>
 		</symbol>
 		<symbol id="icon-arrow-L" viewBox="0 0 34.12 48">
 			<title>arrow-L</title>
-			<path d="M26.46,49L8,25,26.46,1H42.12L23.66,25,42.12,49H26.46Z" transform="translate(-8 -1)"/>
+			<path d="M26.46,49L8,25,26.46,1H42.12L23.66,25,42.12,49H26.46Z" transform="translate(-8 -1)"></path>
 		</symbol>
 		<symbol id="icon-close" viewBox="0 0 47.69 47.69">
 			<title>close</title>
-			<polygon class="cls-1" points="47.69 1.91 45.78 0 23.84 21.94 1.91 0 0 1.91 21.94 23.84 0 45.78 1.91 47.69 23.84 25.75 45.78 47.69 47.69 45.78 25.75 23.84 47.69 1.91"/>
+			<polygon class="cls-1" points="47.69 1.91 45.78 0 23.84 21.94 1.91 0 0 1.91 21.94 23.84 0 45.78 1.91 47.69 23.84 25.75 45.78 47.69 47.69 45.78 25.75 23.84 47.69 1.91"></polygon>
 		</symbol>
 	</svg>
+
+	<script type="text/javascript">
+		let portfolio = [];
+		portfolio.push ({
+			thumb: 'inkedList-pricingTable.jpg',
+			content: 
+				'<h1>Web Design</h1>' + 
+				'<img src="images/portfolio/inkedList-pricingTable.jpg" />'
+		});
+		portfolio.push ({
+			thumb: 'loomAndMill.jpg',
+			content:
+				'<h1>Web Design</h1>' +
+				'<img src="images/portfolio/loomAndMill.jpg" />'
+		});
+		portfolio.push ({
+			thumb: 'LOT76NYC.jpg',
+			content:
+				'<h1>Web Design</h1>' +
+				'<img src="images/portfolio/LOT76NYC.jpg" />'
+		});
+		portfolio.push ({
+			thumb: 'LOT76NYC.jpg',
+			content:
+				'<h1>Web Design</h1>' +
+				'<img src="images/portfolio/LOT76NYC.jpg" />'
+		});
+	</script>
 	
 	<h1>UX/UI Design and Frontend Development</h1>
-	<!--
+
 	<form name="login" action="" method="get">
 		Enter something in the box:
 		<input type="text" name="inputbox" value="">
 		<input type="button" name="button" value="click" onClick="testResults(this.form)">
 	</form>
-	-->
 
 	<div class="gallery gallery-slider" id="slider">
-
 		<div id="sliderViewport">
 			<div class="sliderContent" id="sliderContent">
-				<div class="galleryItem js-item">
-					<a class="trigger">
-						<img src="images/portfolio-loomAndMill.jpg" />
-					</a>
-				</div>
-				<div class="galleryItem js-item">
-					<a class="trigger">
-						<img src="images/portfolio-lot76NYC.jpg" />
-					</a>
-				</div><!--
+				<div id="gallery">
+		<!--
 				<div class="galleryItem js-item">
 					<a class="trigger">
 						<img class="public" src="images/portfolio-wileyx-blurred.jpg" />
 						<img class="protected" src="images/portfolio-wileyx.jpg" />
 					</a>
-				</div>-->
+				</div>
+		-->	
+				<script type="text/javascript">
+					$(document).ready(function() {
+						for (var i = 0; i < portfolio.length; ++i) {
+							let thumb = '<img src="images/portfolio/' + portfolio[i].thumb + '" />';
+							$('#gallery').append(
+								'<div class="galleryItem js-sliderItem">' +
+									'<a class="trigger">' + 
+										 thumb + 
+									'</a>' +
+								'</div>'
+							);
+						}
+					});
+				</script>
+
+				</div><!-- #gallery -->
 			</div><!-- .sliderContent -->
 		</div><!-- .sliderViewport -->
 
-		<article class="galleryContent">
-			<div class="galleryContentWrap">
-				<h1>Web/UI Design and Magento HTML and CSS Integration for Loom & Mill</h1>
-				<img src="images/portfolio-loomAndMill.jpg" />
-			</div>
-		</article>
-		<article class="galleryContent">
-			<div class="galleryContentWrap">
-				<h1>Web/UI Design and custom Wordpress Theme Development for Lot 76 NYC</h1>
-				<img src="images/portfolio-lot76NYC.jpg" />
-			</div>
-		</article>
-		<!--
+<!--
 		<article class="galleryContent">
 			<div class="galleryContentWrap">
 				<h1>Web/UI Design, Development, and Project Management <span class="protected">for WileyX</span></h1>
@@ -76,14 +96,29 @@
 				<img class="protected" src="images/portfolio-wileyx.jpg" />
 			</div>
 		</article>
-		-->
+-->
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				for (var i = 0; i < portfolio.length; ++i) {
+					$('#gallery').append(
+						'<div class="galleryContent">' + 
+							'<div class="galleryContentWrap">' + 
+								portfolio[i].content + 
+							'</div>' +
+						'</div>'
+					);
+				}
+			});
+		</script>
 
 		<div id="sliderNav">
-			<a id="sliderPrev"><svg><use xlink:href="#icon-arrow-L"/></svg></a>
-			<a id="sliderNext"><svg><use xlink:href="#icon-arrow-R"/></svg></a>
+			<a id="sliderPrev"><svg><use xlink:href="#icon-arrow-L"></use></svg></a>
+			<a class="is-active" id="sliderNext"><svg><use xlink:href="#icon-arrow-R"></use></svg></a>
 		</div>
 
 	</div><!-- .slider -->
+
 
 	
 	<h2>Career Timeline</h2>
@@ -222,4 +257,6 @@
 		</ul>
 
 	</section>
+
+	<script src="script.js"></script>
 </body>
