@@ -63,11 +63,19 @@ button svg {
 		display: block;
 	}
 
+/* thumbnails */
+
 .galleryItem {
 	float: left;
 	padding: 10px;
+	position: relative;
+	transition: all .25s ease;
 }
-	.galleryItem .trigger {
+	.galleryItem:hover {
+		transform: scale(1.05);
+	}
+
+	.galleryItem .thumb {
 		border: solid 8px #fff;
 		box-shadow: 0 0 4px #999;
 		cursor: pointer;
@@ -75,12 +83,31 @@ button svg {
 		height: 225px;
 		overflow: hidden;
 		text-decoration: none;
+
+	}
+		.galleryItem:hover .thumb {
+			box-shadow: 0 0 10px #444;
+		}
+	
+	.galleryItem .trigger-authenticate {
+		background: rgba(255, 255, 255, 0.5);
+		bottom: 18px;
+		cursor: pointer;
+		display: block;
+		left: 10px; /* .galleryItem padding */
+		margin: -2em auto 0 auto;
+		padding: .5em;
+		position: absolute;
+		right: 10px; /* .galleryItem padding */
+		text-align: center;
 		transition: all .25s ease;
 	}
-	.galleryItem .trigger:hover {
-		box-shadow: 0 0 10px #444;
-		transform: scale(1.05);
+	.galleryItem .trigger-authenticate:hover {
+		background: rgba(255, 255, 255, .85);
+		text-decoration: underline;
 	}
+
+/* lightwindow content */	
 
 .galleryContent {
 	display: none; /* revealed via js */

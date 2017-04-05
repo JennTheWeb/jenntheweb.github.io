@@ -60,13 +60,6 @@
 			<div class="sliderContent" id="sliderContent">
 				<div class="js-gallery" id="gallery">
 
-					<script type="text/javascript">
-						$(document).ready(function() {
-							loadThumbContent();
-							loadContent();
-						});
-					</script>
-
 				</div><!-- #gallery -->
 			</div><!-- .sliderContent -->
 		</div><!-- .sliderViewport -->
@@ -78,18 +71,15 @@
 
 	</div><!-- .slider -->
 
-	<div class="galleryContent" id="authentication">
+	<div class="galleryContent js-content" id="authentication" style="display: none;">
 		<div class="galleryContentWrap">
 			<form action="" method="get" name="login">
 				Enter something in the box:
 				<input type="text" name="inputbox" value="">
-				<input type="button" name="button" value="click" onClick="testResults(this.form)">
+				<input type="button" name="button" value="click" onClick="authenticate(this.form)">
 			</form>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$('#authentication').hide();
-	</script>
 	
 	<h2>Career Timeline</h2>
 	<section class="timeline">
