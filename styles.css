@@ -110,27 +110,39 @@ button svg {
 /* lightwindow content */	
 
 .galleryContent {
+	color: #fff;
 	display: none; /* revealed via js */
-	left: 12.5%; /* ((100% - width) / 2) */
+	left: 0;
+	max-height: 100vh;
+	overflow-x: auto;
+	overflow-y: auto;
 	position: fixed;
+	text-align: center;
 	top: 0;
-	width: 75%;
+	width: 100%;
 	z-index: 20; /* above .has-overlay */
 }
 	.galleryContentWrap {
-		background: #fff;
-		border: solid 12px #fff;
-		box-shadow: 0 0 20px #333;
-		max-height: 100vh;
-		overflow-x: auto;
-		overflow-y: scroll;
-		padding: 1px;
+		display: inline-block;
+		max-width: 75%;
 	}
+		.galleryContent-text .galleryContentWrap  {
+			background: #fff;
+			color: #222;
+			padding: 12px;
+		}
+		.galleryContentWrap img {
+			background: #fff;
+			box-shadow: 0 0 20px #333;
+			display: block;
+			padding: 1px;
+		}
 	.galleryContent button {
 		border: none;
 	}
 	.galleryContent h2 {
-		margin: 0 0 .75em 0;
+		font-size: 1em;
+		margin: .5em 0;
 	}
 
 .galleryOverlay {
@@ -138,7 +150,7 @@ button svg {
 	content: ' ';
 	height: 100%;
 	left: 0;
-	opacity: .7;
+	opacity: .8;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -165,24 +177,24 @@ button svg {
 		opacity: 1;
 	}
 	.galleryPrev {
-		left: -2em;
+		left: .5em;
 	}
 	.galleryNext {
-		right: -2em;
+		right: .5em;
 	}
 
 .galleryClose {
 	background: none;
 	border: none;
 	position: absolute;
-	right: -5px;
-	top: -5px;
+	right: 10px;
+	top: 10px;
 	}
 	.galleryClose svg {
 		fill: #ccc;
 	}
 	.galleryClose:hover svg {
-		fill: #333;
+		fill: #fff;
 	}
 
 /* ------------------ */

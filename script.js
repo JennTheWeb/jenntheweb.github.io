@@ -90,31 +90,38 @@
 		});	
 	}
 	function createOverlay() {
-		$('body').append(
+		$('.js-gallery').prepend(
 			'<div class="galleryOverlay" id="overlay" style="display: none;"></div>'
 		);
 	}
 
 // VIEW PREV/NEXT CONTENT
 
-	$('#next, #prev').on('click', function() {
+	$('#next, #prev').on('click', function(event) {
 		var action = $(this).attr('id');
 		var currentContent = '#' + $(this).parents(content).attr('id');
+		event.stopPropagation();
 		$(currentContent).hide();
 		currentContent = '#' + $(currentContent).attr(action + 'Item');
 		$(currentContent).show();
+		verticallyCenterContent(currentContent);
 	});
 
 // OPEN AND CLOSE CONTENT
+
 	$(trigger).on('click', function() {
 		var currentItemContent = '#' + $(this).attr('content');
 		openContent(currentItemContent);
 	});
-	$(content + ' #close, #overlay').on('click', function() {
+	$('#close, ' + content).on('click', function() {
 		closeContent(content);
+	});
+	$('.galleryContentWrap').on('click', function(event) {
+		event.stopPropagation();
 	});
 	function openContent(content) {
 		$(content).show();
+		verticallyCenterContent(content);
 		$('#overlay').show();
 		$('body').css(
 			'overflow', 'hidden'
@@ -126,6 +133,19 @@
 		$('body').css(
 			'overflow', 'auto'
 		);
+	}
+
+// CENTER CONTENT
+
+	function verticallyCenterContent(content) {
+		var contentHeight = $(content).outerHeight();
+		var windowHeight = $(window).height();
+		if (contentHeight < windowHeight ) {
+			$(content).css({
+				'top': '50%',
+				'margin-top': '-' + contentHeight / 2 + 'px'
+			});
+		}
 	}
 
 // PASSWORD PROTECTION
