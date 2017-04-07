@@ -129,6 +129,9 @@ button svg {
 	.galleryContent button {
 		border: none;
 	}
+	.galleryContent h2 {
+		margin: 0 0 .75em 0;
+	}
 
 .galleryOverlay {
 	background: #000;
