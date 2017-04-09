@@ -113,7 +113,7 @@
 		var currentItemContent = '#' + $(this).attr('content');
 		openContent(currentItemContent);
 	});
-	$('#close, ' + content).on('click', function() {
+	$('#close, ' + content + ', #overlay').on('click', function() {
 		closeContent(content);
 	});
 	$('.galleryContentWrap').on('click', function(event) {
