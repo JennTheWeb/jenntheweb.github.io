@@ -25,13 +25,13 @@
 		let login = '';
 
 		for (var i = 0; i < numItems; ++i) {
-			if('thumbProtected' in portfolio[i]) {
-				login = '<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>';
-			}
-
 			thumb = portfolio[i].thumbPublic;
 			content = portfolio[i].contentPublic;
-
+			if('thumbProtected' in portfolio[i]) {
+				login = '<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>';
+			} else {
+				login = '';
+			}
 			$(gallery).append(
 				'<div class="galleryItem js-sliderItem">' +
 					'<a class="thumb js-trigger">' +  
@@ -152,11 +152,11 @@
 
 	function authenticate(form) {
 		var password = 'pass';
-		var testVar = form.inputbox.value;
+		var input = form.inputbox.value;
 
 		var form = '#authentication';
 
-		if(testVar == password) {
+		if(input == password) {
 			showProtectedContent();
 			closeContent(form);
 			$('.js-trigger-authenticate').hide();

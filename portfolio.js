@@ -12,6 +12,26 @@ portfolio.push ({
         '<img src="images/portfolio/lot76NYC.jpg" />'
 });
 portfolio.push ({
+    thumbPublic: 'cs/p1-blurred.jpg',
+    thumbProtected: 'cs/p1.jpg',
+    contentPublic:
+        '<h2>Responsive Web Design, Sitefinity Integration</h2>' +
+        '<img src="images/portfolio/cs/p1-blurred.jpg" />',
+    contentProtected:
+        '<h2>Web Design, Sitefinity Integration, , Responsive Design</h2>' +
+        '<img src="images/portfolio/cs/p1.jpg" />'
+});
+portfolio.push ({
+    thumbPublic: 'cs/p3-blurred.jpg',
+    thumbProtected: 'cs/p3.jpg',
+    contentPublic:
+        '<h2>Web UI/UX Design</h2>' +
+        '<img src="images/portfolio/cs/p3-blurred.jpg" />',
+    contentProtected:
+        '<h2>Web UI/UX Design</h2>' +
+        '<img src="images/portfolio/cs/p3.jpg" />'
+});
+portfolio.push ({
     thumbPublic: 'LHI.jpg',
     contentPublic:
         '<h2>Web Design, Drupal Integration</h2>' +
@@ -22,16 +42,6 @@ portfolio.push ({
     contentPublic:
         '<h2>Web Design, Custom Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/practicalBA.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'cs/p1-blurred.jpg',
-    thumbProtected: 'cs/p1.jpg',
-    contentPublic:
-        '<h2>Responsive Web Design, Sitefinity Integration</h2>' +
-        '<img src="images/portfolio/cs/p1-blurred.jpg" />',
-    contentProtected:
-        '<h2>Web Design, Sitefinity Integration, , Responsive Design</h2>' +
-        '<img src="images/portfolio/cs/p1.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'snapKnot.jpg',
@@ -58,12 +68,6 @@ portfolio.push ({
         '<img src="images/portfolio/remository.jpg" />'
 });
 portfolio.push ({
-    thumbPublic: 'elegantWay.jpg',
-    contentPublic:
-        '<h2>Web Design, Custom Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/elegantWay.jpg" />'
-});
-portfolio.push ({
     thumbPublic: 'MTK.jpg',
     contentPublic:
         '<h2>Web Design, HTML/CSS Develpment</h2>' +
@@ -78,16 +82,6 @@ portfolio.push ({
     contentProtected:
         '<h2>Web Design, Wordpress Theme Development, Project Management</h2>' +
         '<img src="images/portfolio/cs/p2.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'cs/p3-blurred.jpg',
-    thumbProtected: 'cs/p3.jpg',
-    contentPublic:
-        '<h2>Web UI/UX Design</h2>' +
-        '<img src="images/portfolio/cs/p3-blurred.jpg" />',
-    contentProtected:
-        '<h2>Web UI/UX Design</h2>' +
-        '<img src="images/portfolio/cs/p3.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'cs/p4-blurred.jpg',
