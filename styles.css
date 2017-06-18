@@ -16,10 +16,11 @@ h1, h2, h3, h4 {
 }
 h1 {
 	text-align: center;
+	margin: 1.5em 0 1em 0;
 }
 h2 {
 	text-align: center;
-	margin: 2em 0 1em 0;
+	margin: 1.5em 0 1em 0;
 	padding: 1px 0;
 }
 
@@ -46,22 +47,30 @@ button svg {
 	display: none;
 }
 
+/* --------------------------- */
+/* ----- main navigation ----- */
+
+.mainNav {
+	background: rgba(0, 0, 0, .4);
+	display: block;
+	margin: 0 0 24px 0;
+	padding: 12px 0;
+	text-align: center;
+}
+.mainNav a {
+	border-bottom: solid 2px transparent;
+	color: #fff;
+	display: inline-block;
+	margin: 0 18px;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+.mainNav a:hover {
+	border-bottom: solid 2px #fff;
+}
+
 /* ------------------------------- */
 /* ----- lightwindow gallery ----- */
-
-.gallery {
-	display: block;
-	margin: 0 auto;
-	width: 90%;
-}
-	.gallery-slider {
-		width: auto;
-	}
-	.gallery:after {
-		clear: both;
-		content: " ";
-		display: block;
-	}
 
 /* thumbnails */
 
@@ -102,10 +111,10 @@ button svg {
 		text-align: center;
 		transition: all .25s ease;
 	}
-	.galleryItem .trigger-authenticate:hover {
-		background: rgba(255, 255, 255, .85);
-		text-decoration: underline;
-	}
+		.galleryItem .trigger-authenticate:hover {
+			background: rgba(255, 255, 255, .85);
+			text-decoration: underline;
+		}
 
 /* lightwindow content */	
 
@@ -369,3 +378,21 @@ button svg {
 		margin: 0;
 		width: 95%;
 	}
+	
+/* --------- */
+/* portfolio */
+
+.portfolio {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+}
+	.portfolio::after {
+		clear: both;
+		content: " ";
+		display: block;
+	}
+
+.portfolio .galleryItem {
+	width: 50%;
+}
