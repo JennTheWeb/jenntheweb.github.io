@@ -1,62 +1,38 @@
-
+$(function() {
 //------------------//
 // LIGHTBOX GALLERY //
 //------------------//
 	
-	var gallery = '.js-gallery';
-	var trigger = '.js-trigger';
-	var content = '.js-content';
-	var triggerPrefix = 'trigger-';
-	var contentPrefix = 'content-';
-	var numItems = portfolio.length;
+	let gallery = '.js-gallery';
+	let trigger = '.js-trigger';
+	let content = '.js-content';
+	let triggerPrefix = 'trigger-';
+	let contentPrefix = 'content-';
+	let numItems = 0;
 
 // CREATE HTML FOR GALLERY ITEMS
 
 	$(gallery).each(function() {
-		generateContent(this);
+		addWrappers();
 		linkTriggerToContent();
 		linkPrevAndNext();
 		createOverlay();
 	});
 
-	function generateContent(gallery) {
-		let thumb = '';
-		let content = '';
-		let login = '';
-
-		for (var i = 0; i < numItems; ++i) {
-			thumb = portfolio[i].thumbPublic;
-			content = portfolio[i].contentPublic;
-			if('thumbProtected' in portfolio[i]) {
-				login = '<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>';
-			} else {
-				login = '';
-			}
-			$(gallery).append(
-				'<div class="galleryItem js-sliderItem">' +
-					'<a class="thumb js-trigger">' +  
-						'<img src="images/portfolio/' +
-							thumb +
-						'" />' +
-					'</a>' +
-					login +
-				'</div>' + 
-				'<div class="galleryContent js-content js-galleryContent">' + 
-					'<div class="galleryContentWrap">' + 
-						content + 
-					'</div>' +
-				'</div>'
+	function addWrappers() {
+		$('.js-galleryContent').each(function() {
+			$(this).wrapInner(
+				'<div class="galleryContentWrap"></div>'
 			);
-		}
+		})
 	}
 
-	// LINK TRIGGERS AND CONTENT
+	// LINK TRIGGERS AND LIGHTWINDOW CONTENT
 	function linkTriggerToContent() {	
-		let n = 0;
 		$('.thumb' + trigger).each(function() {	
-			$(this).attr('id', triggerPrefix + n); // needed to reveal protected content
-			$(this).attr('content', contentPrefix + n);
-			n++;
+			$(this).attr('id', triggerPrefix + numItems); // needed to reveal protected content
+			$(this).attr('content', contentPrefix + numItems);
+			numItems++;
 		});
 	}
 	function linkPrevAndNext() {
@@ -95,7 +71,7 @@
 		);
 	}
 
-// VIEW PREV/NEXT CONTENT
+// VIEW PREV/NEXT CONTENT IN THE LIGHTWINDOW
 
 	$('#next, #prev').on('click', function(event) {
 		var action = $(this).attr('id');
@@ -107,7 +83,7 @@
 		verticallyCenterContent(currentContent);
 	});
 
-// OPEN AND CLOSE CONTENT
+// OPEN AND CLOSE CONTENT IN THE LIGHTWINDOW
 
 	$(trigger).on('click', function() {
 		var currentItemContent = '#' + $(this).attr('content');
@@ -135,7 +111,7 @@
 		);
 	}
 
-// CENTER CONTENT
+// VERTICALLY CENTER THE LIGHTWINDOW
 
 	function verticallyCenterContent(content) {
 		var contentHeight = $(content).outerHeight();
@@ -148,13 +124,13 @@
 		}
 	}
 
-// PASSWORD PROTECTION
-
+	// PASSWORD PROTECTION
+	$('.js-authenticate').on('click', function() {
+		authenticate('#loginForm');
+	});
 	function authenticate(form) {
 		var password = 'pass';
-		var input = form.inputbox.value;
-
-		var form = '#authentication';
+		var input = $('.js-loginInput').val();
 
 		if(input == password) {
 			showProtectedContent();
@@ -163,6 +139,7 @@
 		}
 	}
 	function showProtectedContent() {
+		let numItems = portfolio.length;
 		for (var i = 0; i < numItems; ++i) {
 			let thumb = '';
 			let content = '';
@@ -180,24 +157,45 @@
 		}
 	} 
 
+});
+
 // SLIDER
 
 $(document).ready(function() {
 
+	addWrappers();
+
+	var sliderViewportWidth = 
+		$('#sliderViewport').innerWidth() - 
+		parseInt($('#sliderViewport').css('padding-left')) - 
+		parseInt($('#sliderViewport').css('padding-right'));
+		console.log('width' + sliderViewportWidth);
 	var numItems = 0;
 	var gridSize = 2;
+	
+	calcDimensions();
+	addNav();
 
-	// SET UP SLIDER DIMENSIONS
+	function addWrappers() {
+		$('#slider').each(function() {
+			$(this).wrapInner(
+				'<div id="sliderViewport"><div class="js-sliderContent"></div></div>'
+			);
+			$(this).append( 
+				'<div id="sliderNav">' +
+				'	<a id="sliderPrev"><svg><use xlink:href="#icon-arrow-L"></use></svg></a>' + 
+				'	<a class="is-active" id="sliderNext"><svg><use xlink:href="#icon-arrow-R"></use></svg></a>' +
+				'</div>'
+			);
+		})
+	}
 
-	sliderSetup();
-	function sliderSetup() {	
+	function calcDimensions() {	
 		$('.js-sliderItem').each(function() {
 			numItems++;
 		});
-		$('.js-sliderItem').outerWidth(
-			$('#sliderViewport').width() / gridSize
-		);
-		$('#sliderContent').width(
+		$('.js-sliderItem').outerWidth(sliderViewportWidth / gridSize);
+		$('.js-sliderContent').width(
 			$('.js-sliderItem').outerWidth() * numItems
 		);
 		$('#sliderViewport').height(
@@ -205,33 +203,30 @@ $(document).ready(function() {
 		);
 	}
 
-	// SLIDER NAVIGATION
-
-	sliderNav();
-	function sliderNav() {
-		var n = 0;
+	function addNav() {
+		var n = 1;
 		$('#sliderNext').click(function() {
-			if (n < numItems - gridSize) {
+			if (n < (numItems / gridSize)) {
 				$(this).addClass('is-active');
 				$('#sliderPrev').addClass('is-active');
-				$('#sliderContent').animate({
-					left: '+=-' + $('.js-sliderItem').outerWidth()
+				$('.js-sliderContent').animate({
+					left: '+=-' + sliderViewportWidth
 				});
 				n++;
-				if (n == numItems - gridSize) {
+				if (n == numItems / gridSize) {
 					$(this).removeClass('is-active');
 				}
 			}
 		});
 		$('#sliderPrev').click(function() {
-			if (n > 0) {
+			if (n > 1) {
 				$(this).addClass('is-active');
 				$('#sliderNext').addClass('is-active');
-				$('#sliderContent').animate({
-					left: '+=' + $('.js-sliderItem').outerWidth()
+				$('.js-sliderContent').animate({
+					left: '+=' + sliderViewportWidth
 				});
 				n--;
-				if (n == 0) {
+				if (n == 1) {
 					$(this).removeClass('is-active');
 				}
 			}

@@ -76,7 +76,7 @@ button svg {
 
 .galleryItem {
 	float: left;
-	padding: 10px;
+	padding: 15px;
 	position: relative;
 	transition: all .25s ease;
 }
@@ -174,7 +174,7 @@ button svg {
 	font-size: 3.5em;
 	position: absolute;
 	margin-top: -1em;
-	top: 50vh;
+	top: 50%;
 }
 	.galleryPrev svg,
 	.galleryNext svg {
@@ -210,24 +210,21 @@ button svg {
 /* ----- slider ----- */
 
 #slider {
+	margin: 0 auto;
 	position: relative;
+	width: calc(100% - 6rem);
 }
 #sliderViewport {
-	left: 5%;
 	overflow: hidden;
-
 	/* padding needs to be large enough that the scaled hover effect is not cut off but still
 	less than the padding between galleryItems to prevent box-shadow overflow appearing */
-	padding: 7px;
-	
+	padding: 10px;
 	position: relative;
-	width: 90%;
 }
-.sliderContent {
-	left: 7px; /* same as sliderviewport padding */
+.js-sliderContent {
 	position: absolute;
 	}
-	.sliderContent::after {
+	.js-sliderContent::after {
 		clear: both;
 		content: " ";
 		display: block;
@@ -236,10 +233,10 @@ button svg {
 
 #sliderNav {
 	display: block;
-	left: 5%;
+	left: 0;
 	position: absolute;
 	top: 50%;
-	width: 90%;
+	width: 100%;
 }
 	#sliderPrev,
 	#sliderNext {
@@ -385,6 +382,7 @@ button svg {
 .portfolio {
 	display: block;
 	margin: 0 auto;
+	text-align: center;
 	width: 90%;
 }
 	.portfolio::after {
@@ -392,7 +390,8 @@ button svg {
 		content: " ";
 		display: block;
 	}
-
-.portfolio .galleryItem {
-	width: 50%;
-}
+	.portfolio .galleryItem {
+		display: inline-block;
+		float: none;
+		width: 350px;
+	}

@@ -4,6 +4,18 @@
 	<link href="styles.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet" /> 
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" /> 
+
+	<script src="script.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-102229875-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 	<svg aria-hidden="true" style="display:none">
@@ -28,31 +40,49 @@
 	
 	<h1>UI Design and Development</h1>
 
-	<div class="gallery gallery-slider" id="slider">
-		<div id="sliderViewport">
-			<div class="sliderContent" id="sliderContent">
-				<div class="js-gallery" id="gallery">
+	<div class="gallery gallery-slider js-gallery" id="slider">
 
-				</div><!-- #gallery -->
-			</div><!-- .sliderContent -->
-		</div><!-- .sliderViewport -->
+		<div class="galleryItem js-sliderItem">
+			<a class="thumb js-trigger">  
+				<img src="images/portfolio/loomAndMill.jpg" />
+			</a>
+			<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>
+		</div>
+		<div class="galleryContent js-content js-galleryContent">
+			<h2>Responsive Web Design, Magento Development</h2>
+			<img src="images/portfolio/loomAndMill.jpg" />
+		</div>
 
-		<div id="sliderNav">
-			<a id="sliderPrev"><svg><use xlink:href="#icon-arrow-L"></use></svg></a>
-			<a class="is-active" id="sliderNext"><svg><use xlink:href="#icon-arrow-R"></use></svg></a>
+		<div class="galleryItem js-sliderItem">
+			<a class="thumb js-trigger">  
+				<img src="images/portfolio/lot76NYC.jpg" />
+			</a>
+			<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>
+		</div>
+		<div class="galleryContent js-content js-galleryContent">
+			<h2>Web Design, Custom Wordpress Theme Development</h2>
+			<img src="images/portfolio/lot76NYC.jpg" />
+		</div>
+
+		<div class="galleryItem js-sliderItem">
+			<a class="thumb js-trigger">  
+				<img class="public" src="images/portfolio/cs/p1.jpg" />
+				<img class="protected" src="images/portfolio/cs/p1-blurred.jpg" />
+			</a>
+			<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>
+		</div>
+		<div class="galleryContent js-content js-galleryContent">
+			<div class="public">
+				<h2>Responsive Web Design, Sitefinity Integration</h2>
+				<img src="images/portfolio/cs/p1-blurred.jpg" />
+			</div>
+			<div class="protected">
+				<h2>Web Design, Sitefinity Integration, , Responsive Design</h2>
+				<img src="images/portfolio/cs/p1.jpg" />
+			</div>
 		</div>
 
 	</div><!-- .slider -->
-
-	<div class="galleryContent galleryContent-text js-content" id="authentication" style="display: none;">
-		<div class="galleryContentWrap">
-			<form action="" method="get" name="login">
-				Super Secret Password:
-				<input type="text" name="inputbox" value="">
-				<input type="button" name="button" value="click" onClick="authenticate(this.form)">
-			</form>
-		</div>
-	</div>
 	
 	<h2>Career Timeline</h2>
 	<section class="timeline">
@@ -191,6 +221,5 @@
 
 	</section>
 
-	<script src="portfolio.js"></script>
-	<script src="script.js"></script>
+	
 </body>
