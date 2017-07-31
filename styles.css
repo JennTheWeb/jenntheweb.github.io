@@ -98,16 +98,17 @@ button svg {
 			box-shadow: 0 0 10px #444;
 		}
 	
+	/* login */
 	.galleryItem .trigger-authenticate {
 		background: rgba(255, 255, 255, 0.5);
 		bottom: 18px;
 		cursor: pointer;
 		display: block;
-		left: 10px; /* .galleryItem padding */
+		left: 15px; /* .galleryItem padding */
 		margin: -2em auto 0 auto;
 		padding: .5em;
 		position: absolute;
-		right: 10px; /* .galleryItem padding */
+		right: 15px; /* .galleryItem padding */
 		text-align: center;
 		transition: all .25s ease;
 	}
@@ -217,10 +218,26 @@ button svg {
 #sliderViewport {
 	overflow: hidden;
 	/* padding needs to be large enough that the scaled hover effect is not cut off but still
-	less than the padding between galleryItems to prevent box-shadow overflow appearing */
+	less than the padding between galleryItems to prevent box-shadow from previous and next items from appearing */
 	padding: 10px;
 	position: relative;
 }
+	/* add transparent blocks to prevent hovering over previous and next items that are revealed by the above padding */
+	#sliderViewport::before,
+	#sliderViewport::after {
+		content: "";
+		display: block;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 10px;
+	}
+	#sliderViewport::before {
+		left: 0;
+	}
+	#sliderViewport::after {
+		right: 0;
+	}
 .js-sliderContent {
 	position: absolute;
 	}
