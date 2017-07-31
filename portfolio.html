@@ -45,49 +45,11 @@
         </div><!-- #gallery -->
 	</div><!-- .portfolio -->
 
-	<div class="galleryContent galleryContent-text js-content" id="authentication" style="display: none;">
-		<form action="" method="get" name="login">
-			Super Secret Password:
-			<input type="text" name="inputbox" value="">
-			<input type="button" name="button" value="click" onClick="authenticate(this.form)">
-		</form>
-	</div>
-	
+	<script src="script.js"></script>	
+	<script src="loginForm.js"></script>
 	<script src="portfolio.js"></script>
+	<script src="generateContent.js"></script>
 	<script>
-		$(function() {
-			let thumb = '';
-			let content = '';
-			let login = '';
-			let numItems = portfolio.length;
-
-			for (let i = 0; i < numItems; ++i) {
-				thumb = portfolio[i].thumbPublic;
-				content = portfolio[i].contentPublic;
-
-				// if there is protected content add a login
-				if('thumbProtected' in portfolio[i]) {
-					login = '<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>';
-				} else {
-					login = '';
-				}
-				
-				$('.js-gallery').append(
-					'<div class="galleryItem">' +
-						'<a class="thumb js-trigger">' +  
-							'<img src="images/portfolio/' +
-								thumb +
-							'" />' +
-						'</a>' +
-						login +
-					'</div>' + 
-					'<div class="galleryContent js-content js-galleryContent">' + 
-						content + 
-					'</div>' 
-				);
-			}
-		});
+		generateContent(portfolio);
 	</script>
-
-	<script src="script.js"></script>
 </body>

@@ -5,7 +5,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet" /> 
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" /> 
 
-	<script src="script.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -14,7 +13,6 @@
 
 		ga('create', 'UA-102229875-1', 'auto');
 		ga('send', 'pageview');
-
 	</script>
 </head>
 <body>
@@ -40,49 +38,7 @@
 	
 	<h1>UI Design and Development</h1>
 
-	<div class="gallery gallery-slider js-gallery" id="slider">
-
-		<div class="galleryItem js-sliderItem">
-			<a class="thumb js-trigger">  
-				<img src="images/portfolio/loomAndMill.jpg" />
-			</a>
-			<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>
-		</div>
-		<div class="galleryContent js-content js-galleryContent">
-			<h2>Responsive Web Design, Magento Development</h2>
-			<img src="images/portfolio/loomAndMill.jpg" />
-		</div>
-
-		<div class="galleryItem js-sliderItem">
-			<a class="thumb js-trigger">  
-				<img src="images/portfolio/lot76NYC.jpg" />
-			</a>
-			<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>
-		</div>
-		<div class="galleryContent js-content js-galleryContent">
-			<h2>Web Design, Custom Wordpress Theme Development</h2>
-			<img src="images/portfolio/lot76NYC.jpg" />
-		</div>
-
-		<div class="galleryItem js-sliderItem">
-			<a class="thumb js-trigger">  
-				<img class="public" src="images/portfolio/cs/p1.jpg" />
-				<img class="protected" src="images/portfolio/cs/p1-blurred.jpg" />
-			</a>
-			<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>
-		</div>
-		<div class="galleryContent js-content js-galleryContent">
-			<div class="public">
-				<h2>Responsive Web Design, Sitefinity Integration</h2>
-				<img src="images/portfolio/cs/p1-blurred.jpg" />
-			</div>
-			<div class="protected">
-				<h2>Web Design, Sitefinity Integration, , Responsive Design</h2>
-				<img src="images/portfolio/cs/p1.jpg" />
-			</div>
-		</div>
-
-	</div><!-- .slider -->
+	<div class="gallery gallery-slider js-gallery" id="slider"></div>	
 	
 	<h2>Career Timeline</h2>
 	<section class="timeline">
@@ -221,5 +177,12 @@
 
 	</section>
 
-	
+	<script src="script.js"></script>
+	<script src="loginForm.js"></script>
+	<script src="portfolio.js"></script>
+	<script src="generateContent.js"></script>
+	<script>
+		generateContent(portfolio);
+	</script>
+
 </body>

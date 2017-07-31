@@ -22,12 +22,12 @@ $(function() {
 	function addWrappers() {
 		$('.js-galleryContent').each(function() {
 			$(this).wrapInner(
-				'<div class="galleryContentWrap"></div>'
+				'<div class="galleryContentWrap js-galleryContentWrap"></div>'
 			);
 		})
 	}
 
-	// LINK TRIGGERS AND LIGHTWINDOW CONTENT
+	// LINK TRIGGERS TO LIGHTWINDOW CONTENT
 	function linkTriggerToContent() {	
 		$('.thumb' + trigger).each(function() {	
 			$(this).attr('id', triggerPrefix + numItems); // needed to reveal protected content
@@ -74,16 +74,19 @@ $(function() {
 // VIEW PREV/NEXT CONTENT IN THE LIGHTWINDOW
 
 	$('#next, #prev').on('click', function(event) {
+		event.stopPropagation();
+		
 		var action = $(this).attr('id');
 		var currentContent = '#' + $(this).parents(content).attr('id');
-		event.stopPropagation();
+		
 		$(currentContent).hide();
 		currentContent = '#' + $(currentContent).attr(action + 'Item');
 		$(currentContent).show();
+
 		verticallyCenterContent(currentContent);
 	});
 
-// OPEN AND CLOSE CONTENT IN THE LIGHTWINDOW
+// OPEN AND CLOSE THE LIGHTWINDOW
 
 	$(trigger).on('click', function() {
 		var currentItemContent = '#' + $(this).attr('content');
@@ -92,9 +95,10 @@ $(function() {
 	$('#close, ' + content + ', #overlay').on('click', function() {
 		closeContent(content);
 	});
-	$('.galleryContentWrap').on('click', function(event) {
+	$('.js-galleryContentWrap').on('click', function(event) {
 		event.stopPropagation();
 	});
+
 	function openContent(content) {
 		$(content).show();
 		verticallyCenterContent(content);
@@ -110,9 +114,6 @@ $(function() {
 			'overflow', 'auto'
 		);
 	}
-
-// VERTICALLY CENTER THE LIGHTWINDOW
-
 	function verticallyCenterContent(content) {
 		var contentHeight = $(content).outerHeight();
 		var windowHeight = $(window).height();
@@ -123,39 +124,6 @@ $(function() {
 			});
 		}
 	}
-
-	// PASSWORD PROTECTION
-	$('.js-authenticate').on('click', function() {
-		authenticate('#loginForm');
-	});
-	function authenticate(form) {
-		var password = 'pass';
-		var input = $('.js-loginInput').val();
-
-		if(input == password) {
-			showProtectedContent();
-			closeContent(form);
-			$('.js-trigger-authenticate').hide();
-		}
-	}
-	function showProtectedContent() {
-		let numItems = portfolio.length;
-		for (var i = 0; i < numItems; ++i) {
-			let thumb = '';
-			let content = '';
-			if ('thumbProtected' in portfolio[i]) {
-				thumb = 
-					'<img src="images/portfolio/' + 
-						portfolio[i].thumbProtected + 
-					'" />';
-				$('#' + triggerPrefix + i).html(thumb);
-			}	
-			if ('contentProtected' in portfolio[i]) {
-				content = portfolio[i].contentProtected;
-				$('#' + contentPrefix + i + ' .galleryContentWrap').html(content);
-			}	
-		}
-	} 
 
 });
 
@@ -169,7 +137,6 @@ $(document).ready(function() {
 		$('#sliderViewport').innerWidth() - 
 		parseInt($('#sliderViewport').css('padding-left')) - 
 		parseInt($('#sliderViewport').css('padding-right'));
-		console.log('width' + sliderViewportWidth);
 	var numItems = 0;
 	var gridSize = 2;
 	
