@@ -11,7 +11,7 @@ function generateContent(portfolio) {
         }
         
         $('.js-gallery').append(
-            '<div class="galleryItem js-sliderItem">' +
+            '<div class="galleryItem js-galleryItem">' +
                 '<a class="thumb js-trigger">' +  
                     '<img src="images/portfolio/' +
                         thumb +
@@ -23,6 +23,8 @@ function generateContent(portfolio) {
                 content + 
             '</div>' 
         );
+
+        $('.js-slider.js-gallery').find('.js-galleryItem').addClass('js-sliderItem');
     }
 
     // create login form
