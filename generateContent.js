@@ -23,8 +23,6 @@ function generateContent(portfolio) {
                 content + 
             '</div>' 
         );
-
-        $('.js-slider.js-gallery').find('.js-galleryItem').addClass('js-sliderItem');
     }
 
     // create login form
@@ -75,4 +73,15 @@ function generateContent(portfolio) {
             }	
         }
     } 
+}
+
+function setupSlider() {
+    $('.js-slider.js-gallery').find('.js-galleryItem').addClass('js-sliderItem');
+
+    var width = 
+    $('.js-slider').innerWidth() - 
+    parseInt($('.js-slider').css('padding-left')) - 
+    parseInt($('.js-slider').css('padding-right'));
+    
+    createSlider(2, width);
 }

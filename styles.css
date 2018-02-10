@@ -219,7 +219,7 @@ button svg {
 	overflow: hidden;
 	/* padding needs to be large enough that the scaled hover effect is not cut off but still
 	less than the padding between galleryItems to prevent box-shadow from previous and next items from appearing */
-	padding: 10px;
+	/* padding: 10px; */
 	position: relative;
 }
 	/* add transparent blocks to prevent hovering over previous and next items that are revealed by the above padding */
