@@ -1,4 +1,5 @@
-$(function() {
+function createGallery() {
+
 //------------------//
 // LIGHTBOX GALLERY //
 //------------------//
@@ -15,11 +16,12 @@ $(function() {
 	$(gallery).each(function() {
 		addWrappers();
 		linkTriggerToContent();
-		linkPrevAndNext();
-		createOverlay();
+        linkPrevAndNext();
+        createLightwindow(trigger, content);
 	});
 
 	function addWrappers() {
+        $('.js-galleryContent').addClass('.js-lightwindowContent');
 		$('.js-galleryContent').each(function() {
 			$(this).wrapInner(
 				'<div class="galleryContentWrap js-galleryContentWrap"></div>'
@@ -56,19 +58,8 @@ $(function() {
 					'</button>'
 				);
 			}
-			$(this).prepend(
-				'<button id="close" class="galleryClose" aria-label="Close">' + 
-				'	<svg><use xlink:href="#icon-close"/></svg>' +
-				'</button>'
-			);
-
 			n++;
 		});	
-	}
-	function createOverlay() {
-		$('.js-gallery').prepend(
-			'<div class="galleryOverlay" id="overlay" style="display: none;"></div>'
-		);
 	}
 
 // VIEW PREV/NEXT CONTENT IN THE LIGHTWINDOW
@@ -83,46 +74,67 @@ $(function() {
 		currentContent = '#' + $(currentContent).attr(action + 'Item');
 		$(currentContent).show();
 
-		verticallyCenterContent(currentContent);
+		//verticallyCenterContent(currentContent);
 	});
 
-// OPEN AND CLOSE THE LIGHTWINDOW
+}
+
+function createLightwindow(trigger, content) {
+
+    createOverlay();
+    createCloseButton();
+
+    // OPEN AND CLOSE THE LIGHTWINDOW
 
 	$(trigger).on('click', function() {
 		var currentItemContent = '#' + $(this).attr('content');
 		openContent(currentItemContent);
 	});
-	$('#close, ' + content + ', #overlay').on('click', function() {
+	$('#close, #overlay, .js-lightwindowContent').on('click', function() {
 		closeContent(content);
 	});
 	$('.js-galleryContentWrap').on('click', function(event) {
 		event.stopPropagation();
 	});
 
-	function openContent(content) {
-		$(content).show();
-		verticallyCenterContent(content);
-		$('#overlay').show();
-		$('body').css(
-			'overflow', 'hidden'
-		);
-	}
-	function closeContent(content) {
-		$(content).hide();
-		$('#overlay').hide();
-		$('body').css(
-			'overflow', 'auto'
-		);
-	}
-	function verticallyCenterContent(content) {
-		var contentHeight = $(content).outerHeight();
-		var windowHeight = $(window).height();
-		if (contentHeight < windowHeight ) {
-			$(content).css({
-				'top': '50%',
-				'margin-top': '-' + contentHeight / 2 + 'px'
-			});
-		}
-	}
+    function createOverlay() {
+        $('body').prepend(
+            '<div class="galleryOverlay" id="overlay" style="display: none;"></div>'
+        );
+    }
+    function createCloseButton() {
+        $('body').prepend(
+            '<button id="close" class="galleryClose" aria-label="Close" style="display: none;">' + 
+            '	<svg><use xlink:href="#icon-close"/></svg>' +
+            '</button>'
+        );
+    }
+    function openContent(content) {
+        $(content).show();
+        verticallyCenterContent(content);
+        $('#overlay').show();
+        $('#close').show();
+        $('body').css(
+            'overflow', 'hidden'
+        );
+    }
+    function closeContent(content) {
+        $(content).hide();
+        $('#overlay').hide();
+        $('#close').hide();
+        $('body').css(
+            'overflow', 'auto'
+        );
+    }
+    function verticallyCenterContent(content) {
+        var contentHeight = $(content).outerHeight();
+        var windowHeight = $(window).height();
+        if (contentHeight < windowHeight ) {
+            $(content).css({
+                'top': '50%',
+                'margin-top': '-' + contentHeight / 2 + 'px'
+            });
+        }
+    }
+}
 
-});

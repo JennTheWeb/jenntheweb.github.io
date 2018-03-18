@@ -130,11 +130,12 @@ button svg {
 	text-align: center;
 	top: 0;
 	width: 100%;
-	z-index: 20; /* above .has-overlay */
+	z-index: 20; /* above overlay */
 }
 	.galleryContentWrap {
 		display: inline-block;
 		max-width: 75%;
+		position: relative;
 	}
 		.galleryContent-text .galleryContentWrap  {
 			background: #fff;
@@ -164,7 +165,7 @@ button svg {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10; /* above page content, below .lightboxGallery-item */
+	z-index: 10;
 }
 
 .galleryPrev,
@@ -173,7 +174,7 @@ button svg {
 	border: none;
 	color: #fff;
 	font-size: 3.5em;
-	position: absolute;
+	position: fixed;
 	margin-top: -1em;
 	top: 50%;
 }
@@ -196,9 +197,10 @@ button svg {
 .galleryClose {
 	background: none;
 	border: none;
-	position: absolute;
+	position: fixed;
 	right: 10px;
 	top: 10px;
+	z-index: 30; /* above overlay */
 	}
 	.galleryClose svg {
 		fill: #ccc;

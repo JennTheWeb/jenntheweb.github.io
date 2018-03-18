@@ -1,13 +1,23 @@
 function generateContent(portfolio) {
 
-    // create gallery items
+    let loginTrigger = '';
+    let loginForm = '';
+
+    // create gallery items using portfolio object
     for (let i = 0; i < portfolio.length; ++i) {
         let thumb = portfolio[i].thumbPublic;
         let content = portfolio[i].contentPublic;
-        let loginTrigger = '';
 
         if('thumbProtected' in portfolio[i]) {
-            loginTrigger = '<a class="js-trigger js-trigger-authenticate trigger-authenticate" content="authentication">login to view</a>';
+
+            loginTrigger = '<a class="js-trigger trigger-authenticate" content="authentication">login to view</a>';
+
+            loginForm = 
+            '<form method="get" name="login" id="loginForm">' +
+                'Super Secret Password:' +
+                '<input class="js-loginInput" type="text" name="inputbox" value="">' +
+                '<input class="js-authenticate" type="button" name="button" value="click">' +
+            '</form>';
         }
         
         $('.js-gallery').append(
@@ -19,24 +29,29 @@ function generateContent(portfolio) {
                 '</a>' +
                 loginTrigger +
             '</div>' + 
-            '<div class="galleryContent js-content js-galleryContent">' + 
+            '<div class="galleryContent js-content js-galleryContent js-lightwindowContent">' + 
                 content + 
+                loginForm +
             '</div>' 
         );
     }
 
-    // create login form
+    // create login form lightwindow
     $('body').prepend(
-        '<div class="galleryContent galleryContent-text js-content" id="authentication" style="display: none;">' + 
+        '<div class="galleryContent galleryContent-text js-content js-lightwindowContent" id="authentication">' + 
             '<div class="galleryContentWrap js-galleryContentWrap">' +
-            '<form action="" method="get" name="login" id="loginForm">' +
-                'Super Secret Password:' +
-                '<input class="js-loginInput" type="text" name="inputbox" value="">' +
-                '<input class="js-authenticate" type="button" name="button" value="click">' +
-            '</form>' +
+            loginForm +
             '</div>' +
         '</div>'
     );
+
+    portfolioAuthentication();
+}
+
+function portfolioAuthentication() {
+
+
+    createLightwindow('.js-trigger', '.js-content');
     
     $('.js-authenticate').on('click', function() {
         authenticate('#loginForm');
@@ -51,8 +66,7 @@ function generateContent(portfolio) {
 
         if(input == password) {
             showProtectedContent();
-            $('#overlay').click();
-            $('.js-trigger-authenticate').hide();
+            $('#close').click();
         }
     }
     function showProtectedContent() {
@@ -75,7 +89,9 @@ function generateContent(portfolio) {
     } 
 }
 
-function setupSlider() {
+function createGallerySlider() {
+    createGallery();
+    
     $('.js-slider.js-gallery').find('.js-galleryItem').addClass('js-sliderItem');
 
     var width = 
