@@ -5,7 +5,7 @@ body {
 	background: url("images/bg.png") repeat fixed;
 	color: #444;
 	font-family: 'Crimson Text', serif;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: normal;
 	line-height: 1.3;
 	margin: 0;
@@ -76,43 +76,92 @@ button svg {
 
 .galleryItem {
 	float: left;
-	position: relative;
-	
+	position: relative;	
 }
 	.galleryItem .thumb {
-		border: solid 8px #fff;
+		background: #fff;
+		border: solid 1px #fff;
 		box-shadow: 0 0 4px #999;
 		cursor: pointer;
 		display: block;
 		height: 225px;
-		overflow: hidden;
 		margin: calc(2.5% + 8px);
+		overflow: hidden;
+		position: relative;
 		text-decoration: none;
 		transition: all .25s ease;
 	}
-		.galleryItem:hover .thumb {
+		.galleryItem .thumb:hover {
 			box-shadow: 0 0 10px #444;
 			transform: scale(1.05);
 		}
+		/* .galleryItem .thumb img {
+			height: auto;
+			max-height: 1000px;
+			max-width: 1000px;
+			min-height: 100%;
+			min-width: 100%;
+			width: auto;
+		} */
+
+	.galleryItem .thumb_caption {
+		background: rgba(0, 0, 0, .7);
+		color: #fff;
+		font-size: 2rem;
+		left: 0;
+		padding: 6px;
+		position: absolute;
+		top: 0;
+	}
 	
 	/* login */
 	.galleryItem .trigger-authenticate {
-		background: rgba(255, 255, 255, 0.5);
-		bottom: 18px;
+		background: rgba(0, 0, 0, .3);
+		bottom: 0;
+		box-sizing: border-box;
 		cursor: pointer;
 		display: block;
-		left: 15px; /* .galleryItem padding */
-		margin: -2em auto 0 auto;
-		padding: .5em;
+		height: 225px; /* same as gallery thumb */
+		left: 0;
+		margin: calc(2.5% + 8px); /* same as gallery thumb */
+		padding-top: 100px;
 		position: absolute;
-		right: 15px; /* .galleryItem padding */
+		right: 0;
 		text-align: center;
-		transition: all .25s ease;
+		top: 0;
+		transition: all .25s ease; /* same as gallery thumb */
+		vertical-align: middle;
 	}
-		.galleryItem .trigger-authenticate:hover {
-			background: rgba(255, 255, 255, .85);
-			text-decoration: underline;
+		#slider .galleryItem .trigger-authenticate {
+			height: 250px; /* same as slider thumb */
 		}
+		.galleryItem .trigger-authenticate:hover {
+			background: rgba(0, 0, 0, .7);
+		}
+		.galleryItem .trigger-authenticate span {
+			background: rgba(255, 255, 255, .9);
+			font-size: 1.25em;
+			padding: 4px 7px;
+		}
+
+	#loginForm label {
+		margin-right: 5px;
+	}	
+	#loginForm input[type="text"] {
+		border: solid 1px #e0e0e0;
+		font-size: 1rem;
+		padding: 3px;
+	}
+	#loginForm input[type="button"] {
+		background: #333;
+		border: solid 1px #333;
+		color: #fff;
+		font-size: 1rem;
+		padding: 3px 5px;
+	}
+	#loginForm input[type="button"]:hover {
+		background: #666;
+	}
 
 /* lightwindow content */	
 
@@ -131,8 +180,10 @@ button svg {
 }
 	.galleryContentWrap {
 		display: inline-block;
-		max-width: 75%;
+		margin: 0 50px;
+		max-width: 1000px;
 		position: relative;
+		width: calc(100% - 100px);
 	}
 		.galleryContent-text .galleryContentWrap  {
 			background: #fff;
@@ -145,13 +196,27 @@ button svg {
 			display: block;
 			padding: 1px;
 		}
+
+		@media (max-width: 600px) {
+			.galleryContentWrap {
+				margin: 50px 0 0 0; /* height of close btn */
+				width: 100%;
+			}
+		}
+
 	.galleryContent button {
 		border: none;
 	}
-	.galleryContent h2 {
+
+	.galleryContent_description {
 		font-size: 1em;
 		margin: .5em 0;
 	}
+		@media (max-width: 600px) {
+			.galleryContent_description {
+				display: none;
+			}
+		}
 
 .galleryOverlay {
 	background: #000;
@@ -170,10 +235,10 @@ button svg {
 	background: none;
 	border: none;
 	color: #fff;
-	font-size: 3.5em;
+	font-size: 2em;
+	height: 30vh;
 	position: fixed;
-	margin-top: -1em;
-	top: 50%;
+	top: 35vh;
 }
 	.galleryPrev svg,
 	.galleryNext svg {
@@ -185,10 +250,10 @@ button svg {
 		opacity: 1;
 	}
 	.galleryPrev {
-		left: .5em;
+		left: 0px;
 	}
 	.galleryNext {
-		right: .5em;
+		right: 10px;
 	}
 
 .galleryClose {
@@ -206,6 +271,129 @@ button svg {
 		fill: #fff;
 	}
 
+	@media (max-width: 600px) {
+		.galleryClose {
+			background: #222;
+			display: block;
+			height: 50px;
+			right: 0;
+			text-align: center;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+		}
+		.galleryClose svg {
+			display: inline-block;
+			float: none;
+			height: 1rem;
+			margin-right: 5px;
+			margin-top: -3px;
+			vertical-align: middle;
+			width: 1rem;
+		}
+		.galleryClose::after {
+			color: #fff;
+			content: "Close";
+			display: inline-block;
+			font-family: 'Julius Sans One', sans-serif;
+			vertical-align: middle;
+		}
+	}
+
+/* ---------- */
+/* case study */
+
+.caseStudy_section {
+	background: #fff;
+	box-sizing: border-box;
+	color: #222;
+	margin: 15px auto;
+	padding: 2.5rem;
+	text-align: left;
+}
+	.caseStudy_section hr {
+		background: #e0e0e0;
+		border: none;
+		display: block;
+		height: 1px;
+	}
+
+	.caseStudy_section h1 {
+		font-size: 2rem;
+		text-align: left;
+	}
+	.caseStudy_section h2 {
+		font-size: 1.5rem;
+		text-align: left;
+	}
+	.caseStudy_section h3 {
+		color: #d7601b;
+		font-size: 1.15rem;
+		text-align: left;
+	}
+
+	.caseStudy_section img {
+		box-shadow: none;
+		margin: 0 auto;
+	}
+	.caseStudy_section img.frame {
+		border: solid 3px #f1f1f1;
+		margin: 15px auto;
+	}
+
+.caseStudy_mainHeading {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.caseStudy_mainSubheading {
+	color: #d7601b;
+	margin-bottom: 1.5rem !important;
+	margin-top: .25rem !important;
+}
+
+.caseStudy_headingContainer {
+	flex-basis: 30%;
+	flex-shrink: 0;
+}
+	.caseStudy_headingContainer :first-child {
+		margin-top: 0;
+	}
+
+.caseStudy_row {
+	display: flex;
+	align-items: flex-start;
+	margin: 2.5rem 0;
+}
+	.caseStudy_row-images {
+		align-items: center;
+	}
+
+	@media (max-width: 600px) {
+		.caseStudy_row {
+			display: block;
+		}
+	}
+
+.caseStudy_img {
+	margin: 0 15px;
+}
+	.caseStudy_img:first-child {
+		margin-left: 0;
+	}
+	.caseStudy_img:last-child {
+		margin-right: 0;
+}
+
+.caseStudy_content {
+	flex-grow: 1;
+}
+	.caseStudy_content :first-child {
+		margin-top: 0;
+	}
+	.caseStudy_content :last-child {
+		margin-bottom: 0;
+	}
+
 /* ------------------ */
 /* ----- slider ----- */
 
@@ -217,6 +405,10 @@ button svg {
 #sliderViewport {
 	overflow: hidden;
 	position: relative;
+}
+
+#slider .thumb {
+	height: 250px;
 }
 	
 .js-sliderContent {

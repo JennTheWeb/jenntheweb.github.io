@@ -36,7 +36,7 @@
 		<a class="navItem" href="portfolio.html">Portfolio</a>
 	</nav>
 	
-	<h1>UI Design and Development</h1>
+	<h1>Product Design and Development</h1>
 
 	<div class="gallery gallery-slider js-gallery js-slider" id="slider"></div>	
 	
@@ -183,8 +183,12 @@
 	<script src="portfolio.js"></script>
 	<script src="generateContent.js"></script>
 	<script>
+		$('.gallery').css('opacity', '.1');
 		generateContent(portfolio);
-		createGallerySlider();
+		$(document).ready(function() {
+			createGallerySlider();
+			$('.gallery').css('opacity', '1');
+		})
 	</script>
 
 </body>
