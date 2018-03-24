@@ -1,17 +1,118 @@
 let portfolio = [];
 portfolio.push ({
-    thumbProtected: 'laz/fileCabinetThumb.png',
+    //thumbProtected: 'laz/codeStandards-thumb.png',
+    thumbPublic: 'laz/codeStandards-thumb.png',
+    caption: 'Case Study',
+    contentPublic: 
+        '<h2 class="galleryContent_description">UI, HTML/CSS, Documentation</h2>' +
+        '<img src="images/portfolio/laz/codeStandards-banner.png" />' +
+
+        '<div class="caseStudy_section">' +
+            '<h1 class="caseStudy_mainHeading">Styleguide and CSS Code Standards</h2>' +
+            '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
+
+            '<hr />' +
+
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Problem</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +                  	    
+                    '<p>The CSS codebase was fragile and unruly with files thousands of lines long full of repetition, inconsistencies, and tangled spaghetti code. This was clearly reflected in the UI, where you had 50 shades of purple blue pink red, you name it. If someone needed to add a button, there was no "right" button to choose from, and complete terror at the thought of modifying any existing button for fear of unintended consequences.</p>' +
+                    
+                    '<p>Team members attended a CSS dev conference and came back with ideas of how to use SMACSS methodologies to refactor our CSS, but no one wanted to make the first move. That\'s where I came in.</p>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+        
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Process</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +    
+                    '<p>Having extra time on my hands between projects, and not wanting to see the CSS cleanup initiative die, I created a simple styleguide including a grid system and generic UI components and helpers. I presented this to the team to make sure it was in line with the SMACSS techniques we had discussed, and after some revisions it started to be introduced into new projects.</p>' +
+
+                    '<p>My process was to first take stock of what exists on the sites (buttons, for example)</p>' + 
+
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn1.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn2.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn3.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn4.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn6.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn7.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn8.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn9.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn10.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn11.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn12.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn13.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn14.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn15.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn16.png" />' +
+                    
+                    '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there are 3 green buttons, pick one green and use it consistently, but don\'t change green to orange without good reason. If there are buttons with icons, find a consistent approach for displaying buttons with icons; don\'t remove the icons. And so on. Next I would get approvals and implement the new approach page by page, making sure the selected approach is documented in the styleguide for future use. </p>' +
+
+                    '<img class="frame" src="images/portfolio/laz/styleguide.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/styleguide2.png" />' +
+                    
+                    '<p>With everything consistently cleaned up, it\'s much easier to make more dramatic change in the future, such as removing icons or changing/removing colors.</p>' +
+
+                    '<p>As changes were rolled out, one problem that surfaced was the over-use of helper classes. Because our sites consist of few templates and many separate files, changing the code to include certain helper classes became a huge undertaking. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done.</p>' +
+                    
+                    '<p>As the team continued to grow, it became increasingly difficult to keep our standards under control, and keep everyone on the same page. Three of us met and hashed out details of standards, and I documented it in the styleguide and presented it to the rest of the team.</p>' +
+
+                    '<img class="frame" src="images/portfolio/laz/codeStandards.png" />' +
+
+                    '<p>Part of the job required picking an approach where inconsistencies were present. A lot of before/after mockups were presented to keep everyone on the same page and gather approvals:' +
+
+                    '<img class="frame" src="images/portfolio/laz/colors1.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/colors2.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/colors3.png" />' +
+                    
+                    '<p>Additionally, the parent site was rebranded, and new visual standards needed to be established. This was a perfect opportunity to finish cleaning up the code and unifying the design across the board. BEM was carefully rolled out throughout much of the sites along with a new look and color pallette.</p>' +
+
+                    '<h3>Before:</h3>' +
+
+                    '<img class="frame" src="images/portfolio/laz/header-old1.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/header-old2.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/header-old3.png" />' +
+
+                    '<h3>After:</h3>' +
+
+                    '<img class="frame" src="images/portfolio/laz/header-new1.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/header-new5.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/header-new2.png" />' +
+
+                '</div>' +
+            '</div>' +
+        '</div>' +
+        
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Outcome</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>After years of meticulous work, the stylesheets are far more manageable, and the look of the sites is more clean, modern, and consistent. This is an ongoing initiative, especially as Angular use continues to be ironed out, responsive design comes into play, and new CSS features like flex and grid threaten to break the BEM model. But there is now a solid foundation to build on, a single source of information for designers and engineers to reference when starting any conversation, and a lot of practice carrying out widespread changes. Engineers no longer have to ask a designer to style a form, and designers no longer have to add new styles each time they\'re asked to style something.</p>' +
+                '</div>' +
+            '</div>' +
+        '</div>'
+});
+portfolio.push ({
+    //thumbProtected: 'laz/fileCabinetThumb.png',
     thumbPublic: 'laz/fileCabinetThumb.png',
     caption: 'Case Study',
-    contentProtected:
+    contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, Angular integration</h2>' +
         '<img src="images/portfolio/laz/fileCabinet-banner.png" />' +
         '<div class="caseStudy_section">' +
             '<h1 class="caseStudy_mainHeading">File Cabinet and Custom Assignments</h2>' +
             '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
-    
+
             '<hr />' +
-    
+
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
                     '<h2>Problem</h2>' +
@@ -22,7 +123,7 @@ portfolio.push ({
                 '</div>' +
             '</div>' +
         '</div>' +
-    
+
         '<div class="caseStudy_section">' +
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
@@ -42,45 +143,41 @@ portfolio.push ({
                     '<h3>Design</h3>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>Before designing I spent a lot of time brainstorming with team members and reviewing different ways of handling shopping carts, and also other ways of assigning educational materials elsewhere. The first approach I tried was a model of Assigning now, or saving for later, with a file cabinet preview opening in a dropdown.</p>' +
-                '</div>' +
-            '</div>' +
+                    '<div class="caseStudy_words">' +
+                        '<p>Before designing I spent a lot of time brainstorming with team members and reviewing different ways of handling shopping carts, and also other ways of assigning educational materials elsewhere. The first approach I tried was a model of Assigning now, or saving for later, with a file cabinet preview opening in a dropdown.</p>' +
+                    '</div>' +
 
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/save.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/save2.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/fileCabinetDropdown.png" />' +
-                '</div>' +
-            '</div>' +
-            
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>The feedback received was that the emphasis needed to be on building a collection and assigning it right now, rather than saving it for later. After more brainstorming and gathering ideas from around the web, the next version included an "Add To..." button rather than a "Save" button, with a ribbon rather than a dropdown. Using the "Add" language implied more of an action happening right now, rather than "Save" which implies something for later, and the ribbon allows teachers to actively see their collection being built.</p>' +
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/laz/save.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/laz/save2.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/laz/fileCabinetDropdown.png" />' +
+                        '</div>' +
+                    '</div>' +
+
+                    '<div class="caseStudy_words">' +
+                        '<p>The feedback received was that the emphasis needed to be on building a collection and assigning it right now, rather than saving it for later. After more brainstorming and gathering ideas from around the web, the next version included an "Add To..." button rather than a "Save" button, with a ribbon rather than a dropdown. Using the "Add" language implied more of an action happening right now, rather than "Save" which implies something for later, and the ribbon allows teachers to actively see their collection being built.</p>' +
+                    '</div>' +
 
                     '<img class="frame" src="images/portfolio/laz/ribbon.png" />' +
                     '<img class="frame" src="images/portfolio/laz/ribbon2.png" />' +
-                '</div>' +
-            '</div>' +
-        
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>The final version of the ribbon was changed from gray to almost black, which went along with other site-wide style changes that were being introduced, and also allows the ribbon to stand out much more.</p>' + 
 
-                    '<img class="frame" src="images/portfolio/laz/ribbon3.png" />' +
+                    '<div class="caseStudy_words">' +
+                        '<p>The final version of the ribbon was changed from gray to almost black, which went along with other site-wide style changes that were being introduced, and also allows the ribbon to stand out much more.</p>' + 
 
-                    '<p>And let\'s not forget the process for assigning:</p>' +
+                        '<img class="frame" src="images/portfolio/laz/ribbon3.png" />' +
 
-                    '<img class="frame" src="images/portfolio/laz/assign.png" />' +
+                        '<p>And let\'s not forget the process for assigning:</p>' +
+
+                        '<img class="frame" src="images/portfolio/laz/assign.png" />' +
+                    '</div>' +
+
                 '</div>' +
+
             '</div>' +
         '</div>' +
         
@@ -163,12 +260,13 @@ portfolio.push ({
         '</div>'
 });
 portfolio.push ({
-    thumbProtected: 'laz/dashboard-thumb.png',
+    //thumbProtected: 'laz/dashboard-thumb.png',
     thumbPublic: 'laz/dashboard-thumb.png',
     caption: 'Case Study',
-    contentProtected:
+    contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
         '<img src="images/portfolio/laz/dashboard-banner.png" />' +
+        
         '<div class="caseStudy_section">' +
             '<h1 class="caseStudy_mainHeading">Reporting and Student Management</h1>' +
             '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
@@ -271,24 +369,24 @@ portfolio.push ({
         '<img src="images/portfolio/lot76NYC.jpg" />'
 });
 portfolio.push ({
-    thumbPublic: 'cs/p1-blurred.jpg',
-    thumbProtected: 'cs/p1.jpg',
+    //thumbPublic: 'cs/p1-blurred.jpg',
+    thumbPublic: 'cs/p1.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Sitefinity Integration</h2>' +
         '<img src="images/portfolio/cs/p1-blurred.jpg" />',
-    contentProtected:
+    /*contentProtected:
         '<h2 class="galleryContent_description">Web Design, Sitefinity Integration, , Responsive Design</h2>' +
-        '<img src="images/portfolio/cs/p1.jpg" />'
+        '<img src="images/portfolio/cs/p1.jpg" />'*/
 });
 portfolio.push ({
-    thumbPublic: 'cs/p3-blurred.jpg',
-    thumbProtected: 'cs/p3.jpg',
+    //thumbPublic: 'cs/p3-blurred.jpg',
+    thumbPublic: 'cs/p3.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Web UI/UX Design</h2>' +
         '<img src="images/portfolio/cs/p3-blurred.jpg" />',
-    contentProtected:
+    /*contentProtected:
         '<h2 class="galleryContent_description">Web UI/UX Design</h2>' +
-        '<img src="images/portfolio/cs/p3.jpg" />'
+        '<img src="images/portfolio/cs/p3.jpg" />'*/
 });
 portfolio.push ({
     thumbPublic: 'LHI.jpg',
@@ -333,62 +431,62 @@ portfolio.push ({
         '<img src="images/portfolio/MTK.jpg" />'
 });
 portfolio.push ({
-    thumbPublic: 'cs/p2-blurred.jpg',
-    thumbProtected: 'cs/p2.jpg',
+    //thumbPublic: 'cs/p2-blurred.jpg',
+    thumbPublic: 'cs/p2.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Web Design, Wordpress Theme Development, Project Management</h2>' +
         '<img src="images/portfolio/cs/p2-blurred.jpg" />',
-    contentProtected:
+    /*contentProtected:
         '<h2 class="galleryContent_description">Web Design, Wordpress Theme Development, Project Management</h2>' +
-        '<img src="images/portfolio/cs/p2.jpg" />'
+        '<img src="images/portfolio/cs/p2.jpg" />'*/
 });
 portfolio.push ({
-    thumbPublic: 'cs/p4-blurred.jpg',
-    thumbProtected: 'cs/p4.jpg',
+    //thumbPublic: 'cs/p4-blurred.jpg',
+    thumbPublic: 'cs/p4.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Web UI Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design</h2>' +
         '<img src="images/portfolio/cs/p4-blurred.jpg" />',
-    contentProtected:
+    /*contentProtected:
         '<h2 class="galleryContent_description">Web UI Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design</h2>' +
-        '<img src="images/portfolio/cs/p4.jpg" />'
+        '<img src="images/portfolio/cs/p4.jpg" />'*/
 });
 portfolio.push ({
-    thumbPublic: 'cs/p5-blurred.jpg',
-    thumbProtected: 'cs/p5.jpg',
+    //thumbPublic: 'cs/p5-blurred.jpg',
+    thumbPublic: 'cs/p5.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p5-blurred.jpg" />',
-    contentProtected:
+    /*contentProtected:
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/cs/p5.jpg" />'
+        '<img src="images/portfolio/cs/p5.jpg" />'*/
 });
 portfolio.push ({
-    thumbPublic: 'cs/p6-blurred.jpg',
-    thumbProtected: 'cs/p6.jpg',
+    //thumbPublic: 'cs/p6-blurred.jpg',
+    thumbPublic: 'cs/p6.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p6-blurred.jpg" />',
-    contentProtected:
+    contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p6.jpg" />'
 });
 portfolio.push ({
-    thumbPublic: 'cs/p7-blurred.jpg',
-    thumbProtected: 'cs/p7.jpg',
+    //thumbPublic: 'cs/p7-blurred.jpg',
+    thumbPublic: 'cs/p7.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p7-blurred.jpg" />',
-    contentProtected:
+    /*contentProtected:
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/cs/p7.jpg" />'
+        '<img src="images/portfolio/cs/p7.jpg" />'*/
 });
 portfolio.push ({
-    thumbPublic: 'cs/p8-blurred.jpg',
-    thumbProtected: 'cs/p8.jpg',
+    //thumbPublic: 'cs/p8-blurred.jpg',
+    thumbPublic: 'cs/p8.jpg',
     contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Sitefinity Integration, e-commerce</h2>' +
         '<img src="images/portfolio/cs/p8-blurred.jpg" />',
-    contentProtected:
+    contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Sitefinity Integration, e-commerce</h2>' +
         '<img src="images/portfolio/cs/p8.jpg" />'
 });

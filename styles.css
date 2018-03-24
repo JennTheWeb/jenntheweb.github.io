@@ -15,13 +15,15 @@ h1, h2, h3, h4 {
 	font-weight: normal;
 }
 h1 {
-	text-align: center;
+	font-size: 2rem;
 	margin: 1.5em 0 1em 0;
+	text-align: center;
 }
 h2 {
-	text-align: center;
+	font-size: 1.5rem;
 	margin: 1.5em 0 1em 0;
 	padding: 1px 0;
+	text-align: center;
 }
 
 img {
@@ -144,8 +146,12 @@ button svg {
 			padding: 4px 7px;
 		}
 
+	#loginForm {
+		padding: 100px 0;
+	}
 	#loginForm label {
-		margin-right: 5px;
+		display: block;
+		margin-bottom: 10px;
 	}	
 	#loginForm input[type="text"] {
 		border: solid 1px #e0e0e0;
@@ -181,7 +187,7 @@ button svg {
 	.galleryContentWrap {
 		display: inline-block;
 		margin: 0 50px;
-		max-width: 1000px;
+		max-width: 1200px;
 		position: relative;
 		width: calc(100% - 100px);
 	}
@@ -319,16 +325,16 @@ button svg {
 	}
 
 	.caseStudy_section h1 {
-		font-size: 2rem;
+		font-size: 2.25rem;
 		text-align: left;
 	}
 	.caseStudy_section h2 {
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 		text-align: left;
 	}
 	.caseStudy_section h3 {
 		color: #d7601b;
-		font-size: 1.15rem;
+		font-size: 1.5rem;
 		text-align: left;
 	}
 
@@ -354,6 +360,7 @@ button svg {
 .caseStudy_headingContainer {
 	flex-basis: 30%;
 	flex-shrink: 0;
+	margin: 2.5rem 0;
 }
 	.caseStudy_headingContainer :first-child {
 		margin-top: 0;
@@ -362,7 +369,6 @@ button svg {
 .caseStudy_row {
 	display: flex;
 	align-items: flex-start;
-	margin: 2.5rem 0;
 }
 	.caseStudy_row-images {
 		align-items: center;
@@ -386,6 +392,7 @@ button svg {
 
 .caseStudy_content {
 	flex-grow: 1;
+	margin: 2.5rem 0;
 }
 	.caseStudy_content :first-child {
 		margin-top: 0;
@@ -393,6 +400,10 @@ button svg {
 	.caseStudy_content :last-child {
 		margin-bottom: 0;
 	}
+
+.caseStudy_words {
+	margin: 2.5rem 0;
+}
 
 /* ------------------ */
 /* ----- slider ----- */
