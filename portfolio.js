@@ -4,7 +4,7 @@ portfolio.push ({
     thumbPublic: 'laz/dashboard-thumb.png',
     caption: 'Case Study',
     contentPublic:
-        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
+        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration - 2015</h2>' +
         '<img src="images/portfolio/laz/dashboard-banner.png" />' +
         
         '<div class="caseStudy_section">' +
@@ -16,7 +16,7 @@ portfolio.push ({
                     '<h2>Problem</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>Learning A-Z consists of a family of products with educational resources that can be printed or used online.  Teachers had to navigate through multiple websites for the various products, leaving them unsure of where to go to update settings and view reports. My task was to design one student management site to hold the student roster, settings, and reports so that teachers would have to go to only one place.</p>' +
+                    '<p>Learning A-Z consists of a family of products with interactive features that were becoming increasingly intertwined. Navigating multiple sites with similar interfaces, teachers were left unsure of where to go to update settings and view reports. My task was to design one student management portal to hold the student roster, settings, and reports so that teachers would only have to go one place.</p>' +
                     '<p>In addition, reports consisted of unruly tables, and we needed a way to present at-a-glance views of data in a visually engaging way.</p>' +
                 '</div>' +
             '</div>' +
@@ -30,8 +30,10 @@ portfolio.push ({
                     '<h3>Plan & Design</h3>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>To get started, I needed an understanding of what reports existed, and what the similarities and differences were between the reports available to each product. I went through the sites, familiarizing myself with the reports and taking stock of each one.</p>' +
-                    '<p>The primary instruction I was given was to add tabs to each report table to separate data for each product because everything could no longer fit in one table. After taking stock, my recommendation was to have the user to select the product first, before selecting the type of report.</p>' +
+
+                    '<p>To get started, I needed an understanding of what reports existed, and what similarities and differences there were between the reports available to each product. I went through the sites, familiarizing myself with the reports and taking stock of each one.</p>' +
+
+                    '<p>The primary instruction I was given was to add tabs to each report table to separate data for each product because everything could no longer fit in one table. After taking stock and finding that while certain reports were shared by all products, there were also reports unique to each product, my recommendation was to set up the tabbed navigation so that the user selects the product first before selecting the type of report, which was the opposite of the proposed requirement.</p>' +
 
                     '<img src="images/portfolio/laz/tabs.png" />' +
                 '</div>' +
@@ -41,7 +43,7 @@ portfolio.push ({
                 '<div class="caseStudy_headingContainer">' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>In addition, many other UI improvements were included in mockups for each section of the new student management site to clean up reporting and bring consistency across all sections of the site.</p>' +
+                    '<p>In addition, many other UI improvements were included in mockups for each section of the new student management site to clean up reporting and bring visual consistency and cleanliness throughout, and restructure tables to better combine and separate related and unrelated data.</p>' +
 
                     '<img class="frame" src="images/portfolio/laz/report.png" />' +
                     '<img class="frame" src="images/portfolio/laz/inBasket.png" />' +
@@ -55,7 +57,7 @@ portfolio.push ({
                     '<h3>Development</h3>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>As soon as mockups were approved, development began as details continued to be worked out in the design. I wrote and integrated HTML and CSS while working closely with other members of the engineering and design teams.</p>' +
+                    '<p>Development began after a couple of rounds of mockups, as details continued to be worked out in the design. I wrote and integrated HTML and CSS while working closely with other members of the engineering and design teams to refactor and clean up the codebase.</p>' +
                 '</div>' +
             '</div>' +
 
@@ -66,11 +68,11 @@ portfolio.push ({
                     '<h3>Dashboards</h3>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>After the new student management site was launched, work began on new reporting dashboards. A lot of research on data visualization ensued.</p>' +
-                    '<p>The requirements provided for the dashboards were in the form of requests for specific charts which design and managment agreed would not work. Designing better charts was an awkard process of interpreting what the intent was behind the charts included in the requirements, and providing an alternative chart that achieved the same goal in a better way. It was a long process of collaboration and trial and error between me, my manager, and the product managers who supplied the original charts.</p>' +
-           
-                    
 
+                    '<p>After the new student management site was launched, work began on new reporting dashboards. A lot of research on data visualization ensued.</p>' +
+
+                    '<p>The requirements provided for the dashboards consisted of whiteboards and notes describing specific charts. Having a manager who agreed that the charts would not work, but not having direct access with the team members providing the requirements, designing these charts was an awkard process of trying to interpret what the intent was behind the charts they came up with, and providing an alternative chart that achieved the same goal in a better way by trimming out irrelevant and distracting information, breaking up data into multiple charts, or combining related data into single ones, and choosing different types of visualizations to better tell the story of the data. It was a long process of interpretation and trial and error between me, my manager, and the product managers who supplied the original charts.</p>' +
+           
                 '</div>' +
             '</div>' +
 
@@ -91,7 +93,8 @@ portfolio.push ({
                 '<div class="caseStudy_headingContainer">' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>Once the dashboards were in development and real data was plugged into the approved charts, edge cases were uncovered and it also became apparent that some charts would not be as useful as intended. Requirements continued to evolve, edge cases continued to be uncovered, and technical constraints changed as well, leading to many last minute changes, and finally to the completed dashboards.</p>' +
+
+                    '<p>Once some of the charts became more finalized, development began. Engineering helped uncover edge cases and typical scenarios by pluggin in real data. In some cases pluggins in real data led to realizations that certain data sets were not as useful as intended. Late changes to technical requirements also led to many last minute changes, but in the end we completed the dashboards.</p>' +
 
                     '<img src="images/portfolio/laz/dashboard-rt.png" />' +
                     '<img src="images/portfolio/laz/dashboard-science.png" />' +
@@ -108,9 +111,13 @@ portfolio.push ({
                     '<h2>Outcome</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>In the end, teachers did have a single place to go to manage students, but to find resources they still need to navigate all of the separate sites, so they still get lost when trying to find where all the settings live. The value of the student management site is debatable, but it was a necessary step and the immediate problems have been solved, though many other problems remain.</p>' +
-                    '<p>This series of projects provided a fantastic  opportunity to iron out design and code inconsistencies and introduce new technologies, such as Angular. Many issues were also uncovered throughout the project that will help inform future improvements in teamwork for both engineering and design. And a lot was learned about data visualization. All of this learning can translate to a fantastic outcome as the student management portal continues to evolve.</p>' +
-                    '<p>Clear requirements, understanding of the problems to be solved, and user testing could have led to a much more successful outcome of the student management portal. Learning to communicate and advocate for these needs is important, and that is something I understood after working on this project, and an area that required more growth on my part, some of which I hopefully have achieved.</p>' +
+
+                    '<p>In the end, teachers did have a single place to go to manage students, a cleaner interface to review cleaned up reports, and new dashboards with charts containing at-a-glance data, so the immediate requirements were satisfied, but a lot of work was still to be done to help teachers find where all of the settings live, and how different data sets interact.</p>' +
+
+                    '<p>With this project, design and engineering had a fantastic opportunity to iron out design and code inconsistencies and introduce new technologies, such as Angular, and develop a more in-depth understanding the tools available for teachers on our sites. Many issues were also uncovered throughout the project that will help inform future improvements for both engineering and design. A lot was also learned about data visualization. All of this learning can translate to a fantastic outcome as the student management portal continues to evolve, but it\'s not there yet.</p>' +
+
+                    '<p>Clear requirements, understanding of the problems to be solved, and user testing could have led to a much more successful outcome of the student management portal. Learning to communicate and advocate for these needs is something I continue to work on, finding the balance between cooperating with existing processes and values and pushing for a more design-centric process.</p>' +
+
                 '</div>' +
             '</div>' +
         '</div>'
@@ -120,35 +127,45 @@ portfolio.push ({
     thumbPublic: 'laz/codeStandards-thumb.png',
     caption: 'Case Study',
     contentPublic: 
-        '<h2 class="galleryContent_description">UI, HTML/CSS, Documentation</h2>' +
+        '<h2 class="galleryContent_description">UI, HTML/CSS, Documentation - 2015-17</h2>' +
         '<img src="images/portfolio/laz/codeStandards-banner.png" />' +
 
         '<div class="caseStudy_section">' +
+
             '<h1 class="caseStudy_mainHeading">Styleguide and CSS Code Standards</h2>' +
             '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
 
             '<hr />' +
-
 
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
                     '<h2>Problem</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +                  	    
-                    '<p>The CSS codebase was fragile and unruly with files thousands of lines long full of repetition, inconsistencies, and tangled spaghetti code. This was clearly reflected in the UI, where you had 50 shades of purple blue pink red, you name it. If someone needed to add a button, there was no "right" button to choose from, and complete terror at the thought of modifying any existing button for fear of unintended consequences.</p>' +
+                    '<p>After 10 years of Learning A-Z growing fast, adding new features, and acquiring new products, the UI and CSS codebase were fragile and unruly with files thousands of lines long full of repetition, inconsistencies, and tangled spaghetti code that was clearly reflected in the UI. If someone needed to add a button, there was no "right" button to choose from, and complete terror at the thought of modifying any existing button for fear of unintended consequences.</p>' +
                     
                     '<p>Team members attended a CSS dev conference and came back with ideas of how to use SMACSS methodologies to refactor our CSS, but no one wanted to make the first move. That\'s where I came in.</p>' +
+
                 '</div>' +
             '</div>' +
+
         '</div>' +
         
         '<div class="caseStudy_section">' +
+
+            '<h2>Process</h2>' +
+
+            '<hr />' +
+
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
-                    '<h2>Process</h2>' +
+                    '<h3>Plan & Implement</h3>' +
                 '</div>' +
-                '<div class="caseStudy_content">' +    
-                    '<p>Having extra time on my hands between projects, and not wanting to see the CSS cleanup initiative die, I created a simple styleguide including a grid system and generic UI components and helpers. I presented this to the team to make sure it was in line with the SMACSS techniques we had discussed, and after some revisions it started to be introduced into new projects.</p>' +
+                '<div class="caseStudy_content">' +   
+
+                    '<p>Having extra time on my hands between projects, and not wanting to see the cleanup initiative die, I created a simple styleguide including a grid system and generic UI components and helpers. I presented this to the team to make sure it was in line with the SMACSS techniques we had discussed, and after some revisions it started to be introduced into new projects.</p>' +
+
+                    '<p>After trying out the new styles with new projects, the painstaking process began to roll out the UI updates in the legacy code.</p>' +
 
                     '<p>My process was to first take stock of what exists on the sites (buttons, for example)</p>' + 
 
@@ -168,26 +185,42 @@ portfolio.push ({
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn15.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn16.png" />' +
                     
-                    '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there are 3 green buttons, pick one green and use it consistently, but don\'t change green to orange without good reason. If there are buttons with icons, find a consistent approach for displaying buttons with icons; don\'t remove the icons. And so on. Next I would get approvals and implement the new approach page by page, making sure the selected approach is documented in the styleguide for future use. </p>' +
+                    '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Where there were buttons with icons, I would present a consistent way to create buttons with icons rather than removing the icons, and so on. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>' +
 
                     '<img class="frame" src="images/portfolio/laz/styleguide.png" />' +
                     '<img class="frame" src="images/portfolio/laz/styleguide2.png" />' +
                     
-                    '<p>With everything consistently cleaned up, it\'s much easier to make more dramatic change in the future, such as removing icons or changing/removing colors.</p>' +
+                    '<p>Once everything was cleaned up and consistent, it was much easier to make more dramatic change moving forward, such as removing icons or changing colors.</p>' +
 
-                    '<p>As changes were rolled out, one problem that surfaced was the over-use of helper classes. Because our sites consist of few templates and many separate files, changing the code to include certain helper classes became a huge undertaking. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done.</p>' +
-                    
-                    '<p>As the team continued to grow, it became increasingly difficult to keep our standards under control, and keep everyone on the same page. Three of us met and hashed out details of standards, and I documented it in the styleguide and presented it to the rest of the team.</p>' +
+                '</div><!-- /content -->' +
+            '</div><!-- /row -->' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Evaluate & Pivot</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. As our standards evolved and the team grew, the need for definitions of our standards became clear. I updated the styleguide with clear definitions for the new modular approach.</p>' +
+
+                    '<img class="frame" src="images/portfolio/laz/styleguide-codeStandards3.png" />' +
 
                     '<img class="frame" src="images/portfolio/laz/codeStandards.png" />' +
 
-                    '<p>Part of the job required picking an approach where inconsistencies were present. A lot of before/after mockups were presented to keep everyone on the same page and gather approvals:' +
+                '</div><!-- /content -->' +
+            '</div><!-- /row -->' +
+        
+            '<hr />' +
 
-                    '<img class="frame" src="images/portfolio/laz/colors1.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/colors2.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/colors3.png" />' +
-                    
-                    '<p>Additionally, the parent site was rebranded, and new visual standards needed to be established. This was a perfect opportunity to finish cleaning up the code and unifying the design across the board. BEM was carefully rolled out throughout much of the sites along with a new look and color pallette.</p>' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Rebranding</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>As changes continued to evolve and roll out, the parent site was rebranded, giving a perfect opportunity to establish clean, consistent visual standards across all product sites, starting with the site headers.</p>' +
 
                     '<h3>Before:</h3>' +
 
@@ -211,7 +244,32 @@ portfolio.push ({
                     '<h2>Outcome</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>After years of meticulous work, the stylesheets are far more manageable, and the look of the sites is more clean, modern, and consistent. This is an ongoing initiative, especially as Angular use continues to be ironed out, responsive design comes into play, and new CSS features like flex and grid threaten to break the BEM model. But there is now a solid foundation to build on, a single source of information for designers and engineers to reference when starting any conversation, and a lot of practice carrying out widespread changes. Engineers no longer have to ask a designer to style a form, and designers no longer have to add new styles each time they\'re asked to style something.</p>' +
+
+                    '<p>With each new project and iteration of the styleguide, the process and interface continue to improve. The stylesheets are far more maneagle, and the look of the sites continues to become more clean, modern, and consistent.</p>'+
+
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row caseStudy_row-images">' + 
+                '<div class="caseStudy_img">' +
+                    '<h3>Before</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/homepage-old.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<h3>After</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/home-new.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p> This is an ongoing initiative, especially as Angular use continues to be ironed out, responsive design comes into play, and new CSS features like flex and grid threaten pose new challenges and options. But a solid foundation has been built - a single source of information for designers and engineers to reference when starting any conversation or project, and a lot of practice and shared knowledge in carrying out widespread changes.</p>' +
                 '</div>' +
             '</div>' +
         '</div>'
@@ -221,7 +279,7 @@ portfolio.push ({
     thumbPublic: 'laz/fileCabinetThumb.png',
     caption: 'Case Study',
     contentPublic:
-        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, Angular integration</h2>' +
+        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, Angular integration - 2016-17</h2>' +
         '<img src="images/portfolio/laz/fileCabinet-banner.png" />' +
         '<div class="caseStudy_section">' +
             '<h1 class="caseStudy_mainHeading">File Cabinet and Custom Assignments</h2>' +
@@ -417,16 +475,14 @@ portfolio.push ({
         '</div>'
 });
 portfolio.push ({
-    thumbPublic: 'loomAndMill.jpg',
+    //thumbPublic: 'cs/p3-blurred.jpg',
+    thumbPublic: 'cs/p3.jpg',
+    /*contentPublic:
+        '<h2 class="galleryContent_description">Web UI/UX Design</h2>' +
+        '<img src="images/portfolio/cs/p3-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Magento Development</h2>' +
-        '<img src="images/portfolio/loomAndMill.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'lot76NYC.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/lot76NYC.jpg" />'
+        '<h2 class="galleryContent_description">Web UI/UX Design - 2014</h2>' +
+        '<img src="images/portfolio/cs/p3.jpg" />'
 });
 portfolio.push ({
     //thumbPublic: 'cs/p1-blurred.jpg',
@@ -435,60 +491,8 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Responsive Web Design, Sitefinity Integration</h2>' +
         '<img src="images/portfolio/cs/p1-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Sitefinity Integration, , Responsive Design</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Sitefinity Integration, , Responsive Design - 2013-14</h2>' +
         '<img src="images/portfolio/cs/p1.jpg" />'
-});
-portfolio.push ({
-    //thumbPublic: 'cs/p3-blurred.jpg',
-    thumbPublic: 'cs/p3.jpg',
-    /*contentPublic:
-        '<h2 class="galleryContent_description">Web UI/UX Design</h2>' +
-        '<img src="images/portfolio/cs/p3-blurred.jpg" />',*/
-    contentPublic:
-        '<h2 class="galleryContent_description">Web UI/UX Design</h2>' +
-        '<img src="images/portfolio/cs/p3.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'LHI.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Drupal Integration</h2>' +
-        '<img src="images/portfolio/LHI.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'practicalBA.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/practicalBA.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'snapKnot.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS, PHP integration</h2>' +
-        '<img src="images/portfolio/snapKnot.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'rittenhouseNeedlepoint.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS, Magento Integration</h2>' +
-        '<img src="images/portfolio/rittenhouseNeedlepoint.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'creativeHeads.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web UI Design, HTML/CSS, ASP.NET Integration</h2>' +
-        '<img src="images/portfolio/creativeHeads.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'remository.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web UI Design</h2>' +
-        '<img src="images/portfolio/remository.jpg" />'
-});
-portfolio.push ({
-    thumbPublic: 'MTK.jpg',
-    contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS Develpment</h2>' +
-        '<img src="images/portfolio/MTK.jpg" />'
 });
 portfolio.push ({
     //thumbPublic: 'cs/p2-blurred.jpg',
@@ -497,9 +501,10 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Web Design, Wordpress Theme Development, Project Management</h2>' +
         '<img src="images/portfolio/cs/p2-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Wordpress Theme Development, Project Management</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Wordpress Theme Development, Project Management - 2013</h2>' +
         '<img src="images/portfolio/cs/p2.jpg" />'
 });
+
 portfolio.push ({
     //thumbPublic: 'cs/p4-blurred.jpg',
     thumbPublic: 'cs/p4.jpg',
@@ -507,18 +512,19 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Web UI Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design</h2>' +
         '<img src="images/portfolio/cs/p4-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Web UI Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design</h2>' +
+        '<h2 class="galleryContent_description">Web UI Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design - 2012</h2>' +
         '<img src="images/portfolio/cs/p4.jpg" />'
 });
+
 portfolio.push ({
-    //thumbPublic: 'cs/p5-blurred.jpg',
-    thumbPublic: 'cs/p5.jpg',
+    //thumbPublic: 'cs/p7-blurred.jpg',
+    thumbPublic: 'cs/p7.jpg',
     /*contentPublic:
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/cs/p5-blurred.jpg" />',*/
+        '<img src="images/portfolio/cs/p7-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/cs/p5.jpg" />'
+        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development - 2013</h2>' +
+        '<img src="images/portfolio/cs/p7.jpg" />'
 });
 portfolio.push ({
     //thumbPublic: 'cs/p6-blurred.jpg',
@@ -527,56 +533,104 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p6-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
+        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development - 2013</h2>' +
         '<img src="images/portfolio/cs/p6.jpg" />'
 });
 portfolio.push ({
-    //thumbPublic: 'cs/p7-blurred.jpg',
-    thumbPublic: 'cs/p7.jpg',
-    /*contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/cs/p7-blurred.jpg" />',*/
+    thumbPublic: 'loomAndMill.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
-        '<img src="images/portfolio/cs/p7.jpg" />'
+        '<h2 class="galleryContent_description">Responsive Web Design, Magento Development - 2013</h2>' +
+        '<img src="images/portfolio/loomAndMill.jpg" />'
+});
+
+portfolio.push ({
+    thumbPublic: 'lot76NYC.jpg',
+    contentPublic:
+        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development - 2011</h2>' +
+        '<img src="images/portfolio/lot76NYC.jpg" />'
 });
 portfolio.push ({
-    //thumbPublic: 'cs/p8-blurred.jpg',
-    thumbPublic: 'cs/p8.jpg',
-    /*contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Sitefinity Integration, e-commerce</h2>' +
-        '<img src="images/portfolio/cs/p8-blurred.jpg" />',*/
+    thumbPublic: 'practicalBA.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Sitefinity Integration, e-commerce</h2>' +
-        '<img src="images/portfolio/cs/p8.jpg" />'
+        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development - 2011</h2>' +
+        '<img src="images/portfolio/practicalBA.jpg" />'
+});
+portfolio.push ({
+    thumbPublic: 'creativeHeads.jpg',
+    contentPublic:
+        '<h2 class="galleryContent_description">Web UI Design, HTML/CSS, ASP.NET Integration - 2011</h2>' +
+        '<img src="images/portfolio/creativeHeads.jpg" />'
+});
+
+portfolio.push ({
+    thumbPublic: 'snapKnot.jpg',
+    contentPublic:
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS, PHP integration - 2010</h2>' +
+        '<img src="images/portfolio/snapKnot.jpg" />'
+});
+portfolio.push ({
+    thumbPublic: 'LHI.jpg',
+    contentPublic:
+        '<h2 class="galleryContent_description">Web Design, Drupal Integration - 2010</h2>' +
+        '<img src="images/portfolio/LHI.jpg" />'
+});
+portfolio.push ({
+    thumbPublic: 'rittenhouseNeedlepoint.jpg',
+    contentPublic:
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS, Magento Integration - 2010</h2>' +
+        '<img src="images/portfolio/rittenhouseNeedlepoint.jpg" />'
+});
+
+portfolio.push ({
+    //thumbPublic: 'cs/p5-blurred.jpg',
+    thumbPublic: 'cs/p5.jpg',
+    /*contentPublic:
+        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
+        '<img src="images/portfolio/cs/p5-blurred.jpg" />',*/
+    contentPublic:
+        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development - 2013</h2>' +
+        '<img src="images/portfolio/cs/p5.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p1.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration - 2013</h2>' +
         '<img src="images/portfolio/ss/p1.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p2.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development - 2012</h2>' +
         '<img src="images/portfolio/ss/p2.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p3.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development - 2011</h2>' +
         '<img src="images/portfolio/ss/p3.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p4.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration - 2011</h2>' +
         '<img src="images/portfolio/ss/p4.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p5-c.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS - 2010</h2>' +
         '<img src="images/portfolio/ss/p5-c.jpg" />'
+});
+
+portfolio.push ({
+    thumbPublic: 'remository.jpg',
+    contentPublic:
+        '<h2 class="galleryContent_description">Web UI Design - 2009</h2>' +
+        '<img src="images/portfolio/remository.jpg" />'
+});
+portfolio.push ({
+    thumbPublic: 'MTK.jpg',
+    contentPublic:
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS Develpment - 2009</h2>' +
+        '<img src="images/portfolio/MTK.jpg" />'
 });

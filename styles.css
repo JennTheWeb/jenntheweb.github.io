@@ -609,10 +609,10 @@ button svg {
 	.portfolio_container {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.portfolio .galleryItem {
 		display: inline-block;
 		float: none;
-		flex-basis: 350px;
-		flex-grow: 1;
+		flex-basis: 400px;
 	}
