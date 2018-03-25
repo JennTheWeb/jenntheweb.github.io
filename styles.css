@@ -187,9 +187,8 @@ button svg {
 	.galleryContentWrap {
 		display: inline-block;
 		margin: 0 50px;
-		max-width: 1200px;
 		position: relative;
-		width: calc(100% - 100px);
+		max-width: 1100px;
 	}
 		.galleryContent-text .galleryContentWrap  {
 			background: #fff;
@@ -203,7 +202,7 @@ button svg {
 			padding: 1px;
 		}
 
-		@media (max-width: 600px) {
+		@media (max-width: 800px) {
 			.galleryContentWrap {
 				margin: 50px 0 0 0; /* height of close btn */
 				width: 100%;
@@ -218,7 +217,7 @@ button svg {
 		font-size: 1em;
 		margin: .5em 0;
 	}
-		@media (max-width: 600px) {
+		@media (max-width: 800px) {
 			.galleryContent_description {
 				display: none;
 			}
@@ -259,7 +258,7 @@ button svg {
 		left: 0px;
 	}
 	.galleryNext {
-		right: 10px;
+		right: 15px;
 	}
 
 .galleryClose {
@@ -277,7 +276,7 @@ button svg {
 		fill: #fff;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		.galleryClose {
 			background: #222;
 			display: block;
@@ -368,13 +367,14 @@ button svg {
 
 .caseStudy_row {
 	display: flex;
-	align-items: flex-start;
+	align-items: flex-start; 
 }
 	.caseStudy_row-images {
 		align-items: center;
+		margin: 2.5rem 0;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		.caseStudy_row {
 			display: block;
 		}
