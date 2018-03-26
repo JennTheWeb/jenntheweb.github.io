@@ -475,6 +475,197 @@ portfolio.push ({
         '</div>'
 });
 portfolio.push ({
+    thumbPublic: 'laz/bookBuilder-thumb.png',
+    caption: 'Case Study',
+    contentPublic:
+        '<h2 class="galleryContent_description">Wireframing, UI Design, HTML/CSS/Javascript development - 2015-16</h2>' +
+        '<img src="images/portfolio/laz/bookBuilder-banner.png" />' +
+
+        '<div class="caseStudy_section">' +
+            '<h1 class="caseStudy_mainHeading">eBook Tools</h2>' +
+            '<h2 class="caseStudy_mainSubheading">Kids A-Z</h2>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Problem</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>Kids A-Z provides an interface for K-5 students to read ebooks and complete learning activities. These activities relied on Flash which needed to be converted to HTML5. New interactive tools were also added to engage students and aid teacher instruction. I was tasked with designing and working with engineering to implement the design and interactive features. </p>' +
+                    
+                    '<p>The student interface had also been recently redesigned with beautiful new illustrations by the team, so I wanted to make sure each activity was redesigned as well.<p>' +
+
+                    '<h3>Student Interface</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/kids-interface.png" />' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_content">' +
+                '<h2 style="margin-bottom: 0;">eBook Reader</h2>' +
+                '<p style="margin-top: 0;">Tasks included a redesign of the UI for reading books, and prototyping interactions for book resizing and toolbar behavior. </p>' +
+            '</div>' +
+
+            '<hr />' +
+            
+            '<div class="caseStudy_row caseStudy_row-images" style="align-items: start;">' +
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">Before</h3>' +
+
+                    '<img class="frame" src="images/portfolio/laz/bookReader-before2.png" />' +
+                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/laz/bookReader-before.png" />' +
+                '</div>' +    
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">After</h3>' +
+                    
+                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/laz/bookReader-after.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookReader-after2.png" />' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_content">' +
+                '<h2 style="margin-bottom: 0;">Quiz</h2>' +
+                '<p style="margin-top: 0;">The quiz needed a redesign, and new results screen to accompany the new interface for the ebook reader, and to incorporate the new robot mascot.</p>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row caseStudy_row-images" style="align-items: start;">' +
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">Before</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/quiz-before.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/quiz-before2.png" />' +
+                '</div>' +    
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">After</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/quiz-after.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/quiz-after2.png" />' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+
+        '<div class="caseStudy_section">' +
+            '<h2 style="margin-bottom: 0;">eBook Tools</h2>' +
+            '<p style="margin-top: 0;">New drawing tools were introduced, as well as a redesigned recorder converted from Flash to HTML5, a word journal, vocabulary tool, highlighting, and notes.</p>' +
+            
+            '<hr />' +
+            
+            '<h3>Sketch</h3>' +
+            
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/ebooktools-sketch.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/ebooktools-sketch2.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<h3>Design and Develop</h3>' +
+            
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookReader-recorder.png" />' +    
+                    '<img class="frame" src="images/portfolio/laz/bookReader-toolbar.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookReader-tools3.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookReader-tools2.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                '<img class="frame" src="images/portfolio/laz/bookReader-tools.png" />' +
+                    
+                    '<img class="frame" src="images/portfolio/laz/bookReader-tools4.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<h3>Document</h3>' +
+            '<p>Code for the toolbar was repeated and modified in different ways for slightly different use cases. The full code for the toolbar needed to be documented in one place for future reference.</p>' +
+
+            '<img class="frame" src="images/portfolio/laz/bookTools-document.png" />' +
+        '</div>' +
+
+
+        '<div class="caseStudy_section">' +
+            '<h2>Book Builder</h2>' +
+            '<p>The book builder needed to be converted from Flash to HTML5, and redesigned to incorporate new visual elements and interactive features.</p>' +
+            
+            '<div style="align-items: start;" class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">Before</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-old.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-old2.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-before.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">After</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder4.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder3.png" />' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+
+        '<div class="caseStudy_section">' +
+            '<h2>Book Room</h2>' +
+            '<p>The book room needed a complete redesign, but before then, it needed a refresh to bring it in line with all of the other redesigned activities.</p>' +
+            
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<h3>Before</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/bookroom-before.png" />' +
+                '</div>' +    
+                '<div class="caseStudy_img">' +
+                    '<h3>After</h3>' +
+                    '<img class="frame" src="images/portfolio/laz/bookroom-current2.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<h2>Redesign</h2>' +
+            '<h3>Research</h3>' +
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<img class="frame" src="images/portfolio/laz/bookroom-inspiration.png" />' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<h3>Ideation</h3>' +
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookroom-sketch3.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookroom-sketch2.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<img class="frame" src="images/portfolio/laz/bookroom-sketch.png" />' +
+
+        '</div>' +
+
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Outcome</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>The Kids A-Z Student Portal underwent an entire redesign which was a huge achievement! As with most projects, there is much left to be done, and a whole new redesign is already underway by the talented illustrators at Learning A-Z. I\'m proud to have been able to contribute to the talent behind the student interface.</p>' +
+                '</div>' +
+            '</div>' +
+        '</div>'
+});
+portfolio.push ({
     //thumbPublic: 'cs/p3-blurred.jpg',
     thumbPublic: 'cs/p3.jpg',
     /*contentPublic:
