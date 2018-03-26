@@ -4,7 +4,7 @@ portfolio.push ({
     thumbPublic: 'laz/dashboard-thumb.png',
     caption: 'Case Study',
     contentPublic:
-        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration - 2015</h2>' +
+        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
         '<img src="images/portfolio/laz/dashboard-banner.png" />' +
         
         '<div class="caseStudy_section">' +
@@ -127,7 +127,7 @@ portfolio.push ({
     thumbPublic: 'laz/codeStandards-thumb.png',
     caption: 'Case Study',
     contentPublic: 
-        '<h2 class="galleryContent_description">UI, HTML/CSS, Documentation - 2015-17</h2>' +
+        '<h2 class="galleryContent_description">UI Design, HTML/CSS, Documentation</h2>' +
         '<img src="images/portfolio/laz/codeStandards-banner.png" />' +
 
         '<div class="caseStudy_section">' +
@@ -279,7 +279,7 @@ portfolio.push ({
     thumbPublic: 'laz/fileCabinetThumb.png',
     caption: 'Case Study',
     contentPublic:
-        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, Angular integration - 2016-17</h2>' +
+        '<h2 class="galleryContent_description">UX Design, HTML/CSS, Angular integration</h2>' +
         '<img src="images/portfolio/laz/fileCabinet-banner.png" />' +
 
 
@@ -496,7 +496,7 @@ portfolio.push ({
     thumbPublic: 'laz/bookBuilder-thumb.png',
     caption: 'Case Study',
     contentPublic:
-        '<h2 class="galleryContent_description">Wireframing, UI Design, HTML/CSS/Javascript development - 2015-16</h2>' +
+        '<h2 class="galleryContent_description">Wireframing, UI Design, HTML/CSS/Javascript development</h2>' +
         '<img src="images/portfolio/laz/bookBuilder-banner.png" />' +
 
         '<div class="caseStudy_section">' +
@@ -690,7 +690,7 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Web UI/UX Design</h2>' +
         '<img src="images/portfolio/cs/p3-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Web UI/UX Design - 2014</h2>' +
+        '<h2 class="galleryContent_description">UX Design</h2>' +
         '<img src="images/portfolio/cs/p3.jpg" />'
 });
 portfolio.push ({
@@ -700,7 +700,7 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Responsive Web Design, Sitefinity Integration</h2>' +
         '<img src="images/portfolio/cs/p1-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Sitefinity Integration, , Responsive Design - 2013-14</h2>' +
+        '<h2 class="galleryContent_description">UX and Responsive Design, Sitefinity Integration</h2>' +
         '<img src="images/portfolio/cs/p1.jpg" />'
 });
 portfolio.push ({
@@ -710,7 +710,7 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Web Design, Wordpress Theme Development, Project Management</h2>' +
         '<img src="images/portfolio/cs/p2-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Wordpress Theme Development, Project Management - 2013</h2>' +
+        '<h2 class="galleryContent_description">Design, Wordpress Theme Development, Project Management</h2>' +
         '<img src="images/portfolio/cs/p2.jpg" />'
 });
 
@@ -721,7 +721,7 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Web UI Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design</h2>' +
         '<img src="images/portfolio/cs/p4-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Web UI Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design - 2012</h2>' +
+        '<h2 class="galleryContent_description">Design, Sitefinity Integration, Project Management, e-commerce, Responsive Design</h2>' +
         '<img src="images/portfolio/cs/p4.jpg" />'
 });
 
@@ -732,7 +732,7 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p7-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development - 2013</h2>' +
+        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p7.jpg" />'
 });
 portfolio.push ({
@@ -742,51 +742,51 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p6-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development - 2013</h2>' +
+        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p6.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'loomAndMill.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Magento Development - 2013</h2>' +
+        '<h2 class="galleryContent_description">UI/UX Responsive Web Design, Magento Development</h2>' +
         '<img src="images/portfolio/loomAndMill.jpg" />'
 });
 
 portfolio.push ({
     thumbPublic: 'lot76NYC.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development - 2011</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/lot76NYC.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'practicalBA.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development - 2011</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Custom Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/practicalBA.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'creativeHeads.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web UI Design, HTML/CSS, ASP.NET Integration - 2011</h2>' +
+        '<h2 class="galleryContent_description">UI/UX Design, HTML/CSS, ASP.NET Integration</h2>' +
         '<img src="images/portfolio/creativeHeads.jpg" />'
 });
 
 portfolio.push ({
     thumbPublic: 'snapKnot.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS, PHP integration - 2010</h2>' +
+        '<h2 class="galleryContent_description">UI Design, HTML/CSS, PHP integration</h2>' +
         '<img src="images/portfolio/snapKnot.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'LHI.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Drupal Integration - 2010</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Drupal Integration</h2>' +
         '<img src="images/portfolio/LHI.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'rittenhouseNeedlepoint.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS, Magento Integration - 2010</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS, Magento Integration</h2>' +
         '<img src="images/portfolio/rittenhouseNeedlepoint.jpg" />'
 });
 
@@ -797,49 +797,49 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p5-blurred.jpg" />',*/
     contentPublic:
-        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development - 2013</h2>' +
+        '<h2 class="galleryContent_description">Responsive Web Design, Wordpress Theme Development</h2>' +
         '<img src="images/portfolio/cs/p5.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p1.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration - 2013</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration</h2>' +
         '<img src="images/portfolio/ss/p1.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p2.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development - 2012</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development</h2>' +
         '<img src="images/portfolio/ss/p2.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p3.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development - 2011</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS Development</h2>' +
         '<img src="images/portfolio/ss/p3.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p4.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration - 2011</h2>' +
+        '<h2 class="galleryContent_description">Web Design, Adobe Business Catalyst Integration</h2>' +
         '<img src="images/portfolio/ss/p4.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'ss/p5-c.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS - 2010</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS</h2>' +
         '<img src="images/portfolio/ss/p5-c.jpg" />'
 });
 
 portfolio.push ({
     thumbPublic: 'remository.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web UI Design - 2009</h2>' +
+        '<h2 class="galleryContent_description">UI Design</h2>' +
         '<img src="images/portfolio/remository.jpg" />'
 });
 portfolio.push ({
     thumbPublic: 'MTK.jpg',
     contentPublic:
-        '<h2 class="galleryContent_description">Web Design, HTML/CSS Develpment - 2009</h2>' +
+        '<h2 class="galleryContent_description">Web Design, HTML/CSS Develpment</h2>' +
         '<img src="images/portfolio/MTK.jpg" />'
 });
