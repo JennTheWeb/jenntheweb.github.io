@@ -588,26 +588,40 @@ portfolio.push ({
 
             '<hr />' +
 
-            '<h3>Design and Develop</h3>' +
+            '<h3>Design & Develop</h3>' +
+
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookReader-toolbar2.png" />' +
+                '</div>' +
+            '</div>' +
             
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-recorder.png" />' +    
-                    '<img class="frame" src="images/portfolio/laz/bookReader-toolbar.png" />' +
                     '<img class="frame" src="images/portfolio/laz/bookReader-tools3.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-tools2.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                '<img class="frame" src="images/portfolio/laz/bookReader-tools.png" />' +
-                    
+                    '<img class="frame" src="images/portfolio/laz/bookReader-tools2.png" />' +
+                '</div>' +
+            '</div>' +
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookReader-tools.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
                     '<img class="frame" src="images/portfolio/laz/bookReader-tools4.png" />' +
+                    
                 '</div>' +
             '</div>' +
 
             '<hr />' +
 
-            '<h3>Document</h3>' +
-            '<p>Code for the toolbar was repeated and modified in different ways for slightly different use cases. The full code for the toolbar needed to be documented in one place for future reference.</p>' +
+            '<h3>Refactor & Document</h3>' +
+            '<p>Code for the toolbar was repeated and modified in different ways for slightly different use cases. The full code for the toolbar needed to be cleaned up and documented in one place for future reference.</p>' +
+
+            '<div class="caseStudy_img">' +
+                '<img class="frame" src="images/portfolio/laz/bookReader-toolbarNotes.png" />' +
+            '</div>' +
 
             '<img class="frame" src="images/portfolio/laz/bookTools-document.png" />' +
         '</div>' +
@@ -616,12 +630,39 @@ portfolio.push ({
         '<div class="caseStudy_section">' +
             '<h2>Book Builder</h2>' +
             '<p>The book builder needed to be converted from Flash to HTML5, and redesigned to incorporate new visual elements and interactive features.</p>' +
+
+            '<hr />' +
+
+            '<h3>Plan, Sketch, Design, Iterate</h3>' +
+
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-notes.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-sketch.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<img class="frame" src="images/portfolio/laz/bookBuilder-notes3.png" />' +
+            '<img class="frame" src="images/portfolio/laz/bookBuilder-notes2.png" />' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-text.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-img.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-tools.png" />' +
+                '</div>' +
+            '</div>' +
             
             '<div style="align-items: start;" class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">Before</h3>' +
                     '<img class="frame" src="images/portfolio/laz/bookBuilder-before2.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-old2.png" />' +
                     '<img class="frame" src="images/portfolio/laz/bookBuilder-before.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
