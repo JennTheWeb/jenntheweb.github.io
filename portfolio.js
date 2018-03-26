@@ -1,11 +1,11 @@
 let portfolio = [];
 portfolio.push ({
-    //thumbProtected: 'laz/dashboard-thumb.png',
-    thumbPublic: 'laz/dashboard-thumb.png',
+    //thumbProtected: 'raz/dashboard-thumb.png',
+    thumbPublic: 'raz/dashboard-thumb.png',
     caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
-        '<img src="images/portfolio/laz/dashboard-banner.png" />' +
+        '<img src="images/portfolio/raz/dashboard-banner.png" />' +
         
         '<div class="caseStudy_section">' +
             '<h1 class="caseStudy_mainHeading">Reporting and Student Management</h1>' +
@@ -35,7 +35,7 @@ portfolio.push ({
 
                     '<p>The primary instruction I was given was to add tabs to each report table to separate data for each product because everything could no longer fit in one table. After taking stock and finding that while certain reports were shared by all products, there were also reports unique to each product, my recommendation was to set up the tabbed navigation so that the user selects the product first before selecting the type of report, which was the opposite of the proposed requirement.</p>' +
 
-                    '<img src="images/portfolio/laz/tabs.png" />' +
+                    '<img src="images/portfolio/raz/tabs.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -45,10 +45,10 @@ portfolio.push ({
                 '<div class="caseStudy_content">' +
                     '<p>In addition, many other UI improvements were included in mockups for each section of the new student management site to clean up reporting and bring visual consistency and cleanliness throughout, and restructure tables to better combine and separate related and unrelated data.</p>' +
 
-                    '<img class="frame" src="images/portfolio/laz/report.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/inBasket.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/roster.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/report-hs.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/report.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/inBasket.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/roster.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/report-hs.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -80,10 +80,10 @@ portfolio.push ({
 
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img src="images/portfolio/laz/dashboard-sketch.png" />' +
+                    '<img src="images/portfolio/raz/dashboard-sketch.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img src="images/portfolio/laz/dashboard-sketch3.png" />' +
+                    '<img src="images/portfolio/raz/dashboard-sketch3.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -96,8 +96,8 @@ portfolio.push ({
 
                     '<p>Once some of the charts became more finalized, development began. Engineering helped uncover edge cases and typical scenarios by pluggin in real data. In some cases pluggins in real data led to realizations that certain data sets were not as useful as intended. Late changes to technical requirements also led to many last minute changes, but in the end we completed the dashboards.</p>' +
 
-                    '<img src="images/portfolio/laz/dashboard-rt.png" />' +
-                    '<img src="images/portfolio/laz/dashboard-science.png" />' +
+                    '<img src="images/portfolio/raz/dashboard-rt.png" />' +
+                    '<img src="images/portfolio/raz/dashboard-science.png" />' +
                 '</div>' +
             '</div>' +
             
@@ -123,12 +123,12 @@ portfolio.push ({
         '</div>'
 });
 portfolio.push ({
-    //thumbProtected: 'laz/codeStandards-thumb.png',
-    thumbPublic: 'laz/codeStandards-thumb.png',
+    //thumbProtected: 'raz/codeStandards-thumb.png',
+    thumbPublic: 'raz/codeStandards-thumb.png',
     caption: 'Case Study',
     contentPublic: 
         '<h2 class="galleryContent_description">UI Design, HTML/CSS, Documentation</h2>' +
-        '<img src="images/portfolio/laz/codeStandards-banner.png" />' +
+        '<img src="images/portfolio/raz/codeStandards-banner.png" />' +
 
         '<div class="caseStudy_section">' +
 
@@ -169,26 +169,26 @@ portfolio.push ({
 
                     '<p>My process was to first take stock of what exists on the sites (buttons, for example)</p>' + 
 
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn1.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn2.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn3.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn4.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn6.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn7.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn8.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn9.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn10.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn11.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn12.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn13.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn14.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn15.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/laz/btn16.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn1.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn2.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn3.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn4.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn6.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn7.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn8.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn9.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn10.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn11.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn12.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn13.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn14.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn15.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" />' +
                     
                     '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Where there were buttons with icons, I would present a consistent way to create buttons with icons rather than removing the icons, and so on. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>' +
 
-                    '<img class="frame" src="images/portfolio/laz/styleguide.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/styleguide2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/styleguide.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/styleguide2.png" />' +
                     
                     '<p>Once everything was cleaned up and consistent, it was much easier to make more dramatic change moving forward, such as removing icons or changing colors.</p>' +
 
@@ -205,9 +205,9 @@ portfolio.push ({
 
                     '<p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. As our standards evolved and the team grew, the need for definitions of our standards became clear. I updated the styleguide with clear definitions for the new modular approach.</p>' +
 
-                    '<img class="frame" src="images/portfolio/laz/styleguide-codeStandards3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/styleguide-codeStandards3.png" />' +
 
-                    '<img class="frame" src="images/portfolio/laz/codeStandards.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/codeStandards.png" />' +
 
                 '</div><!-- /content -->' +
             '</div><!-- /row -->' +
@@ -224,15 +224,15 @@ portfolio.push ({
 
                     '<h3>Before:</h3>' +
 
-                    '<img class="frame" src="images/portfolio/laz/header-old1.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/header-old2.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/header-old3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-old1.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-old2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-old3.png" />' +
 
                     '<h3>After:</h3>' +
 
-                    '<img class="frame" src="images/portfolio/laz/header-new1.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/header-new5.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/header-new2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-new1.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-new5.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-new2.png" />' +
 
                 '</div>' +
             '</div>' +
@@ -255,11 +255,11 @@ portfolio.push ({
             '<div class="caseStudy_row caseStudy_row-images">' + 
                 '<div class="caseStudy_img">' +
                     '<h3>Before</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/homepage-old.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/homepage-old.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
                     '<h3>After</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/home-new.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/home-new.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -275,12 +275,12 @@ portfolio.push ({
         '</div>'
 });
 portfolio.push ({
-    //thumbProtected: 'laz/fileCabinetThumb.png',
-    thumbPublic: 'laz/fileCabinetThumb.png',
+    //thumbProtected: 'raz/fileCabinetThumb.png',
+    thumbPublic: 'raz/fileCabinetThumb.png',
     caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">UX Design, HTML/CSS, Angular integration</h2>' +
-        '<img src="images/portfolio/laz/fileCabinet-banner.png" />' +
+        '<img src="images/portfolio/raz/fileCabinet-banner.png" />' +
 
 
         '<div class="caseStudy_section">' +
@@ -332,11 +332,11 @@ portfolio.push ({
             
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/filecabinet-sketch.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-sketch.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/filecabinet-sketch-2.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/fileCabinet.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-sketch-2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -358,12 +358,12 @@ portfolio.push ({
             
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/share1.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/share2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/share1.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/share2.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/share3.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/share5.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/share3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/share5.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -387,13 +387,13 @@ portfolio.push ({
 
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/save.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/save.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/save2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/save2.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/fileCabinetDropdown.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinetDropdown.png" />' +
                 '</div>' +
             '</div>' +
             
@@ -408,14 +408,14 @@ portfolio.push ({
                         '<p>The feedback received was that the emphasis needed to be on building a collection and assigning it right now, rather than saving it for later. After more brainstorming and gathering ideas from around the web, the next version included an "Add To..." button rather than a "Save" button, with a ribbon rather than a dropdown. Using the "Add" language implied more of an action happening right now, rather than "Save" which implies something for later, and the ribbon allows teachers to actively see their collection being built.</p>' +
                     '</div>' +
 
-                    '<img class="frame" src="images/portfolio/laz/ribbon-sketch.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/ribbon2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/ribbon-sketch.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/ribbon2.png" />' +
 
                     '<div class="caseStudy_words">' +
                         '<p>The final version of the ribbon was changed from gray to almost black, which went along with other site-wide style changes that were being introduced, and also allows the ribbon to stand out much more.</p>' + 
 
                         '<div class="caseStudy_row">' +
-                            '<img class="frame" src="images/portfolio/laz/ribbon3.png" />' +
+                            '<img class="frame" src="images/portfolio/raz/ribbon3.png" />' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
@@ -431,9 +431,9 @@ portfolio.push ({
                 '<div class="caseStudy_words">' +
                     '<p>The interface for creating creating the assignment also needed to be redesigned:</p>' +
                         
-                    '<img class="frame" src="images/portfolio/laz/assignments-note2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/assignments-note2.png" />' +
 
-                    '<img class="frame" src="images/portfolio/laz/assign.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/assign.png" />' +
                 '</div>' +
 
             '</div>' +
@@ -449,7 +449,7 @@ portfolio.push ({
                 '<div class="caseStudy_content">' +
                     '<p>During this project, the need arose for an "Assignments" report where teachers can view what they have assigned and to whom. A lot more ideation ensued, discussing what exactly this page would be used for, and where it would live. I got to work putting mockups together, again starting simple, as this page was already a large but necessary bit of scope-creep for the project.</p>' +
 
-                    '<img class="frame" src="images/portfolio/laz/assignments.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/assignments.png" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -471,13 +471,13 @@ portfolio.push ({
 
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/assignments-notes.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/assignments-notes.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/fileCabinet-notes.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-notes.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/fileCabinet-notes2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-notes2.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -490,7 +490,7 @@ portfolio.push ({
                     
                     'I began to document each mockup and requirement in a shared document to keep everyone on the same page. This evolved into a 50+ page document used by design, engineering, and management to communicate and track changes and completion of features.<br /><br /></p>' +
 
-                    '<img class="frame" src="images/portfolio/laz/doc-fileCabinet.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/doc-fileCabinet.png" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -516,11 +516,11 @@ portfolio.push ({
         '</div>'
 });
 portfolio.push ({
-    thumbPublic: 'laz/bookBuilder-thumb.png',
+    thumbPublic: 'raz/bookBuilder-thumb.png',
     caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">Wireframing, UI Design, HTML/CSS/Javascript development</h2>' +
-        '<img src="images/portfolio/laz/bookBuilder-banner.png" />' +
+        '<img src="images/portfolio/raz/bookBuilder-banner.png" />' +
 
         '<div class="caseStudy_section">' +
             '<h1 class="caseStudy_mainHeading">eBook Tools</h2>' +
@@ -538,7 +538,7 @@ portfolio.push ({
                     '<p>The student interface had also been recently redesigned with beautiful new illustrations by the team, so I wanted to make sure each activity was redesigned as well.<p>' +
 
                     '<h3>Student Interface</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/kids-interface.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/kids-interface.png" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -556,14 +556,14 @@ portfolio.push ({
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">Before</h3>' +
 
-                    '<img class="frame" src="images/portfolio/laz/bookReader-before2.png" />' +
-                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/laz/bookReader-before.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-before2.png" />' +
+                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/raz/bookReader-before.png" />' +
                 '</div>' +    
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">After</h3>' +
                     
-                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/laz/bookReader-after.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-after2.png" />' +
+                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/raz/bookReader-after.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-after2.png" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -580,13 +580,13 @@ portfolio.push ({
             '<div class="caseStudy_row caseStudy_row-images" style="align-items: start;">' +
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">Before</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/quiz-before.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/quiz-before2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/quiz-before.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/quiz-before2.png" />' +
                 '</div>' +    
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">After</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/quiz-after.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/quiz-after2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/quiz-after.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/quiz-after2.png" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -602,10 +602,10 @@ portfolio.push ({
             
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/ebooktools-sketch.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/ebooktools-sketch.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/ebooktools-sketch2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/ebooktools-sketch2.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -615,24 +615,24 @@ portfolio.push ({
 
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-toolbar.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-toolbar.png" />' +
                 '</div>' +
             '</div>' +
             
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-tools3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools3.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-tools2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools2.png" />' +
                 '</div>' +
             '</div>' +
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-tools.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-tools4.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools4.png" />' +
                     
                 '</div>' +
             '</div>' +
@@ -643,10 +643,10 @@ portfolio.push ({
             '<p>Code for the toolbar was repeated and modified in different ways for slightly different use cases. The full code for the toolbar needed to be cleaned up and documented in one place for future reference.</p>' +
 
             '<div class="caseStudy_img">' +
-                '<img class="frame" src="images/portfolio/laz/bookReader-toolbar-notes.png" />' +
+                '<img class="frame" src="images/portfolio/raz/bookReader-toolbar-notes.png" />' +
             '</div>' +
 
-            '<img class="frame" src="images/portfolio/laz/bookTools-document.png" />' +
+            '<img class="frame" src="images/portfolio/raz/bookTools-document.png" />' +
         '</div>' +
 
 
@@ -660,38 +660,38 @@ portfolio.push ({
 
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-notes.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-sketch.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-sketch.png" />' +
                 '</div>' +
             '</div>' +
 
-            '<img class="frame" src="images/portfolio/laz/bookBuilder-notes3.png" />' +
-            '<img class="frame" src="images/portfolio/laz/bookBuilder-notes2.png" />' +
+            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes3.png" />' +
+            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes2.png" />' +
 
             '<hr />' +
 
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-text.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-img.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-text.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-img.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-tools.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-tools.png" />' +
                 '</div>' +
             '</div>' +
             
             '<div style="align-items: start;" class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">Before</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-before2.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-before.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-before2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-before.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">After</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder4.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder4.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder3.png" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -704,11 +704,11 @@ portfolio.push ({
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
                     '<h3>Before</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/bookroom-before.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookroom-before.png" />' +
                 '</div>' +    
                 '<div class="caseStudy_img">' +
                     '<h3>After</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/bookroom-current2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookroom-current2.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -717,7 +717,7 @@ portfolio.push ({
             '<h2>Redesign</h2>' +
             '<h3>Research</h3>' +
             '<div class="caseStudy_row caseStudy_row-images">' +
-                '<img class="frame" src="images/portfolio/laz/bookroom-inspiration.png" />' +
+                '<img class="frame" src="images/portfolio/raz/bookroom-inspiration.png" />' +
             '</div>' +
 
             '<hr />' +
@@ -725,14 +725,14 @@ portfolio.push ({
             '<h3>Ideation</h3>' +
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookroom-sketch3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookroom-sketch3.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookroom-sketch2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookroom-sketch2.png" />' +
                 '</div>' +
             '</div>' +
 
-            '<img class="frame" src="images/portfolio/laz/bookroom-sketch.png" />' +
+            '<img class="frame" src="images/portfolio/raz/bookroom-sketch.png" />' +
 
         '</div>' +
 
