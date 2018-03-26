@@ -620,7 +620,7 @@ portfolio.push ({
             '<div style="align-items: start;" class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">Before</h3>' +
-                    '<img class="frame" src="images/portfolio/laz/bookBuilder-old.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookBuilder-before2.png" />' +
                     '<img class="frame" src="images/portfolio/laz/bookBuilder-old2.png" />' +
                     '<img class="frame" src="images/portfolio/laz/bookBuilder-before.png" />' +
                 '</div>' +
