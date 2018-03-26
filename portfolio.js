@@ -325,7 +325,17 @@ portfolio.push ({
 
                     '<p>The File Cabinet was largely modeled after Google Drive. Ours is intentionally a much simpler interface with less features, but also designed to feel familiar to file management on computers, or in Google Drive, so that users don\'t have to re-learn file management just to use our site.</p>' +
 
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+            
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
                     '<img class="frame" src="images/portfolio/laz/filecabinet-sketch.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/filecabinet-sketch2.png" />' +
                     '<img class="frame" src="images/portfolio/laz/fileCabinet.png" />' +
                 '</div>' +
             '</div>' +
@@ -340,13 +350,23 @@ portfolio.push ({
                     '<p>Folder sharing was one of the tough parts of the File Cabinet design. There were tradeoffs to be made between being simple and intuitive vs full-featured and complex. I prefer to start simple and do it right, gather feedback, and add features based on what we learn, and for the most part, that is the approach we took. Folders could be public or private. A public folder would be shared with all members of your organization, and private folders can only be viewed by you.</p>' +
         
                     '<p>Sharing was enhanced post-launch to allow sharing with entire districts, schools, or individual teachers. Checkboxes were requested and ultimately used for the interface, but alternatives were also suggested and discussed, largely based on ideas from Google Drive.</p>' +
+                    
+                '</div>' +
+            '</div>' +
 
+            '<hr />' +
+            
+            '<div class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
                     '<img class="frame" src="images/portfolio/laz/share1.png" />' +
                     '<img class="frame" src="images/portfolio/laz/share2.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
                     '<img class="frame" src="images/portfolio/laz/share3.png" />' +
                     '<img class="frame" src="images/portfolio/laz/share5.png" />' +
                 '</div>' +
             '</div>' +
+
         '</div>' +
 
         
@@ -454,7 +474,10 @@ portfolio.push ({
                     '<img class="frame" src="images/portfolio/laz/assignments-notes.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/fileCabinet-projectNotes.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/fileCabinet-notes.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<img class="frame" src="images/portfolio/laz/fileCabinet-notes2.png" />' +
                 '</div>' +
             '</div>' +
 
