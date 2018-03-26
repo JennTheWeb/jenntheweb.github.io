@@ -335,7 +335,7 @@ portfolio.push ({
                     '<img class="frame" src="images/portfolio/laz/filecabinet-sketch.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/filecabinet-sketch2.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/filecabinet-sketch-2.png" />' +
                     '<img class="frame" src="images/portfolio/laz/fileCabinet.png" />' +
                 '</div>' +
             '</div>' +
@@ -615,7 +615,7 @@ portfolio.push ({
 
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/bookReader-toolbar2.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/bookReader-toolbar.png" />' +
                 '</div>' +
             '</div>' +
             
@@ -643,7 +643,7 @@ portfolio.push ({
             '<p>Code for the toolbar was repeated and modified in different ways for slightly different use cases. The full code for the toolbar needed to be cleaned up and documented in one place for future reference.</p>' +
 
             '<div class="caseStudy_img">' +
-                '<img class="frame" src="images/portfolio/laz/bookReader-toolbarNotes.png" />' +
+                '<img class="frame" src="images/portfolio/laz/bookReader-toolbar-notes.png" />' +
             '</div>' +
 
             '<img class="frame" src="images/portfolio/laz/bookTools-document.png" />' +
