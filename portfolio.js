@@ -281,6 +281,8 @@ portfolio.push ({
     contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, Angular integration - 2016-17</h2>' +
         '<img src="images/portfolio/laz/fileCabinet-banner.png" />' +
+
+
         '<div class="caseStudy_section">' +
             '<h1 class="caseStudy_mainHeading">File Cabinet and Custom Assignments</h2>' +
             '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
@@ -292,12 +294,13 @@ portfolio.push ({
                     '<h2>Problem</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>On the Learning A-Z family of sites, teachers could save books and other resources they like inside a File Cabinet for future use. Teachers can also choose to assign any resource they like for students to complete online.</p>' +
+                    '<p>On the Learning A-Z family of sites, teachers can save books and other resources they like inside a File Cabinet for future use. Teachers can also choose to assign any resource they like for students to complete online.</p>' +
                     '<p>I was asked to redesign the File Cabinet and plan feature enhancements (such as sharing and assigning folders), and to design an additional interface allowing teachers to save multiple resources in a single assignment, assign the collection on the spot, and save the collection for future use. </p>' +
                 '</div>' +
             '</div>' +
         '</div>' +
 
+        
         '<div class="caseStudy_section">' +
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
@@ -305,19 +308,52 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
                     '<p>Initially, the File Cabinet redesign and Custom Assignment process were presented to me as separate projects. But I was essentially being asked to design two interfaces where teachers collect resources, assign them, and save them for future use. The first thing I suggested was one unified project to allow teachers to collect, organize, and assign. This suggestion went over well, and the projects were combined.</p>' +
-                
-                    '<img class="frame" src="images/portfolio/laz/fileCabinet-projectNotes.png" />' +
 
-                    '<p>The next observation I had was that the process of finding something, assigning it now, saving it for later, or collecting a few things and assigning them altogether sounded just like a shopping cart where you can buy now, save in a wish list, or save in a cart and purchase. That is a very familiar process for just about every internet user, so I suggested that as inspiration for the UI. This suggestion was also well received, and the brainstorming, wireframing, and design moved forward in this way.</p>' +
+                    '<p>The next observation I had was that the process of finding something, assigning it now, saving it for later, or collecting a few things and assigning them altogether sounded just like a shopping cart where you can buy now, save in a wish list, or save in a cart and purchase. I suggested a shopping cart experience as inspiration for the UI. This suggestion was also well received, and the brainstorming, wireframing, and design moved forward in this way.</p>' +
                 '</div>' +
             '</div>' +
         '</div>' +
+
         
         '<div class="caseStudy_section">' +
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
-                    '<h2>Process</h2>' +
-                    '<h3>Design</h3>' +
+                    '<h2>File Cabinet</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>The File Cabinet redesign was probably the most straightforward part of the project. There was some discussion about whether or not a file cabinet was the proper metaphore to use, but because this had been in place for years already, we stuck with the approach, knowing we could change the metaphore later if necessary, but for now, folders and files are a familiar interface, both on our site and on computers in general.</p>' +
+
+                    '<p>The File Cabinet was largely modeled after Google Drive. Ours is intentionally a much simpler interface with less features, but also designed to feel familiar to file management on computers, or in Google Drive, so that users don\'t have to re-learn file management just to use our site.</p>' +
+
+                    '<img class="frame" src="images/portfolio/laz/filecabinet-sketch.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/fileCabinet.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Folder Sharing</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>Folder sharing was one of the tough parts of the File Cabinet design. There were tradeoffs to be made between being simple and intuitive vs full-featured and complex. I prefer to start simple and do it right, gather feedback, and add features based on what we learn, and for the most part, that is the approach we took. Folders could be public or private. A public folder would be shared with all members of your organization, and private folders can only be viewed by you.</p>' +
+        
+                    '<p>Sharing was enhanced post-launch to allow sharing with entire districts, schools, or individual teachers. Checkboxes were requested and ultimately used for the interface, but alternatives were also suggested and discussed, largely based on ideas from Google Drive.</p>' +
+
+                    '<img class="frame" src="images/portfolio/laz/share1.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/share2.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/share3.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/share5.png" />' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+        
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Saving Resources</h2>' +
                 '</div>' +
 
                 '<div class="caseStudy_content">' +
@@ -340,7 +376,6 @@ portfolio.push ({
                     '<img class="frame" src="images/portfolio/laz/fileCabinetDropdown.png" />' +
                 '</div>' +
             '</div>' +
-               
             
             '<hr />' +
 
@@ -359,57 +394,40 @@ portfolio.push ({
                     '<div class="caseStudy_words">' +
                         '<p>The final version of the ribbon was changed from gray to almost black, which went along with other site-wide style changes that were being introduced, and also allows the ribbon to stand out much more.</p>' + 
 
-                        '<img class="frame" src="images/portfolio/laz/ribbon3.png" />' +
-
-                        '<p>And let\'s not forget the process for assigning:</p>' +
-
-                        '<img class="frame" src="images/portfolio/laz/assign.png" />' +
+                        '<div class="caseStudy_row">' +
+                            '<img class="frame" src="images/portfolio/laz/ribbon3.png" />' +
+                        '</div>' +
                     '</div>' +
+                '</div>' +
+            '</div>' +
 
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Assigning</h2>' +
+                '</div>' +
+                
+                '<div class="caseStudy_words">' +
+                    '<p>The interface for creating creating the assignment also needed to be redesigned:</p>' +
+                        
+                    '<img class="frame" src="images/portfolio/laz/assignments-note2.png" />' +
+
+                    '<img class="frame" src="images/portfolio/laz/assign.png" />' +
                 '</div>' +
 
             '</div>' +
+
         '</div>' +
+        
         
         '<div class="caseStudy_section">' +
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
-                    '<h3>File Cabinet</h3>' +
+                    '<h2>Report</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>The File Cabinet redesign was probably the most straightforward part of the project. There was some discussion about whether or not a file cabinet was the proper metaphore to use, but because this had been in place for years already, we stuck with the approach, knowing we could change the metaphore later if necessary, but for now, folders and files are a familiar interface, both on our site and on computers in general.</p>' +
-
-                    '<p>The File Cabinet was largely modeled after Google Drive. Ours is intentionally a much simpler interface with less features, but also designed to feel familiar to file management on computers, or in Google Drive, so that users don\'t have to re-learn file management just to use our site.</p>' +
-
-                    '<img class="frame" src="images/portfolio/laz/filecabinet-sketch.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/fileCabinet.png" />' +
-                '</div>' +
-            '</div>' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Folder Sharing</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>Folder sharing was one of the tough parts. There were tradeoffs to be made between being simple and intuitive vs full-featured and complex. I prefer to start simple and do it right, gather feedback, and add features based on what we learn, and for the most part, that is the approach we took. Folders could be public or private. A public folder would be shared with all members of your organization, and private folders can only be viewed by you.</p>' +
-        
-                    '<p>Sharing was enhanced post-launch to allow sharing with entire districts, schools, or individual teachers. Checkboxes were requested and ultimately used for the interface, but alternatives were also suggested and discussed, largely based on ideas from Google Drive.</p>' +
-
-                    '<img class="frame" src="images/portfolio/laz/share1.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/share2.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/share3.png" />' +
-                    '<img class="frame" src="images/portfolio/laz/share5.png" />' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-        
-        '<div class="caseStudy_section">' +
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Assignments</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>During this project, the need arose for an "Assignments" page where teachers can view what they have assigned and to whom. A lot more ideation ensued, discussing what exactly this page would be used for, and where it would live. I got to work putting mockups together, again starting simple, as this page was already a large but necessary bit of scope-creep for the project.</p>' +
+                    '<p>During this project, the need arose for an "Assignments" report where teachers can view what they have assigned and to whom. A lot more ideation ensued, discussing what exactly this page would be used for, and where it would live. I got to work putting mockups together, again starting simple, as this page was already a large but necessary bit of scope-creep for the project.</p>' +
 
                     '<img class="frame" src="images/portfolio/laz/assignments.png" />' +
                 '</div>' +
@@ -422,7 +440,7 @@ portfolio.push ({
                     '<h2>Development</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>As mockups were approved, development began. The engineering team used this project as an opportunity to introduce and begin converting our code base to Angular, so a lot of collaboration happened between me and the senior engineers to bring me up to speed with Angular, and to inform them on how to best structure the files for styling purposes, and for future use in the UI. I provided static HTML, CSS and Javascript prototypes for the "Add To" process, and worked on a lot of style integration with Angular, collaborating with engineers whenever I got stuck.</p>' +
+                    '<p>As mockups were approved, development began. The engineering team used this project as an opportunity to introduce and begin converting our code base to Angular, so a lot of collaboration happened between me and engineering to get caught up to speed with Angular, and to inform them on how to best structure the files for styling purposes, and for future use in the UI.</p>' +
                     
                     '<p>Because of the huge scope of this project and lack of clear requirements, the project evolved every couple of days, with decisions being made too frequently for everyone to keep up with. A lot of decisions needed to be made about modifying assignments, and assigning to groups of students and tracking progress within those groups. A lot of note-taking ensued to wrap my head around these issues and discuss them with other team members.' +
 
@@ -436,7 +454,7 @@ portfolio.push ({
                     '<img class="frame" src="images/portfolio/laz/assignments-notes.png" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/laz/assignments-note2.png" />' +
+                    '<img class="frame" src="images/portfolio/laz/fileCabinet-projectNotes.png" />' +
                 '</div>' +
             '</div>' +
 
@@ -447,7 +465,7 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
                     
-                    'I began to document each mockup and requirement in a shared document to keep everyone on the same page. This evolved into a 50+ page document used by design, engineering, and management to communicate and track changes and completion of features.</p>' +
+                    'I began to document each mockup and requirement in a shared document to keep everyone on the same page. This evolved into a 50+ page document used by design, engineering, and management to communicate and track changes and completion of features.<br /><br /></p>' +
 
                     '<img class="frame" src="images/portfolio/laz/doc-fileCabinet.png" />' +
                 '</div>' +
@@ -469,7 +487,7 @@ portfolio.push ({
                 '<div class="caseStudy_headingContainer">' +
                     '<h2>Reflection</h2>' +
                 '</div>' +
-                '<div class="caseStudy_content">' +         '<p>Throughout the project, as feature changes got out of control, effort was made to understand exactly what the priority was - what problem were we trying to solve? Did we want it to be easy for teachers to plan lessons, or to save their favorites? Did we want to optimize the experience for resource detail pages, or category pages with multiple resource thumbnails? Did we want to focus on ease of use, or advanced lesson planning? Elementary teachers, or reading specialists? As the saying goes, if you design for everyone, you design for no one. Never have I felt the truth of that saying more than when working on this project. But it wasn\'t all negative - there was a lot to be proud of, and a lot learned about UX, development, and project management. </p>' +
+                '<div class="caseStudy_content">' +         '<p>Throughout the project, as feature changes got out of control, effort was made to understand exactly what the priority was - what problem were we trying to solve? Did we want it to be easy for teachers to plan lessons, or to save their favorites? Did we want to optimize the experience for resource detail pages, or category pages? Did we want to focus on ease of use, or advanced lesson planning? Elementary teachers, or reading specialists? As the saying goes, if you design for everyone, you design for no one. Never have I felt the truth of that saying more than when working on this project. But there was a lot to be proud of, and a lot learned about UX, development, and project management. </p>' +
                 '</div>' +
             '</div>' +
         '</div>'
