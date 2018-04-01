@@ -160,32 +160,35 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
 
-                    '<p>The requirements provided for the dashboards consisted of whiteboards and notes describing specific charts. Knowing that the charts would not work as-is, but not having direct access with the product managers providing the requirements, designing these charts was an awkard process of trying to interpret what the intent was behind the sketches, and providing an alternative chart that achieved the same goal in a better way by trimming out irrelevant and distracting information, breaking up data into multiple charts, or combining related data into single ones, and choosing different types of visualizations to better convey the intended meaning. </p>' +
+                    '<p>The requirements provided for the dashboards consisted of whiteboards and notes describing specific charts. Knowing that the charts would not work as-is, but not having direct access with the product managers providing the requirements, designing these charts was an awkard process of trying to interpret the intent behind the sketches, and providing alternative charts that achieved conveyed the same story in a more user-friendly way.</p>' + 
+                    
+                    '<p>What followed was a lot of research into data visualization, and sketching and notes to wrap my head around the problems:</p>' +
 
-                '</div>' +
-            '</div>' +
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes.png" />' +
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes2.png" />' +
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-sketch.png" /><br />' +
 
-            '<hr />' +
+                    '<p>Next, I demonstrated my ideas by mocking up some of the requested tables along with suggested alternatives:</p>' +
 
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<img src="images/portfolio/raz/dashboard-sketch.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img src="images/portfolio/raz/dashboard-sketch3.png" />' +
-                '</div>' +
-            '</div>' +
+                    '<br /><hr />' +
 
-            '<hr />' +
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<h4>Original Request</h4>' +
+                            '<img src="images/portfolio/raz/dashboard-chart-idea1.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<h4>Suggested Alternative</h4>' +
+                            '<img src="images/portfolio/raz/dashboard-chart-idea2.png" />' +
+                        '</div>' +
+                    '</div>' +
 
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
+                    '<hr />' +
+    
                     '<p>Once some of the charts became more finalized, development began. Engineering helped uncover edge cases and typical scenarios by pluggin in real data. In some cases pluggins in real data led to realizations that certain data sets were not as useful as intended. Late changes to technical requirements also led to many last minute changes, but in the end we completed the dashboards.</p>' +
 
                     '<img src="images/portfolio/raz/dashboard-rt.png" />' +
+                    '<br /><hr /><br />' +
                     '<img src="images/portfolio/raz/dashboard-science.png" />' +
                 '</div>' +
             '</div>' +
