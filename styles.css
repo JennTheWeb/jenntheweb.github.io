@@ -359,7 +359,7 @@ button svg {
 .caseStudy_headingContainer {
 	flex-basis: 30%;
 	flex-shrink: 0;
-	margin: 2.5rem 0;
+	padding: 2.5rem 2.5rem 2.5rem 0;
 }
 	.caseStudy_headingContainer :first-child {
 		margin-top: 0;

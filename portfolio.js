@@ -124,7 +124,7 @@ portfolio.push ({
             '</div>' +
         '</div>'
 })
-/*
+
 portfolio.push ({
     //thumbProtected: 'raz/dashboard-thumb.png',
     thumbPublic: 'raz/dashboard-thumb.png',
@@ -143,10 +143,25 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
 
-                    '<p>After the new student management site was launched, work began on new reporting dashboards. A lot of research on data visualization ensued.</p>' +
+                    '<p>Classroom reports consisted of many tables with raw data. Teachers needed a dashboard with at-a-glance data visualizations to help them quickly gather meaning from their student data.</p>' +
 
-                    '<p>The requirements provided for the dashboards consisted of whiteboards and notes describing specific charts. Having a manager who agreed that the charts would not work, but not having direct access with the team members providing the requirements, designing these charts was an awkard process of trying to interpret what the intent was behind the charts they came up with, and providing an alternative chart that achieved the same goal in a better way by trimming out irrelevant and distracting information, breaking up data into multiple charts, or combining related data into single ones, and choosing different types of visualizations to better tell the story of the data. It was a long process of interpretation and trial and error between me, my manager, and the product managers who supplied the original charts.</p>' +
-           
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+        '<div class="caseStudy_section">' +
+        
+            '<h2>Process</h2>' +
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Understand, Design, Iterate</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>The requirements provided for the dashboards consisted of whiteboards and notes describing specific charts. Knowing that the charts would not work as-is, but not having direct access with the product managers providing the requirements, designing these charts was an awkard process of trying to interpret what the intent was behind the sketches, and providing an alternative chart that achieved the same goal in a better way by trimming out irrelevant and distracting information, breaking up data into multiple charts, or combining related data into single ones, and choosing different types of visualizations to better convey the intended meaning. </p>' +
+
                 '</div>' +
             '</div>' +
 
@@ -184,17 +199,13 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
 
-                    '<p>In the end, teachers did have a single place to go to manage students, a cleaner interface to review cleaned up reports, and new dashboards with charts containing at-a-glance data, so the immediate requirements were satisfied, but a lot of work was still to be done to help teachers find where all of the settings live, and how different data sets interact.</p>' +
-
-                    '<p>With this project, design and engineering had a fantastic opportunity to iron out design and code inconsistencies and introduce new technologies, such as Angular, and develop a more in-depth understanding the tools available for teachers on our sites. Many issues were also uncovered throughout the project that will help inform future improvements for both engineering and design. A lot was also learned about data visualization. All of this learning can translate to a fantastic outcome as the student management portal continues to evolve, but it\'s not there yet.</p>' +
-
-                    '<p>Clear requirements, understanding of the problems to be solved, and user testing could have led to a much more successful outcome of the student management portal. Learning to communicate and advocate for these needs is something I continue to work on, finding the balance between cooperating with existing processes and values and pushing for a more design-centric process.</p>' +
+                    '<p>This project resulted in new dashboards and data visualizations which was an improvement over the plain tables, and a great learning experience for design and engineering. However, a lack of cohesion among reports remains, with teachers unable to understand how different reports relate to each other, or how to read the data. The dashboards aren\'t a complete success yet, but a good foundation was laid for future improvements, and lessons were learned about the importance of advocating strongly for communication, requirements, and user data.</p>' +
 
                 '</div>' +
             '</div>' +
         '</div>'
 });
-*/
+
 portfolio.push ({
     //thumbProtected: 'raz/codeStandards-thumb.png',
     thumbPublic: 'raz/codeStandards-thumb.png',
