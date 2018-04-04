@@ -123,243 +123,6 @@ portfolio.push ({
                 '</div>' +
             '</div>' +
         '</div>'
-})
-
-portfolio.push ({
-    //thumbProtected: 'raz/dashboard-thumb.png',
-    thumbPublic: 'raz/dashboard-thumb.png',
-    caption: 'Case Study',
-    contentPublic:
-        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
-        '<img src="images/portfolio/raz/dashboard-banner.png" />' +
-
-        '<div class="caseStudy_section">' +
-            '<h1 class="caseStudy_mainHeading">Teacher Dashboards</h1>' +
-            '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
-            '<hr />' +
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h2>Problem</h2>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>Classroom reports consisted of many tables with raw data. Teachers needed a dashboard with at-a-glance data visualizations to help them quickly gather meaning from their student data.</p>' +
-
-                '</div>' +
-            '</div>' +
-        '</div>' +
-
-        '<div class="caseStudy_section">' +
-        
-            '<h2>Process</h2>' +
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Understand, Design, Iterate</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>The requirements provided for the dashboards consisted of whiteboards and notes describing specific charts. Knowing that the charts would not work as-is, but not having direct access with the product managers providing the requirements, designing these charts was an awkard process of trying to interpret the intent behind the sketches, and providing alternative charts that achieved conveyed the same story in a more user-friendly way.</p>' + 
-                    
-                    '<p>What followed was a lot of research into data visualization, and sketching and notes to wrap my head around the problems:</p>' +
-
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes.png" />' +
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes2.png" />' +
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-sketch.png" /><br />' +
-
-                    '<p>Next, I demonstrated my ideas by mocking up some of the requested tables along with suggested alternatives:</p>' +
-
-                    '<br /><hr />' +
-
-                    '<div class="caseStudy_row caseStudy_row-images">' +
-                        '<div class="caseStudy_img">' +
-                            '<h4>Original Request</h4>' +
-                            '<img src="images/portfolio/raz/dashboard-chart-idea1.png" />' +
-                        '</div>' +
-                        '<div class="caseStudy_img">' +
-                            '<h4>Suggested Alternative</h4>' +
-                            '<img src="images/portfolio/raz/dashboard-chart-idea2.png" />' +
-                        '</div>' +
-                    '</div>' +
-
-                    '<hr />' +
-    
-                    '<p>Once some of the charts became more finalized, development began. Engineering helped uncover edge cases and typical scenarios by pluggin in real data. In some cases pluggins in real data led to realizations that certain data sets were not as useful as intended. Late changes to technical requirements also led to many last minute changes, but in the end we completed the dashboards.</p>' +
-
-                    '<img src="images/portfolio/raz/dashboard-rt.png" />' +
-                    '<br /><hr /><br />' +
-                    '<img src="images/portfolio/raz/dashboard-science.png" />' +
-                '</div>' +
-            '</div>' +
-            
-        '</div>' +
-        
-        '<div class="caseStudy_section">' +
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h2>Outcome</h2>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>This project resulted in new dashboards and data visualizations which was an improvement over the plain tables, and a great learning experience for design and engineering. However, a lack of cohesion among reports remains, with teachers unable to understand how different reports relate to each other, or how to read the data. The dashboards aren\'t a complete success yet, but a good foundation was laid for future improvements, and lessons were learned about the importance of advocating strongly for communication, requirements, and user data.</p>' +
-
-                '</div>' +
-            '</div>' +
-        '</div>'
-});
-
-portfolio.push ({
-    //thumbProtected: 'raz/codeStandards-thumb.png',
-    thumbPublic: 'raz/codeStandards-thumb.png',
-    caption: 'Case Study',
-    contentPublic: 
-        '<h2 class="galleryContent_description">UI Design, HTML/CSS, Documentation</h2>' +
-        '<img src="images/portfolio/raz/codeStandards-banner.png" />' +
-
-        '<div class="caseStudy_section">' +
-
-            '<h1 class="caseStudy_mainHeading">Styleguide and CSS Code Standards</h2>' +
-            '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h2>Problem</h2>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +                  	    
-                    '<p>After 10 years of Learning A-Z growing fast, adding new features, and acquiring new products, the UI and CSS codebase were fragile and unruly with files thousands of lines long full of repetition, inconsistencies, and tangled spaghetti code that was clearly reflected in the UI. If someone needed to add a button, there was no "right" button to choose from, and complete terror at the thought of modifying any existing button for fear of unintended consequences.</p>' +
-                    
-                    '<p>Team members attended a CSS dev conference and came back with ideas of how to use SMACSS methodologies to refactor our CSS, but no one wanted to make the first move. That\'s where I came in.</p>' +
-
-                '</div>' +
-            '</div>' +
-
-        '</div>' +
-        
-        '<div class="caseStudy_section">' +
-
-            '<h2>Process</h2>' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Plan & Implement</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +   
-
-                    '<p>Having extra time on my hands between projects, and not wanting to see the cleanup initiative die, I created a simple styleguide including a grid system and generic UI components and helpers. I presented this to the team to make sure it was in line with the SMACSS techniques we had discussed, and after some revisions it started to be introduced into new projects.</p>' +
-
-                    '<p>After trying out the new styles with new projects, the painstaking process began to roll out the UI updates in the legacy code.</p>' +
-
-                    '<p>My process was to first take stock of what exists on the sites (buttons, for example)</p>' + 
-
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn1.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn2.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn3.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn4.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn6.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn7.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn8.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn9.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn10.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn11.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn12.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn13.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn14.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn15.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" />' +
-                    
-                    '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Where there were buttons with icons, I would present a consistent way to create buttons with icons rather than removing the icons, and so on. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>' +
-
-                    '<img class="frame" src="images/portfolio/raz/styleguide.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/styleguide2.png" />' +
-                    
-                    '<p>Once everything was cleaned up and consistent, it was much easier to make more dramatic change moving forward, such as removing icons or changing colors.</p>' +
-
-                '</div><!-- /content -->' +
-            '</div><!-- /row -->' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Evaluate & Pivot</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. As our standards evolved and the team grew, the need for definitions of our standards became clear. I updated the styleguide with clear definitions for the new modular approach.</p>' +
-
-                    '<img class="frame" src="images/portfolio/raz/styleguide-codeStandards3.png" />' +
-
-                    '<img class="frame" src="images/portfolio/raz/codeStandards.png" />' +
-
-                '</div><!-- /content -->' +
-            '</div><!-- /row -->' +
-        
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Rebranding</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>As changes continued to evolve and roll out, the parent site was rebranded, giving a perfect opportunity to establish clean, consistent visual standards across all product sites, starting with the site headers.</p>' +
-
-                    '<h3>Before:</h3>' +
-
-                    '<img class="frame" src="images/portfolio/raz/header-old1.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/header-old2.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/header-old3.png" />' +
-
-                    '<h3>After:</h3>' +
-
-                    '<img class="frame" src="images/portfolio/raz/header-new1.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/header-new5.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/header-new2.png" />' +
-
-                '</div>' +
-            '</div>' +
-        '</div>' +
-        
-        '<div class="caseStudy_section">' +
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h2>Outcome</h2>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>With each new project and iteration of the styleguide, the process and interface continue to improve. The stylesheets are far more maneagle, and the look of the sites continues to become more clean, modern, and consistent.</p>'+
-
-                '</div>' +
-            '</div>' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row caseStudy_row-images">' + 
-                '<div class="caseStudy_img">' +
-                    '<h3>Before</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/homepage-old.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<h3>After</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/home-new.png" />' +
-                '</div>' +
-            '</div>' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p> This is an ongoing initiative, especially as Angular use continues to be ironed out, responsive design comes into play, and new CSS features like flex and grid threaten pose new challenges and options. But a solid foundation has been built - a single source of information for designers and engineers to reference when starting any conversation or project, and a lot of practice and shared knowledge in carrying out widespread changes.</p>' +
-                '</div>' +
-            '</div>' +
-        '</div>'
 });
 portfolio.push ({
     //thumbProtected: 'raz/fileCabinetThumb.png',
@@ -583,6 +346,159 @@ portfolio.push ({
             '</div>' +
         '</div>'
 });
+portfolio.push ({
+    //thumbProtected: 'raz/codeStandards-thumb.png',
+    thumbPublic: 'raz/codeStandards-thumb.png',
+    caption: 'Case Study',
+    contentPublic: 
+        '<h2 class="galleryContent_description">UI Design, HTML/CSS, Documentation</h2>' +
+        '<img src="images/portfolio/raz/codeStandards-banner.png" />' +
+
+        '<div class="caseStudy_section">' +
+
+            '<h1 class="caseStudy_mainHeading">Styleguide and CSS Code Standards</h2>' +
+            '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Problem</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +                  	    
+                    '<p>After 10 years of Learning A-Z growing fast, adding new features, and acquiring new products, the UI and CSS codebase were fragile and unruly with files thousands of lines long full of repetition, inconsistencies, and tangled spaghetti code that was clearly reflected in the UI. If someone needed to add a button, there was no "right" button to choose from, and complete terror at the thought of modifying any existing button for fear of unintended consequences.</p>' +
+                    
+                    '<p>Team members attended a CSS dev conference and came back with ideas of how to use SMACSS methodologies to refactor our CSS, but no one wanted to make the first move. That\'s where I came in.</p>' +
+
+                '</div>' +
+            '</div>' +
+
+        '</div>' +
+        
+        '<div class="caseStudy_section">' +
+
+            '<h2>Process</h2>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Plan & Implement</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +   
+
+                    '<p>Having extra time on my hands between projects, and not wanting to see the cleanup initiative die, I created a simple styleguide including a grid system and generic UI components and helpers. I presented this to the team to make sure it was in line with the SMACSS techniques we had discussed, and after some revisions it started to be introduced into new projects.</p>' +
+
+                    '<p>After trying out the new styles with new projects, the painstaking process began to roll out the UI updates in the legacy code.</p>' +
+
+                    '<p>My process was to first take stock of what exists on the sites (buttons, for example)</p>' + 
+
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn1.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn2.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn3.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn4.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn6.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn7.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn8.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn9.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn10.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn11.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn12.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn13.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn14.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn15.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" />' +
+                    
+                    '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Where there were buttons with icons, I would present a consistent way to create buttons with icons rather than removing the icons, and so on. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>' +
+
+                    '<img class="frame" src="images/portfolio/raz/styleguide.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/styleguide2.png" />' +
+                    
+                    '<p>Once everything was cleaned up and consistent, it was much easier to make more dramatic change moving forward, such as removing icons or changing colors.</p>' +
+
+                '</div><!-- /content -->' +
+            '</div><!-- /row -->' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Evaluate & Pivot</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. As our standards evolved and the team grew, the need for definitions of our standards became clear. I updated the styleguide with clear definitions for the new modular approach.</p>' +
+
+                    '<img class="frame" src="images/portfolio/raz/styleguide-codeStandards3.png" />' +
+
+                    '<img class="frame" src="images/portfolio/raz/codeStandards.png" />' +
+
+                '</div><!-- /content -->' +
+            '</div><!-- /row -->' +
+        
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Rebranding</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>As changes continued to evolve and roll out, the parent site was rebranded, giving a perfect opportunity to establish clean, consistent visual standards across all product sites, starting with the site headers.</p>' +
+
+                    '<h3>Before:</h3>' +
+
+                    '<img class="frame" src="images/portfolio/raz/header-old1.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-old2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-old3.png" />' +
+
+                    '<h3>After:</h3>' +
+
+                    '<img class="frame" src="images/portfolio/raz/header-new1.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-new5.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/header-new2.png" />' +
+
+                '</div>' +
+            '</div>' +
+        '</div>' +
+        
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Outcome</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>With each new project and iteration of the styleguide, the process and interface continue to improve. The stylesheets are far more maneagle, and the look of the sites continues to become more clean, modern, and consistent.</p>'+
+
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row caseStudy_row-images">' + 
+                '<div class="caseStudy_img">' +
+                    '<h3>Before</h3>' +
+                    '<img class="frame" src="images/portfolio/raz/homepage-old.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<h3>After</h3>' +
+                    '<img class="frame" src="images/portfolio/raz/home-new.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p> This is an ongoing initiative, especially as Angular use continues to be ironed out, responsive design comes into play, and new CSS features like flex and grid threaten pose new challenges and options. But a solid foundation has been built - a single source of information for designers and engineers to reference when starting any conversation or project, and a lot of practice and shared knowledge in carrying out widespread changes.</p>' +
+                '</div>' +
+            '</div>' +
+        '</div>'
+});
+
 portfolio.push ({
     thumbPublic: 'raz/bookBuilder-thumb.png',
     caption: 'Case Study',
@@ -815,6 +731,90 @@ portfolio.push ({
             '</div>' +
         '</div>'
 });
+portfolio.push ({
+    //thumbProtected: 'raz/dashboard-thumb.png',
+    thumbPublic: 'raz/dashboard-thumb.png',
+    caption: 'Case Study',
+    contentPublic:
+        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
+        '<img src="images/portfolio/raz/dashboard-banner.png" />' +
+
+        '<div class="caseStudy_section">' +
+            '<h1 class="caseStudy_mainHeading">Teacher Dashboards</h1>' +
+            '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
+            '<hr />' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Problem</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>Classroom reports consisted of many tables with raw data. Teachers needed a dashboard with at-a-glance data visualizations to help them quickly gather meaning from their student data.</p>' +
+
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+        '<div class="caseStudy_section">' +
+        
+            '<h2>Process</h2>' +
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Understand, Design, Iterate</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>The requirements provided for the dashboards consisted of whiteboards and notes describing specific charts. Knowing that the charts would not work as-is, but not having direct access with the product managers providing the requirements, designing these charts was an awkard process of trying to interpret the intent behind the sketches, and providing alternative charts that achieved conveyed the same story in a more user-friendly way.</p>' + 
+                    
+                    '<p>What followed was a lot of research into data visualization, and sketching and notes to wrap my head around the problems:</p>' +
+
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes.png" />' +
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes2.png" />' +
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-sketch.png" /><br />' +
+
+                    '<p>Next, I demonstrated my ideas by mocking up some of the requested tables along with suggested alternatives:</p>' +
+
+                    '<br /><hr />' +
+
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<h4>Original Request</h4>' +
+                            '<img src="images/portfolio/raz/dashboard-chart-idea1.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<h4>Suggested Alternative</h4>' +
+                            '<img src="images/portfolio/raz/dashboard-chart-idea2.png" />' +
+                        '</div>' +
+                    '</div>' +
+
+                    '<hr />' +
+    
+                    '<p>Once some of the charts became more finalized, development began. Engineering helped uncover edge cases and typical scenarios by pluggin in real data. In some cases pluggins in real data led to realizations that certain data sets were not as useful as intended. Late changes to technical requirements also led to many last minute changes, but in the end we completed the dashboards.</p>' +
+
+                    '<img src="images/portfolio/raz/dashboard-rt.png" />' +
+                    '<br /><hr /><br />' +
+                    '<img src="images/portfolio/raz/dashboard-science.png" />' +
+                '</div>' +
+            '</div>' +
+            
+        '</div>' +
+        
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Outcome</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>This project resulted in new dashboards and data visualizations which was an improvement over the plain tables, and a great learning experience for design and engineering. However, a lack of cohesion among reports remains, with teachers unable to understand how different reports relate to each other, or how to read the data. The dashboards aren\'t a complete success yet, but a good foundation was laid for future improvements, and lessons were learned about the importance of advocating strongly for communication, requirements, and user data.</p>' +
+
+                '</div>' +
+            '</div>' +
+        '</div>'
+});
+
 portfolio.push ({
     //thumbPublic: 'cs/p3-blurred.jpg',
     thumbPublic: 'cs/p3.jpg',
