@@ -374,12 +374,6 @@ button svg {
 		margin: 2.5rem 0;
 	}
 
-	@media (max-width: 800px) {
-		.caseStudy_row {
-			display: block;
-		}
-	}
-
 .caseStudy_img {
 	margin: 0 15px;
 }
@@ -403,6 +397,16 @@ button svg {
 
 .caseStudy_words {
 	margin: 2.5rem 0;
+}
+
+@media (max-width: 800px) {
+	.caseStudy_row {
+		display: block;
+	}
+	.caseStudy_headingContainer {
+		padding-bottom: 0;
+		padding-right: 0;
+	}
 }
 
 /* ------------------ */
