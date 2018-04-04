@@ -1,6 +1,6 @@
 let portfolio = [];
 portfolio.push ({
-    //thumbProtected: 'raz/dashboard-thumb.png',
+    //thumbProtected: 'raz/reports-thumb.png',
     thumbPublic: 'raz/reports-thumb.png',
     caption: 'Case Study',
     contentPublic:
@@ -32,15 +32,15 @@ portfolio.push ({
 
                     '<p>The primary instruction I was given was to take the existing reports and split them up based on subject or product. For example, the activity report could no longer hold the amount of data that needed to be displayed and teachers could not understand what all of the data meant or how it was related.</p>' +
 
-                    '<img class="frame" src="images/portfolio/raz/report-before.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/report-before.png" /><br />' +
                     
                     '<p>To get started, I needed to take stock of the reports and understand the similarities and differences between the reports available to each product. Using the Activity report as an example, I listed out all of the activity types and the products they applied to, then re-listed them grouped first by product.</p>'+
-                    
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/reports-chart2.png" />' +
+
+                    '<br /><img class="frame" src="images/portfolio/raz/reports-chart1.png" /><br />' +
 
                     '<p>The instruction I was given was to add tabs for each subject  at the top of each report so that teachers could select which subject\'s data they wanted to view. For example, after selecting "Activity", the teacher would select Reading, Writing, Science, Testing, or Headsprout. Not sure that this was the right approach, I also listed out each report type available to each product.</p>' +
-
-                    '<img class="frame" src="images/portfolio/raz/reports-chart1.png" />' +
+                    
+                    '<br /><img class="frame" style="width: 500px;" src="images/portfolio/raz/reports-chart2.png" /><br />' +
 
                     '<p>Each product has its own unique reports, so by listing the report-type first, teachers would be misled into thinking each report is available for each product. For example, a Writing teacher would click through all of the reports only to find that the only data available for Writing is Activity, or a Science teacher would click through all of the reports, only to find that Activity and Skills are the only relevant ones.</p>' +
                     
@@ -429,9 +429,8 @@ portfolio.push ({
 
                     '<p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. As our standards evolved and the team grew, the need for definitions of our standards became clear. I updated the styleguide with clear definitions for the new modular approach.</p>' +
 
+                    '<br /><img class="frame" src="images/portfolio/raz/codeStandards.png" /><br />' +
                     '<img class="frame" src="images/portfolio/raz/styleguide-codeStandards3.png" />' +
-
-                    '<img class="frame" src="images/portfolio/raz/codeStandards.png" />' +
 
                 '</div><!-- /content -->' +
             '</div><!-- /row -->' +
