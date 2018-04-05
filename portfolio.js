@@ -2,7 +2,7 @@ let portfolio = [];
 portfolio.push ({
     //thumbProtected: 'raz/reports-thumb.png',
     thumbPublic: 'raz/reports-thumb.png',
-    caption: 'Case Study',
+    caption: 'Reports and Student Management',
     contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
         '<img src="images/portfolio/raz/reports-banner.png" />' +
@@ -127,7 +127,7 @@ portfolio.push ({
 portfolio.push ({
     //thumbProtected: 'raz/fileCabinetThumb.png',
     thumbPublic: 'raz/fileCabinetThumb.png',
-    caption: 'Case Study',
+    caption: 'UX for File Cabinet and Assignments',
     contentPublic:
         '<h2 class="galleryContent_description">UX Design, HTML/CSS, Angular integration</h2>' +
         '<img src="images/portfolio/raz/fileCabinet-banner.png" />' +
@@ -306,6 +306,12 @@ portfolio.push ({
                     '<img class="frame" src="images/portfolio/raz/assignments.png" /><br />' +
                 '</div>' +
             '</div>' +
+
+            '<hr />' +
+
+                '<h3>All Together</h3>' +
+                '<img class="frame" src="images/portfolio/raz/assignments-flow.png" />' +
+
         '</div>' +
         
         '<div class="caseStudy_section">' +
@@ -315,13 +321,12 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
 
-                    '<p>The project had evolved into a large complex one, and it seemed to change every day as new requirements and feedback came to light. I began to document each mockup and requirement in a shared document to keep everyone on the same page. This evolved into a 50+ page document used by design, engineering, and management to communicate and track changes and completion of features.</p>' +
+                    '<p>The project had evolved into a large complex one, and it seemed to change every day as new requirements and feedback came to light. I began to document each mockup and requirement in a shared document to keep everyone on the same page. This evolved into a 50+ page document used by design, engineering, and management to communicate and track changes and completion of features. This was accompanied by user flow diagrams and prototypes.</p>' +
 
                     '<img class="frame" src="images/portfolio/raz/doc-fileCabinet.png" />' +
 
                 '</div>' +
             '</div>' +
-
         '</div>' +
         
         '<div class="caseStudy_section">' +
@@ -349,7 +354,7 @@ portfolio.push ({
 portfolio.push ({
     //thumbProtected: 'raz/codeStandards-thumb.png',
     thumbPublic: 'raz/codeStandards-thumb.png',
-    caption: 'Case Study',
+    caption: 'Visual and CSS Styleguide',
     contentPublic: 
         '<h2 class="galleryContent_description">UI Design, HTML/CSS, Documentation</h2>' +
         '<img src="images/portfolio/raz/codeStandards-banner.png" />' +
@@ -500,7 +505,7 @@ portfolio.push ({
 
 portfolio.push ({
     thumbPublic: 'raz/bookBuilder-thumb.png',
-    caption: 'Case Study',
+    caption: 'Student Learning Activities',
     contentPublic:
         '<h2 class="galleryContent_description">Wireframing, UI Design, HTML/CSS/Javascript development</h2>' +
         '<img src="images/portfolio/raz/bookBuilder-banner.png" />' +
@@ -733,7 +738,7 @@ portfolio.push ({
 portfolio.push ({
     //thumbProtected: 'raz/dashboard-thumb.png',
     thumbPublic: 'raz/dashboard-thumb.png',
-    caption: 'Case Study',
+    caption: 'Data Visualization for Teacher Dashboards',
     contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
         '<img src="images/portfolio/raz/dashboard-banner.png" />' +
