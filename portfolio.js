@@ -241,8 +241,8 @@ portfolio.push ({
                 '<div class="caseStudy_content">' +
                     '<p>Before moving further, I needed to evaluate the interfaces and interactions required for this project. I sketched out some informal user flow charts to help think this through.</p>' +
                     
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-userFlow2.png" /><br />' +
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-userFlow3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-userflow2.png" /><br />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-userflow3.png" />' +
 
                     '<p>A few parts major parts of the project emerged:</p>' +
                     '<ul>' +
