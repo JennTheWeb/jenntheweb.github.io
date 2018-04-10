@@ -2,7 +2,7 @@ let portfolio = [];
 portfolio.push ({
     //thumbProtected: 'raz/reports-thumb.png',
     thumbPublic: 'raz/reports-thumb.png',
-    caption: 'Reports and Student Management',
+    caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
         '<img src="images/portfolio/raz/reports-banner.png" />' +
@@ -127,7 +127,7 @@ portfolio.push ({
 portfolio.push ({
     //thumbProtected: 'raz/fileCabinetThumb.png',
     thumbPublic: 'raz/fileCabinetThumb.png',
-    caption: 'UX for File Cabinet and Assignments',
+    caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">UX Design, HTML/CSS, Angular integration</h2>' +
         '<img src="images/portfolio/raz/fileCabinet-banner.png" />' +
@@ -354,7 +354,7 @@ portfolio.push ({
 portfolio.push ({
     //thumbProtected: 'raz/codeStandards-thumb.png',
     thumbPublic: 'raz/codeStandards-thumb.png',
-    caption: 'Visual and CSS Styleguide',
+    caption: 'Case Study',
     contentPublic: 
         '<h2 class="galleryContent_description">UI Design, HTML/CSS, Documentation</h2>' +
         '<img src="images/portfolio/raz/codeStandards-banner.png" />' +
@@ -505,7 +505,7 @@ portfolio.push ({
 
 portfolio.push ({
     thumbPublic: 'raz/bookBuilder-thumb.png',
-    caption: 'Student Learning Activities',
+    caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">Wireframing, UI Design, HTML/CSS/Javascript development</h2>' +
         '<img src="images/portfolio/raz/bookBuilder-banner.png" />' +
@@ -738,7 +738,7 @@ portfolio.push ({
 portfolio.push ({
     //thumbProtected: 'raz/dashboard-thumb.png',
     thumbPublic: 'raz/dashboard-thumb.png',
-    caption: 'Data Visualization for Teacher Dashboards',
+    caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
         '<img src="images/portfolio/raz/dashboard-banner.png" />' +
