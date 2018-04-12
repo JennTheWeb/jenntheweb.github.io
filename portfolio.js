@@ -16,7 +16,7 @@ portfolio.push ({
                     '<h2>Problem</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>To manage students and monitor activity and skills in writing, reading, vocabulary, and science, teachers had to navigate multiple similar websites containing a lot of overlapping information. My task was to design one student management portal to hold the student roster, settings, and reports so that teachers could manage their classroom from one web location. In addition, the tables used to display student data  needed to be enhanced with a dashboard containing at-a-glance data visualizations to emphasize the information most important and useful for teachers.</p>' +
+                    '<p>To manage students and monitor activity and skills in writing, reading, vocabulary, and science, teachers had to navigate multiple similar websites containing a lot of overlapping information. My task was to design one student management portal to hold the student roster, settings, and reports so that teachers could manage their classroom from one web location.</p>' +
                 '</div>' +
             '</div>' +
         '</div>' +
