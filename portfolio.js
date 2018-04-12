@@ -199,8 +199,8 @@ portfolio.push ({
                         '<p>The feedback received was that the emphasis needed to be on building a collection and assigning it right now, rather than saving it for later. After more brainstorming and gathering ideas from around the web, the next version included an "Add To..." button rather than a "Save" button, with a ribbon rather than a dropdown. Using the "Add" language implied more of an action happening right now, rather than "Save" which implies something for later, and the ribbon allows teachers to actively see their collection being built.</p>' +
                     '</div>' +
 
-                    '<img class="frame" src="images/portfolio/raz/ribbon-sketch.png" />' +
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/ribbon2.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/ribbon-sketch.png" />' +
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/ribbon2.png" /><br />' +
 
                     '<div class="caseStudy_words">' +
                         '<p>The final version of the ribbon was changed from gray to almost black, which went along with other site-wide style changes that were being introduced, and also allows the ribbon to stand out much more.</p>' + 
@@ -222,10 +222,10 @@ portfolio.push ({
                 '<div class="caseStudy_content">' +
                     '<p>Redesigning the File Cabinet itself was probably the most straightforward part of the project. There was some discussion about whether or not a file cabinet was the proper metaphor to use, but because this had been in place for years already, changing the metaphor wasn\'t really an option. Folders and files are a familiar interface for computer users though, so this metaphor had a lot of well-established precedent to follow as a guide. The File Cabinet is designed to feel familiar to file management on computers, or in Google Drive or One Drive, but simpler so that teachers can focus on organizing resources intsead of learning intricacies of the interface.</p>' +
 
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-notes.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/fileCabinet-notes.png" />' +
                     '<img class="frame" src="images/portfolio/raz/fileCabinet-sketch-2.png" />' +
                     '<img class="frame" style="width: 500px;" src="images/portfolio/raz/fileCabinet-sketch.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet.png" /><br />' +
                     
                 '</div><!-- content -->' +
             '</div><!-- row -->' +
@@ -241,8 +241,8 @@ portfolio.push ({
                 '<div class="caseStudy_content">' +
                     '<p>Before moving further, I needed to evaluate the interfaces and interactions required for this project. I sketched out some informal user flow charts to help think this through.</p>' +
                     
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-userflow2.png" /><br />' +
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-userflow3.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/fileCabinet-userflow2.png" /><br />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-userflow3.png" /><br />' +
 
                     '<p>A few parts major parts of the project emerged:</p>' +
                     '<ul>' +
@@ -264,9 +264,9 @@ portfolio.push ({
                 '<div class="caseStudy_content">' +
                     '<p>An interface for assigning individual resources already existed, but this needed to be expanded to include assigning entire folders:</p>' +
                         
-                    '<img class="frame" src="images/portfolio/raz/assignments-note2.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/assignments-note2.png" />' +
 
-                    '<img class="frame" src="images/portfolio/raz/assign.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/assign.png" /><br />' +
                 '</div>' +
 
             '</div><!-- row -->' +
@@ -278,9 +278,9 @@ portfolio.push ({
                     '<h3>Folder Sharing</h3>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>The File Cabinet redesign was mostly complete as far as the UI was concerned, but one part of the user interaction that needed to be thought through was folder sharing. There were tradeoffs to be made between being simple and intuitive vs full-featured and complex. I started with some more thinking on paper, before completing multiple iterations of mockups.</p><br />' +
+                    '<p>The File Cabinet redesign was mostly complete as far as the UI was concerned, but one part of the user interaction that needed to be thought through was folder sharing. There were tradeoffs to be made between being simple and intuitive vs full-featured and complex. I started with some more thinking on paper, before completing multiple iterations of mockups.</p>' +
 
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-diagram3.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/fileCabinet-diagram3.png" />' +
                     '<img class="frame" src="images/portfolio/raz/fileCabinet-diagram4.png" /><br />' +
 
                     '<img class="frame" style="width: 500px;" src="images/portfolio/raz/share1.png" />' +
@@ -301,7 +301,7 @@ portfolio.push ({
                 '<div class="caseStudy_content">' +
                     '<p>After expanding the functionality for assigning resources and folders, a new page needed to be created where these assignments could be viewed and managed. A lot more ideation ensued, brainstorming what this page would be used for, where it would live, and what it would do. I got to work putting mockups together, again starting simple, as this page was already a large but necessary bit of scope-creep for the project.</p>' +
 
-                    '<img class="frame" src="images/portfolio/raz/assignments-notes.png" /><br />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/assignments-notes.png" /><br />' +
                     '<img class="frame" src="images/portfolio/raz/assignments-sketch.png" /><br />' +
                     '<img class="frame" src="images/portfolio/raz/assignments.png" /><br />' +
                 '</div>' +
@@ -323,7 +323,7 @@ portfolio.push ({
 
                     '<p>The project had evolved into a large complex one, and it seemed to change every day as new requirements and feedback came to light. I began to document each mockup and requirement in a shared document to keep everyone on the same page. This evolved into a 50+ page document used by design, engineering, and management to communicate and track changes and completion of features. This was accompanied by user flow diagrams and prototypes.</p>' +
 
-                    '<img class="frame" src="images/portfolio/raz/doc-fileCabinet.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/doc-fileCabinet.png" />' +
 
                 '</div>' +
             '</div>' +
@@ -398,7 +398,7 @@ portfolio.push ({
 
                     '<p>My process was to first take stock of what exists on the sites (buttons, for example)</p>' + 
 
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn1.png" />' +
+                    '<br /><img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn1.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn2.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn3.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn4.png" />' +
@@ -412,12 +412,12 @@ portfolio.push ({
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn13.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn14.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn15.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" /><br />' +
                     
                     '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Where there were buttons with icons, I would present a consistent way to create buttons with icons rather than removing the icons, and so on. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>' +
 
-                    '<img class="frame" src="images/portfolio/raz/styleguide.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/styleguide2.png" />' +
+                    '<br /><img class="frame" src="images/portfolio/raz/styleguide.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/styleguide2.png" /><br />' +
                     
                     '<p>Once everything was cleaned up and consistent, it was much easier to make more dramatic change moving forward, such as removing icons or changing colors.</p>' +
 
@@ -782,7 +782,7 @@ portfolio.push ({
                     
                     '<p>What followed was a lot of research into data visualization, and sketching and notes to wrap my head around the problems:</p>' +
 
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes.png" />' +
+                    '<br /><img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes.png" />' +
                     '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-notes2.png" />' +
                     '<img class="frame" style="width: 500px;" src="images/portfolio/raz/dashboard-sketch.png" /><br />' +
 
@@ -801,13 +801,13 @@ portfolio.push ({
                         '</div>' +
                     '</div>' +
 
-                    '<hr />' +
+                    '<hr /><br />' +
     
                     '<p>Once some of the charts became more finalized, development began. Engineering helped uncover edge cases and typical scenarios by pluggin in real data. In some cases pluggins in real data led to realizations that certain data sets were not as useful as intended. Late changes to technical requirements also led to many last minute changes, but in the end we completed the dashboards.</p>' +
 
-                    '<img src="images/portfolio/raz/dashboard-rt.png" />' +
+                    '<br /><img src="images/portfolio/raz/dashboard-rt.png" />' +
                     '<br /><hr /><br />' +
-                    '<img src="images/portfolio/raz/dashboard-science.png" />' +
+                    '<img src="images/portfolio/raz/dashboard-science.png" /><br />' +
                 '</div>' +
             '</div>' +
             
