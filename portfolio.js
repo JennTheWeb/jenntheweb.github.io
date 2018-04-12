@@ -533,10 +533,8 @@ portfolio.push ({
 
 
         '<div class="caseStudy_section">' +
-            '<div class="caseStudy_content">' +
-                '<h2 style="margin-bottom: 0;">eBook Reader</h2>' +
-                '<p style="margin-top: 0;">Tasks included a redesign of the UI for reading books, and prototyping interactions for book resizing and toolbar behavior. </p>' +
-            '</div>' +
+            '<h2 style="margin-bottom: 0; margin-top: 0;">eBook Reader</h2>' +
+            '<p style="margin-top: 0;">Tasks included a redesign of the UI for reading books, and prototyping interactions for book resizing and toolbar behavior.</p><br />' +
 
             '<hr />' +
             
@@ -558,10 +556,8 @@ portfolio.push ({
 
 
         '<div class="caseStudy_section">' +
-            '<div class="caseStudy_content">' +
-                '<h2 style="margin-bottom: 0;">Quiz</h2>' +
-                '<p style="margin-top: 0;">The quiz needed a redesign, and new results screen to accompany the new interface for the ebook reader, and to incorporate the new robot mascot.</p>' +
-            '</div>' +
+            '<h2 style="margin-bottom: 0; margin-top: 0;">Quiz</h2>' +
+            '<p style="margin-top: 0;">The quiz needed a redesign, and new results screen to accompany the new interface for the ebook reader, and to incorporate the new robot mascot.</p><br />' +
 
             '<hr />' +
 
@@ -581,94 +577,101 @@ portfolio.push ({
 
 
         '<div class="caseStudy_section">' +
-            '<h2 style="margin-bottom: 0;">eBook Tools</h2>' +
-            '<p style="margin-top: 0;">New drawing tools were introduced, as well as a redesigned recorder converted from Flash to HTML5, a word journal, vocabulary tool, highlighting, and notes.</p>' +
+
+            '<h2 style="margin-bottom: 0; margin-top: 0;">eBook Tools</h2>' +
+            '<p style="margin-top: 0;">New drawing tools were introduced, as well as a redesigned recorder converted from Flash to HTML5, a word journal, vocabulary tool, highlighting, and notes.</p><br />' +
             
             '<hr />' +
             
-            '<h3>Sketch</h3>' +
-            
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Sketch</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +                  	    
                     '<img class="frame" src="images/portfolio/raz/ebooktools-sketch.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
+                
                     '<img class="frame" src="images/portfolio/raz/ebooktools-sketch2.png" />' +
-                '</div>' +
-            '</div>' +
+                '</div><!-- .caseStudy_content -->' +
+            '</div><!-- .caseStudy_row -->' +
 
             '<hr />' +
 
-            '<h3>Design & Develop</h3>' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Design & Develop</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
 
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
                     '<img class="frame" src="images/portfolio/raz/bookReader-toolbar.png" />' +
-                '</div>' +
-            '</div>' +
-            
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools3.jpg" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools2.jpg" />' +
-                '</div>' +
-            '</div>' +
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools.jpg" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools4.jpg" />' +
-                    
-                '</div>' +
-            '</div>' +
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookReader-tools3.jpg" />' +
+                            '<img class="frame" src="images/portfolio/raz/bookReader-tools.jpg" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookReader-tools2.jpg" />' +
+                            '<img class="frame" src="images/portfolio/raz/bookReader-tools4.jpg" />' +
+                        '</div>' +
+                    '</div>' +
 
+                '</div><!-- .caseStudy_content -->' +
+            '</div><!-- .caseStudy_row -->' +
+            
             '<hr />' +
 
-            '<h3>Refactor & Document</h3>' +
-            '<p>Code for the toolbar was repeated and modified in different ways for slightly different use cases. The full code for the toolbar needed to be cleaned up and documented in one place for future reference.</p>' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Refactor & Document</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +   
+                    '<p>Code for the toolbar was repeated and modified in different ways for slightly different use cases. The full code for the toolbar needed to be cleaned up and documented in one place for future reference.</p><br />' +
+               	    
+                    '<img class="frame" src="images/portfolio/raz/bookReader-toolbar-notes.png" />' +
 
-            '<div class="caseStudy_img">' +
-                '<img class="frame" src="images/portfolio/raz/bookReader-toolbar-notes.png" />' +
-            '</div>' +
-
-            '<img class="frame" src="images/portfolio/raz/bookTools-document.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookTools-document.png" />' +
+                '</div><!-- .caseStudy_content -->' +
+            '</div><!-- .caseStudy_row -->' +
+            
         '</div>' +
 
 
         '<div class="caseStudy_section">' +
-            '<h2>Book Builder</h2>' +
-            '<p>The book builder needed to be converted from Flash to HTML5, and redesigned to incorporate new visual elements and interactive features.</p>' +
+            '<h2 style="margin-top: 0; margin-bottom: 0;">Book Builder</h2>' +
+            '<p style="margin-top: 0;">The book builder needed to be converted from Flash to HTML5, and redesigned to incorporate new visual elements and interactive features.</p><br />' +
 
             '<hr />' +
 
-            '<h3>Plan, Sketch, Design, Iterate</h3>' +
-
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes.png" />' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Plan, Sketch, Design, Iterate</h3>' +
                 '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-sketch.png" />' +
-                '</div>' +
-            '</div>' +
+                '<div class="caseStudy_content">' +   
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-sketch.png" />' +
+                        '</div>' +
+                    '</div>' +
+            
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes3.jpg" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes2.jpg" />' +
 
-            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes3.jpg" />' +
-            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes2.jpg" />' +
-
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-text.png" />' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-img.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-tools.png" />' +
+                        '</div>' +
+                    '</div>' +
+                            
+                '</div><!-- .caseStudy_content -->' +
+            '</div><!-- .caseStudy_row -->' +
+        
             '<hr />' +
-
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-text.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-img.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-tools.png" />' +
-                '</div>' +
-            '</div>' +
             
             '<div style="align-items: start;" class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
@@ -686,8 +689,10 @@ portfolio.push ({
 
 
         '<div class="caseStudy_section">' +
-            '<h2>Book Room</h2>' +
+            '<h2 style="margin-top: 0; margin-bottom: 0;">Book Room</h2>' +
             '<p>The book room needed a complete redesign, but before then, it needed a refresh to bring it in line with all of the other redesigned activities.</p>' +
+
+            '<hr />' +
             
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
@@ -722,6 +727,9 @@ portfolio.push ({
 
             '<img class="frame" src="images/portfolio/raz/bookroom-sketch.png" />' +
 
+            '<br /><hr /><br />' +
+
+            '<h3>Still In Progress</h3>' +
         '</div>' +
 
         '<div class="caseStudy_section">' +
