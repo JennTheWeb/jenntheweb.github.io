@@ -125,8 +125,8 @@ portfolio.push ({
         '</div>'
 });
 portfolio.push ({
-    //thumbProtected: 'raz/fileCabinetThumb.png',
-    thumbPublic: 'raz/fileCabinetThumb.png',
+    //thumbProtected: 'raz/fileCabinetThumb.jpg',
+    thumbPublic: 'raz/fileCabinetThumb.jpg',
     caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">UX Design, HTML/CSS, Angular integration</h2>' +
@@ -206,7 +206,7 @@ portfolio.push ({
                         '<p>The final version of the ribbon was changed from gray to almost black, which went along with other site-wide style changes that were being introduced, and also allows the ribbon to stand out much more.</p>' + 
 
                         '<div class="caseStudy_row">' +
-                            '<img class="frame" src="images/portfolio/raz/ribbon3.png" />' +
+                            '<img class="frame" src="images/portfolio/raz/ribbon3.jpg" />' +
                         '</div>' +
                     '</div>' +
 
@@ -473,7 +473,7 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
 
-                    '<p>With each new project and iteration of the styleguide, the process and interface continue to improve. The stylesheets are far more maneagle, and the look of the sites continues to become more clean, modern, and consistent.</p>'+
+                    '<p>With each new project and iteration of the styleguide, the process and interface continue to improve. The stylesheets are far more manageable, and the look of the sites continues to become more clean, modern, and consistent.</p>'+
 
                 '</div>' +
             '</div>' +
@@ -483,11 +483,11 @@ portfolio.push ({
             '<div class="caseStudy_row caseStudy_row-images">' + 
                 '<div class="caseStudy_img">' +
                     '<h3>Before</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/homepage-old.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/homepage-old.jpg" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
                     '<h3>After</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/home-new.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/home-new.jpg" />' +
                 '</div>' +
             '</div>' +
 
@@ -504,11 +504,11 @@ portfolio.push ({
 });
 
 portfolio.push ({
-    thumbPublic: 'raz/bookBuilder-thumb.png',
+    thumbPublic: 'raz/bookBuilder-thumb.jpg',
     caption: 'Case Study',
     contentPublic:
         '<h2 class="galleryContent_description">Wireframing, UI Design, HTML/CSS/Javascript development</h2>' +
-        '<img src="images/portfolio/raz/bookBuilder-banner.png" />' +
+        '<img src="images/portfolio/raz/bookBuilder-banner.jpg" />' +
 
         '<div class="caseStudy_section">' +
             '<h1 class="caseStudy_mainHeading">eBook Tools</h2>' +
@@ -526,7 +526,7 @@ portfolio.push ({
                     '<p>The student interface had also been recently redesigned with beautiful new illustrations by the team, so I wanted to make sure each activity was redesigned as well.<p>' +
 
                     '<h3>Student Interface</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/kids-interface.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/kids-interface.jpg" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -550,8 +550,8 @@ portfolio.push ({
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">After</h3>' +
                     
-                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/raz/bookReader-after.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-after2.png" />' +
+                    '<img class="frame" style="flex-basis: 50%;" src="images/portfolio/raz/bookReader-after.jpg" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-after2.jpg" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -609,18 +609,18 @@ portfolio.push ({
             
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools3.jpg" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools2.jpg" />' +
                 '</div>' +
             '</div>' +
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools.jpg" />' +
                 '</div>' +
                 '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookReader-tools4.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookReader-tools4.jpg" />' +
                     
                 '</div>' +
             '</div>' +
@@ -655,8 +655,8 @@ portfolio.push ({
                 '</div>' +
             '</div>' +
 
-            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes3.png" />' +
-            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes2.png" />' +
+            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes3.jpg" />' +
+            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes2.jpg" />' +
 
             '<hr />' +
 
@@ -678,8 +678,8 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_img">' +
                     '<h3 style="margin-top: 0;">After</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder4.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder3.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder4.jpg" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder3.jpg" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -692,11 +692,11 @@ portfolio.push ({
             '<div class="caseStudy_row caseStudy_row-images">' +
                 '<div class="caseStudy_img">' +
                     '<h3>Before</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/bookroom-before.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookroom-before.jpg" />' +
                 '</div>' +    
                 '<div class="caseStudy_img">' +
                     '<h3>After</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/bookroom-current2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookroom-current2.jpg" />' +
                 '</div>' +
             '</div>' +
 
@@ -705,7 +705,7 @@ portfolio.push ({
             '<h2>Redesign</h2>' +
             '<h3>Research</h3>' +
             '<div class="caseStudy_row caseStudy_row-images">' +
-                '<img class="frame" src="images/portfolio/raz/bookroom-inspiration.png" />' +
+                '<img class="frame" src="images/portfolio/raz/bookroom-inspiration.jpg" />' +
             '</div>' +
 
             '<hr />' +
