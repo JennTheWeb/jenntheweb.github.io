@@ -1,130 +1,5 @@
 let portfolio = [];
 portfolio.push ({
-    //thumbProtected: 'raz/reports-thumb.png',
-    thumbPublic: 'raz/reports-thumb.png',
-    caption: 'Case Study',
-    contentPublic:
-        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
-        '<img src="images/portfolio/raz/reports-banner.png" />' +
-        
-        '<div class="caseStudy_section">' +
-            '<h1 class="caseStudy_mainHeading">Reporting and Student Management</h1>' +
-            '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
-            '<hr />' +
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h2>Problem</h2>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>To manage students and monitor activity and skills in writing, reading, vocabulary, and science, teachers had to navigate multiple similar websites containing a lot of overlapping information. My task was to design one student management portal to hold the student roster, settings, and reports so that teachers could manage their classroom from one web location.</p>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-
-        '<div class="caseStudy_section">' +
-            '<h2>Process</h2>' +
-            '<hr />' +
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Understand</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>The primary instruction I was given was to take the existing reports and split them up based on subject or product. For example, the activity report could no longer hold the amount of data that needed to be displayed and teachers could not understand what all of the data meant or how it was related.</p>' +
-
-                    '<br /><img class="frame" src="images/portfolio/raz/report-before.png" /><br />' +
-                    
-                    '<p>To get started, I needed to take stock of the reports and understand the similarities and differences between the reports available to each product. Using the Activity report as an example, I listed out all of the activity types and the products they applied to, then re-listed them grouped first by product.</p>'+
-
-                    '<br /><img class="frame" src="images/portfolio/raz/reports-chart1.png" /><br />' +
-
-                    '<p>The instruction I was given was to add tabs for each subject  at the top of each report so that teachers could select which subject\'s data they wanted to view. For example, after selecting "Activity", the teacher would select Reading, Writing, Science, Testing, or Headsprout. Not sure that this was the right approach, I also listed out each report type available to each product.</p>' +
-                    
-                    '<br /><img class="frame" style="width: 500px;" src="images/portfolio/raz/reports-chart2.png" /><br />' +
-
-                    '<p>Each product has its own unique reports, so by listing the report-type first, teachers would be misled into thinking each report is available for each product. For example, a Writing teacher would click through all of the reports only to find that the only data available for Writing is Activity, or a Science teacher would click through all of the reports, only to find that Activity and Skills are the only relevant ones.</p>' +
-                    
-                '</div>' +
-            '</div>' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Design</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>The final design had a product-first tabbed navigation, allowing teachers to easily recognize which reports applied to which subject:</p>' +
-
-                    '<img src="images/portfolio/raz/tabs.png" />' +
-
-                    '<p>With a navigation strategy in place, I marched through the reports one by one, creating mockups showing how each one would look with the tabs incorporated, while also cleaning up the design and bringing visual consistency and throughout, and designing new reports that had since become necessary.</p>' +
-
-                    '<br />' +
-                    '<img class="frame" src="images/portfolio/raz/report.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/report-hs.png" />' +
-                    '<br />' +
-
-                    '<p>In addition, other sections of the site besides reports needed prdouct tabs incorporated along with a design refresh.</p>' +
-
-                '</div><!-- content -->' +
-            '</div><!-- row -->' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_img">' +
-                    '<h4>Before:</h4>' +
-                    '<img class="frame" src="images/portfolio/raz/reports-roster-before.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<h4>After:</h4>' +
-                    '<img class="frame" src="images/portfolio/raz/reports-roster-after.png" />' +
-                '</div>' +
-            '</div>' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_img">' +
-                    '<h4>Before:</h4>' +
-                    '<img class="frame" src="images/portfolio/raz/reports-studentProfile-before.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<h4>After:</h4>' +
-                    '<img class="frame" src="images/portfolio/raz/reports-studentProfile-after.png" />' +
-                '</div>' +
-            '</div>' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Development</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>Development began after a couple of rounds of mockups, as details continued to be worked out in the design. I wrote and integrated HTML and CSS while working closely with other members of the engineering and design teams to refactor and clean up the codebase.</p>' +
-                '</div>' +
-            '</div>' +
-
-        '</div>' +
-        
-        '<div class="caseStudy_section">' +
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h2>Outcome</h2>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-
-                    '<p>In the end, teachers did have a single place to go to manage students, and a reorganized interface to review cleaned up reports. In that sense, the project was a success. Many issues were also uncovered and a lot of redesign and refactoring took place throughout the project that will help with future improvements for both engineering and design. But there was a lack of real data to support hypothesis about how teachers would use the site, and outstanding questions and concerns remain about the effectiveness of the reports, and whether or not the architecture and navigation patterns used are the correct ones.</p>' +
-
-                    '<p>Gathering data to develop a clear understanding of the problems that need to be solved and for which types of users could have led to a much more successful outcome of the student management portal. Learning to advocate for these needs and push for a more design-centric process while still respecting and cooperating with existing strategies and processes is a difficult task. There is still much to improve, but this project was a step in the right direction, and opened a door to more user-centric product development.</p>' +
-
-                '</div>' +
-            '</div>' +
-        '</div>'
-});
-portfolio.push ({
     //thumbProtected: 'raz/fileCabinetThumb.jpg',
     thumbPublic: 'raz/fileCabinetThumb.jpg',
     caption: 'Case Study',
@@ -502,7 +377,6 @@ portfolio.push ({
             '</div>' +
         '</div>'
 });
-
 portfolio.push ({
     thumbPublic: 'raz/bookBuilder-thumb.jpg',
     caption: 'Case Study',
@@ -743,6 +617,7 @@ portfolio.push ({
             '</div>' +
         '</div>'
 });
+
 portfolio.push ({
     //thumbProtected: 'raz/dashboard-thumb.png',
     thumbPublic: 'raz/dashboard-thumb.png',
@@ -826,7 +701,6 @@ portfolio.push ({
             '</div>' +
         '</div>'
 });
-
 portfolio.push ({
     //thumbPublic: 'cs/p3-blurred.jpg',
     thumbPublic: 'cs/p3.jpg',
@@ -837,6 +711,7 @@ portfolio.push ({
         '<h2 class="galleryContent_description">UX Design</h2>' +
         '<img src="images/portfolio/cs/p3.jpg" />'
 });
+
 portfolio.push ({
     //thumbPublic: 'cs/p1-blurred.jpg',
     thumbPublic: 'cs/p1.jpg',
@@ -857,7 +732,131 @@ portfolio.push ({
         '<h2 class="galleryContent_description">Design, Wordpress Theme Development, Project Management</h2>' +
         '<img src="images/portfolio/cs/p2.jpg" />'
 });
+/*portfolio.push ({
+    //thumbProtected: 'raz/reports-thumb.png',
+    thumbPublic: 'raz/reports-thumb.png',
+    caption: 'Case Study',
+    contentPublic:
+        '<h2 class="galleryContent_description">UX/UI Design, HTML/CSS, PHP and Angular integration</h2>' +
+        '<img src="images/portfolio/raz/reports-banner.png" />' +
+        
+        '<div class="caseStudy_section">' +
+            '<h1 class="caseStudy_mainHeading">Reporting and Student Management</h1>' +
+            '<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>' +
+            '<hr />' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Problem</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>To manage students and monitor activity and skills in writing, reading, vocabulary, and science, teachers had to navigate multiple similar websites containing a lot of overlapping information. My task was to design one student management portal to hold the student roster, settings, and reports so that teachers could manage their classroom from one web location.</p>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
 
+        '<div class="caseStudy_section">' +
+            '<h2>Process</h2>' +
+            '<hr />' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Understand</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>The primary instruction I was given was to take the existing reports and split them up based on subject or product. For example, the activity report could no longer hold the amount of data that needed to be displayed and teachers could not understand what all of the data meant or how it was related.</p>' +
+
+                    '<br /><img class="frame" src="images/portfolio/raz/report-before.png" /><br />' +
+                    
+                    '<p>To get started, I needed to take stock of the reports and understand the similarities and differences between the reports available to each product. Using the Activity report as an example, I listed out all of the activity types and the products they applied to, then re-listed them grouped first by product.</p>'+
+
+                    '<br /><img class="frame" src="images/portfolio/raz/reports-chart1.png" /><br />' +
+
+                    '<p>The instruction I was given was to add tabs for each subject  at the top of each report so that teachers could select which subject\'s data they wanted to view. For example, after selecting "Activity", the teacher would select Reading, Writing, Science, Testing, or Headsprout. Not sure that this was the right approach, I also listed out each report type available to each product.</p>' +
+                    
+                    '<br /><img class="frame" style="width: 500px;" src="images/portfolio/raz/reports-chart2.png" /><br />' +
+
+                    '<p>Each product has its own unique reports, so by listing the report-type first, teachers would be misled into thinking each report is available for each product. For example, a Writing teacher would click through all of the reports only to find that the only data available for Writing is Activity, or a Science teacher would click through all of the reports, only to find that Activity and Skills are the only relevant ones.</p>' +
+                    
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Design</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>The final design had a product-first tabbed navigation, allowing teachers to easily recognize which reports applied to which subject:</p>' +
+
+                    '<img src="images/portfolio/raz/tabs.png" />' +
+
+                    '<p>With a navigation strategy in place, I marched through the reports one by one, creating mockups showing how each one would look with the tabs incorporated, while also cleaning up the design and bringing visual consistency and throughout, and designing new reports that had since become necessary.</p>' +
+
+                    '<br />' +
+                    '<img class="frame" src="images/portfolio/raz/report.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/report-hs.png" />' +
+                    '<br />' +
+
+                    '<p>In addition, other sections of the site besides reports needed product tabs incorporated along with a design refresh.</p>' +
+
+                '</div><!-- content -->' +
+            '</div><!-- row -->' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_img">' +
+                    '<h4>Before:</h4>' +
+                    '<img class="frame" src="images/portfolio/raz/reports-roster-before.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<h4>After:</h4>' +
+                    '<img class="frame" src="images/portfolio/raz/reports-roster-after.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_img">' +
+                    '<h4>Before:</h4>' +
+                    '<img class="frame" src="images/portfolio/raz/reports-studentProfile-before.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<h4>After:</h4>' +
+                    '<img class="frame" src="images/portfolio/raz/reports-studentProfile-after.png" />' +
+                '</div>' +
+            '</div>' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Development</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>Development began after a couple of rounds of mockups, as details continued to be worked out in the design. I wrote and integrated HTML and CSS while working closely with other members of the engineering and design teams to refactor and clean up the codebase.</p>' +
+                '</div>' +
+            '</div>' +
+
+        '</div>' +
+        
+        '<div class="caseStudy_section">' +
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h2>Outcome</h2>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+
+                    '<p>In the end, teachers did have a single place to go to manage students, and a reorganized interface to review cleaned up reports. In that sense, the project was a success. Many issues were also uncovered and a lot of redesign and refactoring took place throughout the project that will help with future improvements for both engineering and design. But there was a lack of real data to support hypothesis about how teachers would use the site, and outstanding questions and concerns remain about the effectiveness of the reports, and whether or not the architecture and navigation patterns used are the correct ones.</p>' +
+
+                    '<p>Gathering data to develop a clear understanding of the problems that need to be solved and for which types of users could have led to a much more successful outcome of the student management portal. Learning to advocate for these needs and push for a more design-centric process while still respecting and cooperating with existing strategies and processes is a difficult task. There is still much to improve, but this project was a step in the right direction, and opened a door to more user-centric product development.</p>' +
+
+                '</div>' +
+            '</div>' +
+        '</div>'
+});*/
 portfolio.push ({
     //thumbPublic: 'cs/p4-blurred.jpg',
     thumbPublic: 'cs/p4.jpg',
