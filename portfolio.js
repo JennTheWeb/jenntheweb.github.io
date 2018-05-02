@@ -18,8 +18,8 @@ portfolio.push ({
                     '<h2>Problem</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>On the Learning A-Z family of sites, teachers can save books and other resources they like inside of a File Cabinet for future use. Teachers can also choose to assign any resource they like for students to complete online.</p>' +
-                    '<p>I was asked to redesign the File Cabinet and plan feature enhancements (such as sharing and assigning folders), and to design an additional interface allowing teachers to save multiple resources in a single assignment, assign the collection on the spot, and save the collection for future use. </p>' +
+                    '<p>On the Learning A-Z family of sites, teachers can save resources they like inside of a File Cabinet for future use, and create assignments for students to complete online.</p>' +
+                    '<p>I was asked to redesign the File Cabinet and plan feature enhancements for sharing and assigning. </p>' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -31,81 +31,20 @@ portfolio.push ({
                     '<h2>Understand</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>Initially, the File Cabinet redesign and Custom Assignment process were presented to me as separate projects. But I sensed a lot of overlap between the two projects, so I needed to gather and organize my thoughts simple hand-drawn diagram.</p>' +
+                    '<p>Initially, the File Cabinet and Assignments were  presented to me as separate projects. But I sensed a lot of overlap between the two projects, so I wrote out a simple hand-drawn diagram to think this through.</p>' +
 
                     '<br /><img class="frame" style="width: 500px;" src="images/portfolio/raz/fileCabinet-diagram.png" /><br />' +
                      
-                    '<p>I was essentially being asked to design two interfaces that did the same thing. Instead, I suggested one unified project to allow teachers to collect, organize, and the project moved forward in this way.</p>' +
+                    '<p>I suggested one unified project to allow teachers to collect, organize, and the project moved forward in this way.</p>' +
 
-                    '<p>The next observation I had was that the process of finding something, assigning it now, saving it for later, sounded like a shopping cart where you can buy now, save in a wish list, or save in a cart and purchase.</p>'+
+                    '<p>The described process of finding something, assigning it now, or saving it for later sounded a lot like a shopping cart and wishlist experience, so I did some more diagramming again to think this through.</p>'+
 
                     '<br /><img class="frame" style="width: 500px;" src="images/portfolio/raz/fileCabinet-diagram2.png" /><br />' +
                     
-                    '<p>Shopping cart experiences became a big source of reference and inspiration for the assigning process moving forward.</p>' +
+                    '<p>After demonstrating the strong correlation, shopping cart experiences became a big source of reference and inspiration for the assigning process.</p>' +
                 '</div>' +
             '</div>' +
         '</div>' +
-
-        '<div class="caseStudy_section">' +
-
-            '<h2>Design & Iterate</h2>' +
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Saving Resources</h3>' +
-                '</div>' +
-
-                '<div class="caseStudy_content">' +
-                    '<div class="caseStudy_words">' +
-                        '<p>Before designing I spent a lot of time brainstorming with team members and reviewing different ways of handling shopping carts, and also other ways of assigning educational materials elsewhere. The first approach I tried was a model of Assigning now, or saving for later, with a file cabinet preview opening in a dropdown.</p>' +
-                    '</div>' +
-
-                    '<div class="caseStudy_row caseStudy_row-images">' +
-                        '<div class="caseStudy_img">' +
-                            '<img class="frame" src="images/portfolio/raz/save2.png" />' +
-                        '</div>' +
-                        '<div class="caseStudy_img">' +
-                            '<img class="frame" src="images/portfolio/raz/fileCabinetDropdown.png" />' +
-                        '</div>' +
-                    '</div>' +
-                
-                    '<div class="caseStudy_words">' +
-                        '<p>The feedback received was that the emphasis needed to be on building a collection and assigning it right now, rather than saving it for later. After more brainstorming and gathering ideas from around the web, the next version included an "Add To..." button rather than a "Save" button, with a ribbon rather than a dropdown. Using the "Add" language implied more of an action happening right now, rather than "Save" which implies something for later, and the ribbon allows teachers to actively see their collection being built.</p>' +
-                    '</div>' +
-
-                    '<br /><img class="frame" src="images/portfolio/raz/ribbon-sketch.png" />' +
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/ribbon2.png" /><br />' +
-
-                    '<div class="caseStudy_words">' +
-                        '<p>The final version of the ribbon was changed from gray to almost black, which went along with other site-wide style changes that were being introduced, and also allows the ribbon to stand out much more.</p>' + 
-
-                        '<div class="caseStudy_row">' +
-                            '<img class="frame" src="images/portfolio/raz/ribbon3.jpg" />' +
-                        '</div>' +
-                    '</div>' +
-
-                '</div><!-- content -->' +
-            '</div><!-- row -->' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>File Cabinet</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>Redesigning the File Cabinet itself was probably the most straightforward part of the project. There was some discussion about whether or not a file cabinet was the proper metaphor to use, but because this had been in place for years already, changing the metaphor wasn\'t really an option. Folders and files are a familiar interface for computer users though, so this metaphor had a lot of well-established precedent to follow as a guide. The File Cabinet is designed to feel familiar to file management on computers, or in Google Drive or One Drive, but simpler so that teachers can focus on organizing resources intsead of learning intricacies of the interface.</p>' +
-
-                    '<br /><img class="frame" src="images/portfolio/raz/fileCabinet-notes.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-sketch-2.png" />' +
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/fileCabinet-sketch.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet.png" /><br />' +
-                    
-                '</div><!-- content -->' +
-            '</div><!-- row -->' +
-        '</div><!-- section -->' +
-
 
         '<div class="caseStudy_section">' +
             '<div class="caseStudy_row">' +
@@ -119,21 +58,75 @@ portfolio.push ({
                     '<br /><img class="frame" src="images/portfolio/raz/fileCabinet-userflow2.png" /><br />' +
                     '<img class="frame" src="images/portfolio/raz/fileCabinet-userflow3.png" /><br />' +
 
-                    '<p>A few parts major parts of the project emerged:</p>' +
+                    '<p>4 main parts of the project emerged:</p>' +
                     '<ul>' +
-                        '<li>Assigning Resources</li>' +
-                        '<li>Folder Management and Sharing</li>' +
-                        '<li>Assignments management</li>' +
+                        '<li>File Cabinet</li>' +
+                        '<li>File Cabinet Preview</li>' +
+                        '<li>Assignment Process</li>' +
+                        '<li>Assignment Management</li>' +
                     '</ul>' +
                 '</div><!-- content -->' +
+            '</div><!-- row -->' +
+        '</div><!-- section -->' +
 
+        '<div class="caseStudy_section">' +
+
+            '<h2>Design & Iterate</h2>' +
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>File Cabinet</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +
+                    '<p>The File Cabinet was designed with well-established patterns of digital file management in mind, while also prioritizing simplicity.</p>' +
+
+                    '<br /><img class="frame" src="images/portfolio/raz/fileCabinet-notes.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet-sketch-2.png" />' +
+                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/fileCabinet-sketch.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/fileCabinet.png" /><br />' +
+                    
+                '</div><!-- content -->' +
             '</div><!-- row -->' +
 
             '<hr />' +
 
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
-                    '<h3>Assigning Resources</h3>' +
+                    '<h3>File Cabinet Preview</h3>' +
+                '</div>' +
+
+                '<div class="caseStudy_content">' +
+                    '<div class="caseStudy_words">' +
+                        '<p>After plenty of brainstorming and research, this was the first approach for the shopping cart-inspired process for saving resources:</p>' +
+                    '</div>' +
+
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/save2.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/fileCabinetDropdown.png" />' +
+                        '</div>' +
+                    '</div>' +
+                
+                    '<div class="caseStudy_words">' +
+                        '<p>After tt was determined that more emphasis needed to be put on building a collection and assigning it right now, rather than saving it for later, the next version included an "Add To..." button rather than a "Save" button, and the dropdown evolved into a ribbon, allowing teachers to actively see their collection being built.</p>' +
+                    '</div>' +
+
+                    '<img class="frame" src="images/portfolio/raz/ribbon-sketch.png" />' +
+                    '<div class="caseStudy_row">' +
+                        '<img class="frame" src="images/portfolio/raz/ribbon3.jpg" />' +
+                    '</div>' +
+
+                '</div><!-- content -->' +
+            '</div><!-- row -->' +
+
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Assignment Process</h3>' +
                 '</div>' +
                 
                 '<div class="caseStudy_content">' +
@@ -150,31 +143,10 @@ portfolio.push ({
 
             '<div class="caseStudy_row">' +
                 '<div class="caseStudy_headingContainer">' +
-                    '<h3>Folder Sharing</h3>' +
+                    '<h3>Assignment Management</h3>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>The File Cabinet redesign was mostly complete as far as the UI was concerned, but one part of the user interaction that needed to be thought through was folder sharing. There were tradeoffs to be made between being simple and intuitive vs full-featured and complex. I started with some more thinking on paper, before completing multiple iterations of mockups.</p>' +
-
-                    '<br /><img class="frame" src="images/portfolio/raz/fileCabinet-diagram3.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-diagram4.png" /><br />' +
-
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/share1.png" />' +
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/share2.png" />' +
-                    '<img class="frame" style="width: 500px;" src="images/portfolio/raz/share5.png" /><br />' +
-
-                    '<img class="frame" src="images/portfolio/raz/fileCabinet-sharedFolder.png" />' +
-            
-                '</div><!-- content -->' +
-            '</div><!-- row -->' +         
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Assignments</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p>After expanding the functionality for assigning resources and folders, a new page needed to be created where these assignments could be viewed and managed. A lot more ideation ensued, brainstorming what this page would be used for, where it would live, and what it would do. I got to work putting mockups together, again starting simple, as this page was already a large but necessary bit of scope-creep for the project.</p>' +
+                    '<p>To track assignments, a new page needed to be designed. After more ideation and research, I got to work putting mockups together.</p>' +
 
                     '<br /><img class="frame" src="images/portfolio/raz/assignments-notes.png" /><br />' +
                     '<img class="frame" src="images/portfolio/raz/assignments-sketch.png" /><br />' +
@@ -182,7 +154,9 @@ portfolio.push ({
                 '</div>' +
             '</div>' +
 
-            '<hr />' +
+        '</div><!-- section -->' +
+
+        '<div class="caseStudy_section">' +
 
                 '<h3>All Together</h3>' +
                 '<img class="frame" src="images/portfolio/raz/assignments-flow.png" />' +
@@ -246,10 +220,8 @@ portfolio.push ({
                     '<h2>Problem</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +                  	    
-                    '<p>After 10 years of Learning A-Z growing fast, adding new features, and acquiring new products, the UI and CSS codebase were fragile and unruly with files thousands of lines long full of repetition, inconsistencies, and tangled spaghetti code that was clearly reflected in the UI. If someone needed to add a button, there was no "right" button to choose from, and complete terror at the thought of modifying any existing button for fear of unintended consequences.</p>' +
+                    '<p>After 10 years of Learning A-Z growing fast, adding new features, and acquiring new products, the UI and CSS codebase were fragile and unruly with files thousands of lines long and full of repetition, inconsistencies, and tangled spaghetti code that was clearly reflected in the UI. After some initial team meetings to kick off the project, I got to work putting together a new CSS codebase and styleguide.</p>' +
                     
-                    '<p>Team members attended a CSS dev conference and came back with ideas of how to use SMACSS methodologies to refactor our CSS, but no one wanted to make the first move. That\'s where I came in.</p>' +
-
                 '</div>' +
             '</div>' +
 
@@ -267,9 +239,7 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +   
 
-                    '<p>Having extra time on my hands between projects, and not wanting to see the cleanup initiative die, I created a simple styleguide including a grid system and generic UI components and helpers. I presented this to the team to make sure it was in line with the SMACSS techniques we had discussed, and after some revisions it started to be introduced into new projects.</p>' +
-
-                    '<p>After trying out the new styles with new projects, the painstaking process began to roll out the UI updates in the legacy code.</p>' +
+                    '<p>Initially, the styleguide was built based on SMACSS principles and included a grid system and generic UI components and helpers. After some revisions with the team, the new CSS began being introduced into new projects. Then came the painstaking process of updating the legacy code.</p>' +
 
                     '<p>My process was to first take stock of what exists on the sites (buttons, for example)</p>' + 
 
@@ -287,9 +257,9 @@ portfolio.push ({
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn13.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn14.png" />' +
                     '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn15.png" />' +
-                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" /><br />' +
+                    '<img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" /><br /><br />' +
                     
-                    '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Where there were buttons with icons, I would present a consistent way to create buttons with icons rather than removing the icons, and so on. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>' +
+                    '<p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>' +
 
                     '<br /><img class="frame" src="images/portfolio/raz/styleguide.png" />' +
                     '<img class="frame" src="images/portfolio/raz/styleguide2.png" /><br />' +
@@ -307,7 +277,7 @@ portfolio.push ({
                 '</div>' +
                 '<div class="caseStudy_content">' +
 
-                    '<p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. As our standards evolved and the team grew, the need for definitions of our standards became clear. I updated the styleguide with clear definitions for the new modular approach.</p>' +
+                    '<p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. I updated the styleguide with clear definitions for the new modular approach.</p>' +
 
                     '<br /><img class="frame" src="images/portfolio/raz/codeStandards.png" /><br />' +
                     '<img class="frame" src="images/portfolio/raz/styleguide-codeStandards3.png" />' +
@@ -366,15 +336,6 @@ portfolio.push ({
                 '</div>' +
             '</div>' +
 
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                '</div>' +
-                '<div class="caseStudy_content">' +
-                    '<p> This is an ongoing initiative, especially as Angular use continues to be ironed out, responsive design comes into play, and new CSS features like flex and grid threaten pose new challenges and options. But a solid foundation has been built - a single source of information for designers and engineers to reference when starting any conversation or project, and a lot of practice and shared knowledge in carrying out widespread changes.</p>' +
-                '</div>' +
-            '</div>' +
         '</div>'
 });
 portfolio.push ({
@@ -395,12 +356,60 @@ portfolio.push ({
                     '<h2>Problem</h2>' +
                 '</div>' +
                 '<div class="caseStudy_content">' +
-                    '<p>Kids A-Z provides an interface for K-5 students to read ebooks and complete learning activities. These activities relied on Flash which needed to be converted to HTML5. New interactive tools were also added to engage students and aid teacher instruction. I was tasked with designing and working with engineering to implement the design and interactive features. </p>' +
+                    '<p>Kids A-Z provides an interface for K-5 students to read ebooks and complete learning activities. This interface had recently been redesigned, a conversion from Flash to HTML5 was underway, and new interactive tools were to be added to engage students and aid teacher instruction. I was tasked with redesigning the HTML5 interfaces and designing the new features, and developing them with engineering.</p>' +
                     
-                    '<p>The student interface had also been recently redesigned with beautiful new illustrations by the team, so I wanted to make sure each activity was redesigned as well.<p>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
 
-                    '<h3>Student Interface</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/kids-interface.jpg" />' +
+
+        '<div class="caseStudy_section">' +
+            '<h2 style="margin-top: 0; margin-bottom: 0;">Book Builder</h2>' +
+            
+            '<hr />' +
+
+            '<div class="caseStudy_row">' +
+                '<div class="caseStudy_headingContainer">' +
+                    '<h3>Plan, Sketch, Design</h3>' +
+                '</div>' +
+                '<div class="caseStudy_content">' +   
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-sketch.png" />' +
+                        '</div>' +
+                    '</div>' +
+            
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes3.jpg" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes2.jpg" />' +
+
+                    '<div class="caseStudy_row caseStudy_row-images">' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-text.png" />' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-img.png" />' +
+                        '</div>' +
+                        '<div class="caseStudy_img">' +
+                            '<img class="frame" src="images/portfolio/raz/bookBuilder-tools.png" />' +
+                        '</div>' +
+                    '</div>' +
+                            
+                '</div><!-- .caseStudy_content -->' +
+            '</div><!-- .caseStudy_row -->' +
+        
+            '<hr />' +
+            
+            '<div style="align-items: start;" class="caseStudy_row caseStudy_row-images">' +
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">Before</h3>' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-before2.png" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder-before.png" />' +
+                '</div>' +
+                '<div class="caseStudy_img">' +
+                    '<h3 style="margin-top: 0;">After</h3>' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder4.jpg" />' +
+                    '<img class="frame" src="images/portfolio/raz/bookBuilder3.jpg" />' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -431,8 +440,7 @@ portfolio.push ({
 
         '<div class="caseStudy_section">' +
             '<h2 style="margin-bottom: 0; margin-top: 0;">Quiz</h2>' +
-            '<p style="margin-top: 0;">The quiz needed a redesign, and new results screen to accompany the new interface for the ebook reader, and to incorporate the new robot mascot.</p><br />' +
-
+            
             '<hr />' +
 
             '<div class="caseStudy_row caseStudy_row-images" style="align-items: start;">' +
@@ -453,7 +461,7 @@ portfolio.push ({
         '<div class="caseStudy_section">' +
 
             '<h2 style="margin-bottom: 0; margin-top: 0;">eBook Tools</h2>' +
-            '<p style="margin-top: 0;">New drawing tools were introduced, as well as a redesigned recorder converted from Flash to HTML5, a word journal, vocabulary tool, highlighting, and notes.</p><br />' +
+            '<p style="margin-top: 0;">New drawing tools were introduced, as well as a redesigned voice recorder, a word journal, vocabulary tool, highlighting, and notes.</p><br />' +
             
             '<hr />' +
             
@@ -507,104 +515,7 @@ portfolio.push ({
             '</div><!-- .caseStudy_row -->' +
             
         '</div>' +
-
-
-        '<div class="caseStudy_section">' +
-            '<h2 style="margin-top: 0; margin-bottom: 0;">Book Builder</h2>' +
-            '<p style="margin-top: 0;">The book builder needed to be converted from Flash to HTML5, and redesigned to incorporate new visual elements and interactive features.</p><br />' +
-
-            '<hr />' +
-
-            '<div class="caseStudy_row">' +
-                '<div class="caseStudy_headingContainer">' +
-                    '<h3>Plan, Sketch, Design, Iterate</h3>' +
-                '</div>' +
-                '<div class="caseStudy_content">' +   
-                    '<div class="caseStudy_row caseStudy_row-images">' +
-                        '<div class="caseStudy_img">' +
-                            '<img class="frame" src="images/portfolio/raz/bookBuilder-notes.png" />' +
-                        '</div>' +
-                        '<div class="caseStudy_img">' +
-                            '<img class="frame" src="images/portfolio/raz/bookBuilder-sketch.png" />' +
-                        '</div>' +
-                    '</div>' +
-            
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes3.jpg" />' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-notes2.jpg" />' +
-
-                    '<div class="caseStudy_row caseStudy_row-images">' +
-                        '<div class="caseStudy_img">' +
-                            '<img class="frame" src="images/portfolio/raz/bookBuilder-text.png" />' +
-                            '<img class="frame" src="images/portfolio/raz/bookBuilder-img.png" />' +
-                        '</div>' +
-                        '<div class="caseStudy_img">' +
-                            '<img class="frame" src="images/portfolio/raz/bookBuilder-tools.png" />' +
-                        '</div>' +
-                    '</div>' +
-                            
-                '</div><!-- .caseStudy_content -->' +
-            '</div><!-- .caseStudy_row -->' +
         
-            '<hr />' +
-            
-            '<div style="align-items: start;" class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<h3 style="margin-top: 0;">Before</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-before2.png" />' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder-before.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<h3 style="margin-top: 0;">After</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder4.jpg" />' +
-                    '<img class="frame" src="images/portfolio/raz/bookBuilder3.jpg" />' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-
-
-        '<div class="caseStudy_section">' +
-            '<h2 style="margin-top: 0; margin-bottom: 0;">Book Room</h2>' +
-            '<p>The book room needed a complete redesign, but before then, it needed a refresh to bring it in line with all of the other redesigned activities.</p>' +
-
-            '<hr />' +
-            
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<h3>Before</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/bookroom-before.jpg" />' +
-                '</div>' +    
-                '<div class="caseStudy_img">' +
-                    '<h3>After</h3>' +
-                    '<img class="frame" src="images/portfolio/raz/bookroom-current2.jpg" />' +
-                '</div>' +
-            '</div>' +
-
-            '<hr />' +
-
-            '<h2>Redesign</h2>' +
-            '<h3>Research</h3>' +
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<img class="frame" src="images/portfolio/raz/bookroom-inspiration.jpg" />' +
-            '</div>' +
-
-            '<hr />' +
-
-            '<h3>Ideation</h3>' +
-            '<div class="caseStudy_row caseStudy_row-images">' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookroom-sketch3.png" />' +
-                '</div>' +
-                '<div class="caseStudy_img">' +
-                    '<img class="frame" src="images/portfolio/raz/bookroom-sketch2.png" />' +
-                '</div>' +
-            '</div>' +
-
-            '<img class="frame" src="images/portfolio/raz/bookroom-sketch.png" />' +
-
-            '<br /><hr /><br />' +
-
-            '<h3>Still In Progress</h3>' +
-        '</div>' +
 
         '<div class="caseStudy_section">' +
             '<div class="caseStudy_row">' +
