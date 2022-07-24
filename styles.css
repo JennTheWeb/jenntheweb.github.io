@@ -34,15 +34,15 @@ img {
 	background: #000;
 	color: #000;
 	padding: 0;
-	top: auto;
-    bottom: 5px;
-    width: auto;	
+	top: calc(50% - 22px);
+	height: 45px;
+    width: 45px;	
 }
 .offcanvas-portfolio .carousel-control-prev {
-	left: 5px;
+	left:0;
 }
 .offcanvas-portfolio .carousel-control-next {
-	right: 25px;
+	right: 17px;
 }
 
 /* ---------- */
@@ -140,15 +140,15 @@ img {
 
 .tl-heading {
 	clear: both;
-	background: #ccc;
+	background: #999;
 	border-radius: 2em;
 	color: #fff;
 	display: block;
 	font-size: 1em;
 	font-weight: bold;
-	line-height: 4em;
+	line-height: 3em;
 	margin: 0 auto;
-	width: 4em;
+	width: 3em;
 }
 .tl-subheading {
 	clear: both;
