@@ -1,60 +1,43 @@
-<!DOCTYPE html>
-<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet" /> 
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" /> 
-	<link href="styles.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-	<meta name="viewport" content="width=device-width, initial-scale-1" />
+    <!-- custom styles -->
+    <link href="styles.css" rel="stylesheet">
 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet" /> 
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" />
 
-		ga('create', 'UA-102229875-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Hello, world!</title>
 </head>
 <body>
-	<svg aria-hidden="true" style="display:none">
-		<symbol id="icon-arrow-R" viewBox="0 0 34.12 48">
-			<title>arrow-R</title>
-			<path d="M8,49L26.46,25,8,1H23.66L42.12,25,23.66,49H8Z" transform="translate(-8 -1)"></path>
-		</symbol>
-		<symbol id="icon-arrow-L" viewBox="0 0 34.12 48">
-			<title>arrow-L</title>
-			<path d="M26.46,49L8,25,26.46,1H42.12L23.66,25,42.12,49H26.46Z" transform="translate(-8 -1)"></path>
-		</symbol>
-		<symbol id="icon-close" viewBox="0 0 47.69 47.69">
-			<title>close</title>
-			<polygon class="cls-1" points="47.69 1.91 45.78 0 23.84 21.94 1.91 0 0 1.91 21.94 23.84 0 45.78 1.91 47.69 23.84 25.75 45.78 47.69 47.69 45.78 25.75 23.84 47.69 1.91"></polygon>
-		</symbol>
-	</svg>
 
-	<nav class="mainNav">
-		<a class="navItem" href="index.html">Home</a>
-		<a class="navItem" href="portfolio.html">Portfolio</a>
-	</nav>
-	
-	<h1>Design and Development</h1>
-
-	<div class="gallery gallery-slider js-gallery js-slider" id="slider"></div>	
-	
-	<h2>Career Timeline</h2>
 	<section class="timeline">
-		<h3 class="tl-heading">'07</h3>
+
+        <h1 class="mb-3">Career Timeline</h1>
+
+		<h2 class="tl-heading">'07</h2>
+        <h4 class="tl-subheading">
+            Beginnings 
+        </h4>
 		<ul>
-			<li class="tl-left">
+			<li class="tl-left"> 
 				<div class="tl-content content-lg">
-					Obtained an associate's degree including a semester studying <strong>Graphic Design</strong>.
+					Obtained an associate's degree, including a semester of <strong>Graphic Design</strong> and <b>Photoshop</b>.
 				</div> 
 			</li>
 			<li class="tl-right">
 				<div class="tl-content">
-					Purchased a used book for a few bucks to learn <strong>HTML</strong>, and built my first website using table-based HTML, then rebuilt it using <strong>CSS</strong> once I realized why that book was just a few bucks (it was terribly outdated).
+					Purchased a used book to learn HTML and <b>built my first website</b> using table-based <b>HTML</b>. Then I rebuilt it using <b>CSS</b> once I realized why that book was just a few bucks (it was terribly outdated).
 				</div>
 			</li>
 			<li class="tl-left">
@@ -64,59 +47,79 @@
 			</li>
 			<li class="tl-right">
 				<div class="tl-content tl-content-lg">
-					<strong>Photoshop</strong> time, getting familiarized with the pen tool to cut out lots and lots of hats from their background in one of my first contract positions!
+					Got my <b>first freelance job</b>! I used the Photoshop pen tool to cut out lots and lots of hats to put them on a clean and consistent white background.
+				</div>
+			</li>
+            <li class="tl-left">
+				<div class="tl-content">
+					Attended a small <b>Drupal</b> conference which introduced me to the world of CMSs and web 2.0. It was also here that I learned about <b>Firebug</b>. Whoa, tools!
 				</div>
 			</li>
 		</ul>
 
-		<h3 class="tl-heading">'08</h3>
+        <h2 class="tl-heading">'08</h2>
+        <h4 class="tl-subheading">
+            <button 
+                class="btn btn-link btn-lg" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvas-freelance" 
+                aria-controls="freelance-examples"
+            >
+                Freelance Web Design
+                <i class="bi bi-arrow-bar-right"></i>
+            </button>
+        </h4>
 		<ul>
+			<li class="tl-left">
+				<div class="tl-content tl-content-lg">
+					Full swing into my Freelance career - <strong>web design</strong>, maintenance, data entry, and converting static mockups into <strong>pixel-perfect HTML/CSS</strong> with a focus on  <strong>cross-browser compatibility</strong>. I was a proud master of IE6 quarkiness!.
+				</div>
+			</li>
+			<li class="tl-right">
+				<div class="tl-content tl-content-lg">
+					As my portfolio grew, I landed <b>larger projects</b> where I was involved in the <b>full web development process</b> - creating a design, coding it up, helping integrate the HTML/CSS with backend developers, and completing final testing.
+				</div>
+			</li>
+			<li class="tl-left">
+				<div class="tl-content tl-content-lg">
+					I started specializing in custom <strong>Wordpress theming</strong>. The skills I gained allowed me to tackle tough <b>CMS theme and plugin customizations</b> for clients using a variety of mainstream and obscure systems.
+				</div>
+			</li>
+			<li class="tl-right">
+				<div class="tl-content tl-content-lg">
+					I painstakingly hand-coded many <b>custom email newsletters</b> for clients. The outdated table-based HTML I mistakenly learned turned out to come in handy for compatibility with Outlook.
+				</div>
+			</li>
+        </ul>
+
+        <h3 class="tl-heading">'10</h3>
+        <h4 class="tl-subheading">
+            <button 
+                class="btn btn-link btn-lg" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvas-UI" 
+                aria-controls="UI-examples"
+            >
+                UI Design and Development
+                <i class="bi bi-arrow-bar-right"></i>
+            </button>
+        </h4>
+        <ul>
+			<li class="tl-left">
+				<div class="tl-content tl-content-lg">
+					My projects continued getting bigger, and I got to work on some fun and challenging ongoing projects for <b>startups</b>. As I got move involved in UI design, I discovered my ability to pinpoint areas of confusion on a site and improve <b>usability</b>.
+				</div>
+			</li>
+			<li class="tl-right">
+				<div class="tl-content tl-content-lg">
+					My technical experience also grew as I wrote, modified, refactored, and integrated HTML/CSS on larger, more complex projects, and began working more closely with engineers. I got an introduction to <strong>version control</strong>, discovered a strength in writing <strong>clean code</strong> fast and efficiently, and <strong>integrating HTML/CSS</strong> with various templates in PHP, ASP.NET, Wordpess, Drupal, and more.
+				</div>
+			</li>
 			<li class="tl-left">
 				<div class="tl-content">
-					Intro to <strong>CMSs</strong> and <strong>Firebug</strong>. Whoa, tools!
-				</div>
-			</li>
-			<li class="tl-right">
-				<div class="tl-content tl-content-lg">
-					Full swing into my Freelance career - <strong>web design</strong>, maintenance, data entry, and converting static mockups into <strong>pixel-perfect HTML/CSS</strong>, slowly mastering CSS and <strong>cross-browser compatibility</strong>.
-				</div>
-			</li>
-			<li class="tl-left">
-				<div class="tl-content tl-content-lg">
-					Gained a feel for what works and what doesn't while designing websites and interfaces for <strong>blogs, small businesses,</strong> and <strong>startups</strong>. 
-				</div>
-			</li>
-		</ul>
-
-		<h3 class="tl-heading">'09</h3>
-		<ul>
-			<li class="tl-left">
-				<div class="tl-content tl-content-lg">
-					Dug into custom <strong>Wordpress theming</strong>. Developed a simple starter theme which I built on for my own personal projects and for new clients - skills which expanded into tackling tough theme and plugin customizations for clients, and for more obscure CMSs.
-				</div>
-			</li>
-			<li class="tl-right">
-				<div class="tl-content tl-content-lg">
-					Remember that table-based HTML I mistakenly learned? Came in handy when creating <strong>custom email newsletter templates</strong> that worked in various email clients (Outlook, anyone?). 
-				</div>
-			</li>
-			<li class="tl-left">
-				<div class="tl-content tl-content-lg">
-					Got deeper into <strong>UI/UX design</strong> doing work for startups. Discovered an ability to pinpoint areas of confusion on a site and improve usability using information architecture, clear language and communication, layout and design.
-				</div>
-			</li>
-			<li class="tl-right">
-				<div class="tl-content tl-content-lg">
-					Wrote, modified, refactored, and integrated HTML/CSS on larger, more complex projects. Began working more closely with engineers.  Introduction to <strong>version control</strong>. Discovered a strength in writing <strong>clean code</strong> fast and efficiently, and <strong>integrating HTML/CSS</strong> with various templates in PHP, ASP.NET, Wordpess, Drupal, and more.
-				</div>
-			</li>
-		</ul>
-
-		<h3 class="tl-heading">'11</h3>
-		<ul>
-			<li class="tl-left">
-				<div class="tl-content">
-					Began working with an <strong>agency</strong> serving mid-size businesses. Developed <strong>organizational skills</strong> and an ability to <strong>balance</strong> design, development, timeline, budget, and client needs and preferences.
+					I began working regularly with an <strong>agency</strong> assisting mid-size businesses with <b>ecommerce</b>. While managing multiple client projects for the agency and managing multiple of my own clients, I developed strong  <strong>organizational skills</strong> and an ability to <strong>balance design, development, timeline, budget,</strong> and client <b>wants</b> and <b>needs</b>.
 				</div>
 			</li>
 			<li class="tl-right">
@@ -124,14 +127,21 @@
 					New challenge: <strong>Responsive Design</strong>! I became the go-to-gal for converting a regular website to a responsive one. 
 				</div>
 			</li>
-			<li class="tl-right">
-				<div class="tl-content">
-					After finding patterns among design and development processes and solve similar problems over and over again, I started putting more thought into <strong>documenting</strong>, and <strong>abstracting</strong> my code for easy re-use and customization for future projects.
-				</div>
-			</li>
 		</ul>
 
 		<h3 class="tl-heading">'14</h3>
+        <h4 class="tl-subheading">
+            <button 
+                class="btn btn-link btn-lg" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvas-LAZ" 
+                aria-controls="LAZ-examples"
+            >
+                UI Architecture
+                <i class="bi bi-arrow-bar-right"></i>
+            </button>
+        </h4>
 		<ul>
 			<li class="tl-left">
 				<div class="tl-content">
@@ -140,49 +150,763 @@
 			</li>
 			<li class="tl-right">
 				<div class="tl-content">
-					Working on a larger team, I gained a new understanding of the importance of <strong>documentation</strong> and <strong>maintainability</strong>, and more in-depth experience with <strong>version control</strong>. 
+					I've always been a <b>systems thinker</b>, but working on a large team gave me a new understanding of the importance of <strong>documentation</strong> and <strong>maintainability</strong>, and more in-depth experience with <strong>version control</strong>. 
 				</div>
 			</li>
 			<li class="tl-left">
 				<div class="tl-content">
-					Developed an obsession for documentation, structure, and consistency, resulting in the creation of a <strong>styleguide</strong> to kick off an ongoing team HTML/CSS codebase cleanup. Thought more about color pallettes, visual patterns, naming conventions, and <strong>architecture</strong> than ever before. 
+					My obsession with documentation and consistency resulted in the creation of a <strong>styleguide</strong> to kick off an ongoing team visual design and HTML/CSS code cleanup. I thought more about color palettes, visual patterns, naming conventions, and file organization than ever before. 
 				</div>
 			</li>
 			<li class="tl-right">
 				<div class="tl-content">
-					Gained more expertise in <strong>UX design</strong>, creating <strong>wireframes</strong> for new features and overhauling existing ones. Sketching with OneNote on a Surface Pro and <strong>Adobe XD</strong> became my wireframing/prototyping tools of choice. Also attended <strong>NNG User Experience training</strong> in New York.
+					I continued gaining experience on more and more complex projects. I became known for my <b>logical arguments supporting my design decisions</b>, and my digitally sketched <b>wireframes</b>.  
+				</div>
+			</li>
+			<li class="tl-left">
+				<div class="tl-content">
+					With the support of my company, I went back to school! During my year at the <strong>University of Michigan</strong>, I got very comfortable with <strong>functions, loops, arrays, abstraction using Classes, linked lists, recursion, binary trees,</strong> and <strong>memory management</strong>.
+				</div>
+			</li>
+        </ul>
+
+        <h3 class="tl-heading">'17</h3>
+        <h4 class="tl-subheading">
+            <button 
+                class="btn btn-link btn-lg" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvas-UX" 
+                aria-controls="UX-examples"
+            >
+                UX Design
+                <i class="bi bi-arrow-bar-right"></i>
+            </button>
+        </h4>
+        <ul>
+            <li class="tl-left">
+                <div class="tl-content">
+                    I began to fully understand and appreciate the difference between UI and UX design after reaching the limits of what UI Design can accomplish without well defined personas, problems, or focused user testing. I also attended <strong>NNG User Experience training</strong> in New York which furthered my understanding of UX.
+                </div>
+            </li>
+			<li class="tl-right">
+				<div class="tl-content">
+                    I continued finding, establishing, and documenting <b>patterns and design guidelines</b> in our styleguide. Many <b>audits</b> were completed, detailing issues such as inconsistent components, page layouts, and labeling, and navigation behavior not following best practices. Plans were crafted to <b>pay back our design and technical debt</b> in a way that was incremental, and therefore, doable. 
+				</div>
+			</li>
+            <li class="tl-left">
+				<div class="tl-content">
+                    I became more deeply involved with other departments, <b>ensuring alignment</b> among stakeholders about <b>what problems we are solving for which users</b>. Solutions were carefully developed with engineers, and adjusted as needed, ensuring changes didn't jeopardize the user goals. Shifting requirements, priorities, and a lack of user testing became major painpoints. 
 				</div>
 			</li>
 		</ul>
 
-		<h3 class="tl-heading">'16</h3>
-		<ul>
-			<li class="tl-left">
-				<div class="tl-content">
-					With the support of my company, went back to school! During my year at the <strong>University of Michigan</strong>, I learned better documentation using RMEs, got very comfortable with <strong>functions, loops, arrays, abstraction using Classes, linked lists, recursion, binary trees, and memory management</strong>.
-				</div>
-			</li>
-			<li class="tl-right">
-				<div class="tl-content">
-					Continuing the journey! Deep dive into modular CSS using <strong>BEM</strong>, integration with <strong>Angular</strong>, refactoring legacy code, and establishing visual design standards. Examining complex challenges in <strong>Information Architecture</strong>. More wireframes and prototyping, user testing, and always obsessing about whitespace, alignment, color usage, and consistency, and balancing design, development, and business needs.
-				</div>
-			</li>
-		</ul>
+        <h3 class="tl-heading">'20</h3>
+        <h4 class="tl-subheading">
+            <button 
+                class="btn btn-link btn-lg" 
+                type="button" 
+                data-bs-toggle="offcanvas" 
+                data-bs-target="#offcanvas-agile" 
+                aria-controls="UI-examples"
+            >
+                Product Design
+                <i class="bi bi-arrow-bar-right"></i>
+            </button>
+        </h4>
+        <ul>
+            <li class="tl-left">
+                <div class="tl-content">
+                    My company transitioned to a <b>problem-focused</b> approach to product development called Pragmatic Marketing. Soon after, we transitioned to a <b>Scrum Agile</b> framework for product development. Different departments worked together like never before, and I enjoyed close working relationships with our project managers, product managers, content authors, instructional designers, and as always, engineers.
+                </div>
+            </li>
+            <li class="tl-right">
+                <div class="tl-content">
+                    I began sharing <b>presentations</b> much more frequently, which often included <b>sitemaps</b> and <b>flows</b> to help find and maintain alignment across teams as we tried to understand new products and how they would fit in with existing ones. I was also introduced to the concept of <b>story mapping</b> which gave us a visual tool for defining the problems to be solved without jumping ahead to solutions and design.
+                </div>
+            </li>
+        </ul>
+        <h3 class="tl-heading">'21</h3>
+        <h4 class="tl-subheading">Enterprise Design</h4>
+        <ul>
+            <li class="tl-left">
+                <div class="tl-content">
+                    I began work for a startup creating <b>enterprise applications</b>. I was met with new challenges trying to understand the incredibly complex needs of our highly specialized users. A close working relationship with the product owner was key. 
+                </div>
+            </li>
+            <li class="tl-right">
+                <div class="tl-content">    
+                    I learned more than ever to listen, educate, and <b>advocate for the design process</b>. My strengths for <b>breaking down complex tasks</b> and putting together <b>practical plans</b> to establish consistency and <b>pay back design debt</b> were put to immediate use.
+                </div>
+            </li>
+        </ul>
 
 	</section>
 
-	<script src="lightboxGallery.js"></script>
-	<script src="slider.js"></script>	
-	<script src="loginForm.js"></script>
-	<script src="portfolio.js"></script>
-	<script src="generateContent.js"></script>
-	<script>
-		$('.gallery').css('opacity', '.1');
-		generateContent(portfolio);
-		$(document).ready(function() {
-			createGallerySlider();
-			$('.gallery').css('opacity', '1');
-		})
-	</script>
+    <div id="offcanvas-freelance" class="offcanvas offcanvas-start offcanvas-portfolio" tabindex="-1" aria-labelledby="Freelance Portfolio">
+        <div class="offcanvas-body">
+            <div 
+                id="carousel-freelance" 
+                class="carousel slide carousel-portfolio" 
+                data-bs-ride="carousel"
+                data-bs-interval="false"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/portfolio/freelance/p2.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p6.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p9.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p12.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p13.jpg" />
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-freelance" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-freelance" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
+    <div id="offcanvas-UI" class="offcanvas offcanvas-start offcanvas-portfolio" tabindex="-1" aria-labelledby="UI Portfolio">
+        <div class="offcanvas-body">
+            <div 
+                id="carousel-UI" 
+                class="carousel slide carousel-portfolio" 
+                data-bs-ride="carousel"
+                data-bs-interval="false"
+            >
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="images/portfolio/freelance/p1.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p3.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p4.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p10.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p7.jpg" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/portfolio/freelance/p14.jpg" />
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-UI" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-UI" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="offcanvas-LAZ" class="offcanvas offcanvas-start offcanvas-portfolio" tabindex="-1" aria-labelledby="LAZ Case Studies">
+        <div class="offcanvas-body">
+            <div 
+                id="carousel-LAZ" 
+                class="carousel slide carousel-portfolio" 
+                data-bs-ride="carousel"
+                data-bs-interval="false"
+            >
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+<h1 class="caseStudy_mainHeading">Styleguide and CSS Code Standards</h2>
+<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>
+
+<img src="images/portfolio/raz/codeStandards-banner.png" />
+
+<div class="caseStudy_row">
+    <div class="caseStudy_headingContainer">
+        <h3>Problem</h3>
+    </div>
+    <div class="caseStudy_content">                	    
+        <p>After 10 years of Learning A-Z growing fast, adding new features, and acquiring new products, the UI and CSS codebase were fragile and unruly with files thousands of lines long and full of repetition, inconsistencies, and tangled spaghetti code that was clearly reflected in the UI. After some initial team meetings to kick off the project, I got to work putting together a new CSS codebase and styleguide.</p>
+    </div>
+</div>
+
+<h3>Process</h3>
+
+<hr />
+
+<div class="caseStudy_row">
+    <div class="caseStudy_headingContainer">
+        <h4>Plan & Implement</h4>
+    </div>
+    <div class="caseStudy_content">   
+
+        <p>Initially, the styleguide was built based on SMACSS principles and included a grid system and generic UI components and helpers. After some revisions with the team, the new CSS began being introduced into new projects. Then came the painstaking process of updating the legacy code.</p>
+
+        <p>My process was to first take stock of what exists on the sites (buttons, for example)</p>
+
+        <br /><img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn1.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn2.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn3.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn4.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn6.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn7.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn8.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn9.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn10.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn11.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn12.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn13.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn14.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn15.png" />
+        <img style="display: inline-block; vertical-align: middle;" src="images/portfolio/raz/btn16.png" /><br /><br />
+        
+        <p>Next I needed to find a unified approach that would work for all scenarios without requiring controversial change that would lead to a longer approval process. For example, if there were 3 green buttons, I would pick a good green and use it consistently everywhere, but wouldn\'t change green to orange without good reason. Once an approach was approved, I wrote HTML/CSS following new guidelines in the styleguide, and implemented it page by page. </p>
+
+        <br /><img class="frame" src="images/portfolio/raz/styleguide.png" />
+        <img class="frame" src="images/portfolio/raz/styleguide2.png" /><br />
+        
+        <p>Once everything was cleaned up and consistent, it was much easier to make more dramatic change moving forward, such as removing icons or changing colors.</p>
+
+    </div><!-- /content -->
+</div><!-- /row -->
+
+<hr />
+
+<div class="caseStudy_row">
+    <div class="caseStudy_headingContainer">
+        <h4>Evaluate & Pivot</h4>
+    </div>
+    <div class="caseStudy_content">
+
+        <p>As changes were rolled out, one problem that surfaced was the over-use of helpers. The same complicated patterns of helper classes were being repeated over and over in a huge number of files. The need for a more module-based approach became clear, leading us to adopt BEM, slightly modified to suit work we had already done with the looser SMACSS method. I updated the styleguide with clear definitions for the new modular approach.</p>
+
+        <br /><img class="frame" src="images/portfolio/raz/codeStandards.png" /><br />
+        <img class="frame" src="images/portfolio/raz/styleguide-codeStandards3.png" />
+
+    </div><!-- /content -->
+</div><!-- /row -->
+
+<hr />
+
+<div class="caseStudy_row">
+    <div class="caseStudy_headingContainer">
+        <h3>Rebranding</h3>
+    </div>
+    <div class="caseStudy_content">
+
+        <p>As changes continued to evolve and roll out, the parent site was rebranded, giving a perfect opportunity to establish clean, consistent visual standards across all product sites, starting with the site headers.</p>
+
+        <h3>Before:</h3>
+
+        <img class="frame" src="images/portfolio/raz/header-old1.png" />
+        <img class="frame" src="images/portfolio/raz/header-old2.png" />
+        <img class="frame" src="images/portfolio/raz/header-old3.png" />
+
+        <h3>After:</h3>
+
+        <img class="frame" src="images/portfolio/raz/header-new1.png" />
+        <img class="frame" src="images/portfolio/raz/header-new5.png" />
+        <img class="frame" src="images/portfolio/raz/header-new2.png" />
+
+    </div>
+</div>
+
+<div class="caseStudy_row">
+    <div class="caseStudy_headingContainer">
+        <h2>Outcome</h2>
+    </div>
+    <div class="caseStudy_content">
+
+        <p>With each new project and iteration of the styleguide, the process and interface continue to improve. The stylesheets are far more manageable, and the look of the sites continues to become more clean, modern, and consistent.</p>
+
+    </div>
+</div>
+
+<hr />
+
+<div class="caseStudy_row caseStudy_row-images">
+    <div class="caseStudy_img">
+        <h3>Before</h3>
+        <img class="frame" src="images/portfolio/raz/homepage-old.jpg" />
+    </div>
+    <div class="caseStudy_img">
+        <h3>After</h3>
+        <img class="frame" src="images/portfolio/raz/home-new.jpg" />
+    </div>
+</div>
+
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-UX" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-UX" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="offcanvas-UX" class="offcanvas offcanvas-start offcanvas-portfolio" tabindex="-1" aria-labelledby="UX Case Studies">
+        <div class="offcanvas-body">
+            <div 
+                id="carousel-UX" 
+                class="carousel slide carousel-portfolio" 
+                data-bs-ride="carousel"
+                data-bs-interval="false"
+            >
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+
+<h1 class="caseStudy_mainHeading">File Cabinet and Custom Assignments</h2>
+<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>
+
+<img 
+    class="caseStudy_banner border border-5"
+    src="images/portfolio/raz/fileCabinet-banner.png" 
+/> 
+
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>My Assignment</h3> 
+    </div> 
+    <div class="caseStudy_content"> 
+        <p>On the Learning A-Z family of sites, teachers can <b>save books</b> and other resources inside of a File Cabinet for future use. They can also <b>assign books</b> for students to complete online.</p> 
+        <p>I was assigned <b>two new projects</b> related to the File Cabinet and Assignments:</p> 
+        <ol>
+            <li>
+                <b>Redesign the File Cabinet</b>, including new functionality for teachers to share their collections
+            </li>
+            <li>
+                <b>Enhance the Assignments feature</b> to Design a way for teachers to create assignments with multiple books, and save them for future use
+            </li>
+        </ol>
+        <p>I knew the features that needed to be added, but <b>didn't know the 'why'</b>. What types of teachers was this for? What are some representative scenarios for how they might use this feature? Nonetheless, I was instructed to move ahead, and took on the challenge from more of an architectural standpoint.</p>
+    </div>
+
+</div>
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Analysis</h3> 
+    </div> 
+    <div class="caseStudy_content">
+        <p>When the features were described to me, it sounded like <b>2 versions of the same feature</b>. I wrote up a simple diagram to think this through and demonstrate my point.</p>
+
+        <img class="border border-5" style="width: 500px;" src="images/portfolio/raz/fileCabinet-diagram.png" /> 
+            
+        <p>Both features were ways for teachers to <b>collect and organize resources</b>. I suggested one unified project so that teachers aren't collecting resources in two different places.</p> 
+
+        <hr />
+
+        <p>Next, I had to think about what sort of UI might support flows for browsing, collecting, saving, assigning, and sharing. The process sounded a lot like the familiar <b>ecommerce experiences</b> of finding items, adding them to wishlists and shopping carts, and completing purchases. I did some more diagramming to think this through.</p>
+
+        <img class="border border-5" style="width: 500px;" src="images/portfolio/raz/fileCabinet-diagram2.png" />
+        
+        <p>After demonstrating the strong correlation, shopping cart experiences became a big source of reference and inspiration for the File Cabinet and Assignments.</p> 
+
+    </div>
+
+</div>
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Information Architecture</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>Before beginning any layouts, I needed to <b>map out the features</b> to better understand the requirements, and <b>how they fit together</b>.</p>
+
+        <p>First, I started with the known sitemap, and added the necessary interactions for each page.</p>
+
+        <img class="border border-5" src="images/portfolio/raz/fileCabinet-userflow2.png" />
+
+        <p>Then, I <b>reorganized the map</b> by the sequences of actions users can take.</p>
+
+        <img class="border border-5" src="images/portfolio/raz/fileCabinet-userflow3.png" />
+
+        <p>From this process, <b>4 project components</b> emerged:</p> 
+        <ul> 
+            <li>File Cabinet</li> 
+            <li>File Cabinet Preview</li> 
+            <li>Assignment Process</li> 
+            <li>Assignment Management</li> 
+        </ul> 
+    </div><!-- content --> 
+
+</div><!-- row --> 
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Wireframes</h3> 
+    </div> 
+    <div class="caseStudy_content"> 
+        <p>The File Cabinet was redesigned using well-established patterns of digital file management with simplicity as a top priority.</p> 
+
+        <p>Before creating wireframes, I loosely outlined the File Cabinet <b>information architecture and navigation</b></p>
+
+        <img class="border border-5" src="images/portfolio/raz/fileCabinet-notes.png" />
+
+        <p>Next came <b>sketches</b>.</p> 
+
+        <p>At this stage, <b>I accepted many assumptions</b> that were made about what would be most important to the majority of teachers. These assumptions came from design and product leadership in the organization.</p>
+            
+        <img class="border border-5" src="images/portfolio/raz/fileCabinet-sketch-2.png" /> 
+        <img class="border border-5" style="width: 500px;" src="images/portfolio/raz/fileCabinet-sketch.png" /> 
+    </div>
+
+</div><!-- row --> 
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Mockups</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>Once the design lead was comfortable with the sketches, final mockups were created.</p>
+
+        <img class="border border-5" src="images/portfolio/raz/fileCabinet.png" />
+
+        <div class="row">
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/save2.png" /> 
+            </div>
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/fileCabinetDropdown.png" /> 
+            </div>
+        </div>
+
+    </div>
+
+</div><!-- row --> 
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Iteration</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>At this point, the numerous <b>assumptions</b> and lack of research and clear use cases <b>began to catch up to us</b>. Feedback from the product team was that it needed to be easier to assign a collection of resources on the spot. Saving this collection for later was a secondary priority. Once again, <b>the 'why' was not understood</b>. It was explained simply as a feature the market was asking for. I moved forward with the assumption that this was correct, and <b>mockups were reworked</b> to satisfy this new requirement.</p>
+        
+        <p>A ribbon was used to allow teachers to actively see their collection being built, and the button labeling was changed so that it didn't feel like a feature primarily for saving collections.</p>  
+
+        <img class="border border-5" src="images/portfolio/raz/ribbon-sketch.png" /> 
+        
+        <img class="border border-5" src="images/portfolio/raz/ribbon3.jpg" /> 
+            
+        <hr />
+
+        <p>
+            A <b>similar design process</b> was followed to design screens for <b>creating and managing assignments, and monitoring assignment progress</b>. Limitations based on the existing information architecture and technical limitations were also taken into consideration. The final flow of Assignments screens was like this:
+        </p>
+
+    </div><!-- content --> 
+
+</div><!-- row --> 
+
+<img class="border border-5" src="images/portfolio/raz/assignments-flow.png" /> 
+
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Development</h3> 
+    </div> 
+    <div class="caseStudy_content"> 
+
+        <p>During the design phase, it became clear that this project was a large and complex one, more than originally thought.</p>
+
+        <p>During development, new requirements and feedback continued to come to light, leading to constant adjustments to mockups, and frustrating rework for the engineers. Our habit of <b>moving forward with designs without challenging assumptions or gathering clear requirements, personas, and use cases really started to effect the project.</b></p> 
+        
+        <p>To help organize the chaos, I documented each mockup and requirement, providing a single source of truth to maintain alignment among design, engineering, QA, and product teams as much as possible, and to track changes and progress as they occurred.</p> 
+
+    </div>
+
+</div>
+<div class="caseStudy_row"> 
+    
+    <div class="caseStudy_headingContainer"> 
+        <h3>Outcome</h3> 
+    </div> 
+    <div class="caseStudy_content">          
+        <p>In the end, teachers were able to assign groups of resources with just a few clicks, easily view those collections in the File Cabinet, and monitor progress on the Assignments page, so <b>for the company, the project was considered a success</b>. However, there was still much work to be done to tie these features together. But many steps were taken in the right direction, resulting in a more useful experience for teachers.</p> 
+                
+        <p>Throughout the project, I made an effort to understand exactly what the priority was - <b>what problems were we trying to solve?</b> What were the key scenarios we wanted to design for? Were our users primarily elementary teachers, or reading specialists? Unfortunately <b>I failed to collect this information</b>, and relied on assumptions and heresay to make decisions and move forward. This project was clear evidence that skipping steps and making assumptions hurts everyone, including our users. I was proud of my ability to step up and help organize the project, but learned the <b>importance of advocating more strongly for design thinking</b>.</p> 
+    </div> 
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-UX" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-UX" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    
+    <div id="offcanvas-agile" class="offcanvas offcanvas-start offcanvas-portfolio" tabindex="-1" aria-labelledby="UX Case Studies">
+        <div class="offcanvas-body">
+            <div 
+                id="carousel-agile" 
+                class="carousel slide carousel-portfolio" 
+                data-bs-ride="carousel"
+                data-bs-interval="false"
+            >
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+
+<h1 class="caseStudy_mainHeading">Next Gen Writing</h2>
+<h2 class="caseStudy_mainSubheading">Learning A-Z</h2>
+
+<hr />
+
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>My Assignment</h3> 
+    </div> 
+    <div class="caseStudy_content"> 
+        <p>After obtaining new leadership, merging with acquisitions, starting new <b>scrum agile</b> processes, and reacting to changes to schooling after the 2020 pandemic, Learning A-Z set out to introduce <b>two new "Next Gen" products.</b> Both projects shared similarities so it was a team effort. I was assigned to portions of both, but primarily one, nicknamed <b>Next Gen Writing</b>.</p>
+        <p>The project ask was massive, and <b>very little direction given</b>. This provided an opportunity to take initiative and try work I normally did not normally do.</p>         
+    </div>
+
+</div>
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Product Definition</h3> 
+    </div> 
+    <div class="caseStudy_content">
+        <p>After initial meetings with the new scrum team, everyone was struggling to wrap our minds around what we were trying to create. </p>
+
+        <p>My first contribution was putting together a <b>simple sitemap</b> to help get everyone on the same page.</p>
+
+        <img class="border border-5 w-75 d-block mx-auto mb-3" src="images/portfolio/raz/nextgen/waz-sitemap-simple.png" />
+
+        <p>This evolved into a more <b>thorough sitemap</b> as our understanding of the product developed.</p>
+
+        <img class="border border-5" src="images/portfolio/raz/nextgen/waz-sitemap-full.png" />
+
+        <p>Our project manager and scrum master introduced us to the concept of story mapping. I worked closely with her and the product owner to fill out the storymap, which became a sort of hybrid between a <b>storymap and a flow</b>.</p> 
+
+        <img class="border border-5" src="images/portfolio/raz/nextgen/waz-storymap.png" />
+
+    </div>
+
+</div>
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Product Ecosystem</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>One thing the team was still struggling with was <b>understanding our existing product line and how the new products would fit in</b>. The team responded very well to my sitemaps, so I created more maps to demonstrate how the new products compared to the existing ones.</p>
+
+        <img class="border border-5" src="images/portfolio/raz/nextgen/global-ecosystem-products.png" /> 
+
+        <p>The most exciting part of this side-project was when I was able to show a map to visualize where the team ultimately wanted to go - a <b>single Learning A-Z portal</b> where you can access all of your tools for learning, rather than a series of similar but disconnected experiences. These maps excited the team and allowed us to align, visualize, and communicate this shared goal.</p>
+
+        <img class="border border-5" src="images/portfolio/raz/nextgen/global-ecosystem-simplified.png" /> 
+
+    </div>
+
+</div>
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Personas</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>As different ideas were developing and a tight deadline approaching, the team realized a need to prioritize and focus. <b>Developing personas</b> helped us stay on track.</p>
+
+        <p>We didn't have time or resources for much research, but our product owner had results from a past survey with writing educators that I was able to pull data from. Using the surveys, I found patterns, discussed my findings with the team, and put the information together in nicely packaged personas to represent who we were creating this product for, and what our priorities needed to be. </p>
+
+        <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-emma.png" />
+        <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-emma2.png" />
+        <hr />
+        <div class="row">
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-matt.png" />
+            </div>
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-matt2.png" />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-jade.png" />
+            </div>
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-jade2.png" />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-kat.png" />
+            </div>
+            <div class="col">
+                <img class="border border-5" src="images/portfolio/raz/nextgen/personas/persona-kat2.png" />
+            </div>
+        </div>
+         
+    </div><!-- content --> 
+
+</div><!-- row --> 
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>UI Patterns</h3> 
+    </div> 
+    <div class="caseStudy_content">
+        <p>With our Next Gen products, we wanted to set the new standard for our company moving forward. Our existing products were somewhat of a mess. But a lot of redesign iniatives were mid-flight and contained work that would benefit our new products. To ensure valuable work wasn't lost, I put together <b>wireframes</b> to show what our existing <b>patterns and templates</b> look like with all of the legacy mess stripped away, and how Next Gen Writing would look like using them. This also helped give the team a shared understanding of what we meant when we talked about certain pages like the homepage, category page, detail page, or reports.</p>
+
+        <div class="row">
+            <div class="col">
+                <p><b>Homepage</b></p>
+                <img class="border border-5" src="images/portfolio/raz/nextgen/pattern-homepage.png" /> 
+            </div>
+            <div class="col">
+                <p><b>Category Page</b></p>
+                <img class="border border-5" src="images/portfolio/raz/nextgen/pattern-category.png" /> 
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <p><b>Detail Page</b></p>
+                <img class="border border-5" src="images/portfolio/raz/nextgen/pattern-detail.png" /> 
+            </div>
+            <div class="col">
+                <p><b>Reports</b></p>
+                <img class="border border-5" src="images/portfolio/raz/nextgen/pattern-report.png" /> 
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Mockups</h3> 
+    </div> 
+    <div class="caseStudy_content"> 
+        <p>With loads of great foundational work, we were ready to begin mockups. Mockups included the teacher's experience finding and using <b>lesson plans</b> on the site, assigning them to students, and also the student experience completing lessons using the <b>digital writing tool</b>. In addition, we needed to consider <b>how the teacher would use the digital writing tool to write with the class.</b></p> 
+
+        <p><b>Teacher Experience</b></p>
+        <img class="border border-5" src="images/portfolio/raz/nextgen/lesson-page.png" />
+        
+        <p><b>Student Experience</b></p>
+        <img class="border border-5" src="images/portfolio/raz/nextgen/walt.png" />
+
+        <p>Mockups went through <b>multiple iterations</b> to reach the point shown here, but because of the careful and thorough background work, the first round of mockups was close, and further iterations served to help us narrow the scope and refine details. This was an example of how a <b>good exploration phase can lead to a successful design phase!</b></p>
+
+    </div>
+
+</div><!-- row --> 
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Prototypes and User Testing</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>At this point, we needed to get some questions answered, and gut check many assumptions with <b>user testing</b>. The initial testing was focused on the big picture - would teachers understand the product? Would they want to use it? Basically - <b>were we building the right product?</b></p>
+
+        <p>Because this line of questioning was very product-focused, the product owner took ownership of this round of testing. We were very pleased to find that teachers immediately <b>recognized the lesson structure, and how the digital tools were intended to be used</b>. They invisioned using it in their classroom and were excited by what they saw. We wouldn't know for sure until teachers truly tried it out with their class, but the <b>initial feedback was very encouraging</b>.</p>
+
+        <p>Next, the UX team completed more <b>detailed testing</b> to narrow down some of the UI decisions we needed to make. I provided <b>prototypes and questions</b>, and another UX team member completed testing for this project alongside the other Next Gen product that was being developed. This testing was surrounding issues like <b>navigation, information architecture, and the hierarchy of information</b>. A few quick tests were very helpful in <b>refining details</b> we were waffling on for our beta version of the Next Gen products, and helping us find blind spots. Fortunately, <b>no major issues were found</b>.</p>
+
+    </div>
+
+</div><!-- row --> 
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Development</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>One of my primary focuses with the Next Gen projects was <b>maintaining alignment across teams</b>. This included the work shown above, a lot of ongoing work to coordinate with the other Next Gen product team, and <b>close collaboration with our engineers</b>. As the deadline for our <b>beta release</b> kept getting closer, we needed to understand <b>what tools would be used</b> to build the site, which features were realistic for our timeline, and <b>which features needed to be simplified</b> or adjust to keep them in scope.</p>
+
+        <p>The engineering team had decided to start fresh with the Next Gen sites rather than re-using old problematic code built on AngularJS. The new products would be built with an updated version of <b>Angular using Angular Material</b>. Time was going to be extremely tight for development, so after carefully studying Angular Material, the <b>mockups were adjusted to match out-of-the-box Angular Material</b>. This didn't look ideal, but <b>gave a very clear pictures of what could be accomplished within the timeframe we had</b>. Creating a subpar page layout was much preferred over setting up the team to rush and write hundreds of lines of spaghetti styles which would land us in the same mess we were in with our legacy code. This helped ensure that everyone on the team understood what we were doing, and why.</p>
+        
+        <img class="border border-5" src="images/portfolio/raz/nextgen/lesson-materialDesign.png" />
+
+    </div> 
+</div>
+<hr />
+<div class="caseStudy_row"> 
+
+    <div class="caseStudy_headingContainer"> 
+        <h3>Conclusion</h3> 
+    </div> 
+    <div class="caseStudy_content">
+
+        <p>As the beta design phase wrapped up and development began, I left Learning A-Z for a position with another company. As of this writing (7/22), Next Gen Writing still hasn't been launched, so I can't share any final results.</p>
+
+        <p>This project was a <b>great example of teamwork, and following process</b>. Instead of thinking to myself "if only I could talk to so and so... if only we would stick to a process... if only..." we did it right. With our project manager advocating strongly for scrum processes, and a new sprint team, and a team of people willing and eager to learn better ways of doing things and wanting to make an awesome product, I was able to tackle the UX in the right way - by <b>understanding the background, working closely with the product team, content editors, instructional designers, developers, and other UX designers</b>. It was a very stressful time, but very rewarding to put in effort to do things right, and see it start to pay off.</p>
+        
+    </div> 
+</div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-UX" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-UX" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Bootstrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

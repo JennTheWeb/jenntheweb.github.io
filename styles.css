@@ -5,364 +5,69 @@ body {
 	background: url("images/bg.png") repeat fixed;
 	color: #444;
 	font-family: 'Crimson Text', serif;
-	font-size: 18px;
+	font-size: 1.2rem;
 	font-weight: normal;
 	line-height: 1.3;
-	margin: 0;
 }
 h1, h2, h3, h4 {
 	font-family: 'Julius Sans One', sans-serif;
 	font-weight: normal;
 }
-h1 {
-	font-size: 2rem;
-	margin: 1.5em 0 1em 0;
-	text-align: center;
-}
-h2 {
-	font-size: 1.5rem;
-	margin: 1.5em 0 1em 0;
-	padding: 1px 0;
-	text-align: center;
-}
-
 img {
-	height: auto;
 	max-width: 100%;
 }
-
-button {
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1em;
-	line-height: 1.3;
-	padding: 2px;
-	vertical-align: middle;
-}
-button svg {
-	float: left;
-	height: 1.3em;
-	width: 1.3em;
-}
-
-.protected {
-	display: none;
-}
-
-/* --------------------------- */
-/* ----- main navigation ----- */
-
-.mainNav {
-	background: rgba(0, 0, 0, .4);
-	display: block;
-	margin: 0 0 24px 0;
-	padding: 12px 0;
-	text-align: center;
-}
-.mainNav a {
-	border-bottom: solid 2px transparent;
-	color: #fff;
-	display: inline-block;
-	margin: 0 18px;
-	font-size: 1.2rem;
+.btn-link {
+	color: #d7601b;
+	font-weight: bold;
 	text-decoration: none;
 }
-.mainNav a:hover {
-	border-bottom: solid 2px #fff;
+
+/* ------------------------------------------------ */
+/* offcanvas with carousel for displaying portfolio */
+
+.offcanvas-portfolio {
+	width: 1000px;
+	max-width: 95%;
 }
-
-/* ------------------------------- */
-/* ----- lightwindow gallery ----- */
-
-/* thumbnails */
-
-.galleryItem {
-	float: left;
-	position: relative;	
-}
-	.galleryItem .thumb {
-		background: #fff;
-		border: solid 1px #fff;
-		box-shadow: 0 0 4px #999;
-		cursor: pointer;
-		display: block;
-		height: 225px;
-		margin: calc(2.5% + 8px);
-		overflow: hidden;
-		position: relative;
-		text-decoration: none;
-		transition: all .25s ease;
-	}
-		.galleryItem .thumb:hover {
-			box-shadow: 0 0 10px #444;
-			transform: scale(1.05);
-		}
-		/* .galleryItem .thumb img {
-			height: auto;
-			max-height: 1000px;
-			max-width: 1000px;
-			min-height: 100%;
-			min-width: 100%;
-			width: auto;
-		} */
-
-	.galleryItem .thumb_caption {
-		background: rgba(0, 0, 0, .8);
-		color: #fff;
-		font-family: 'Julius Sans One', sans-serif;
-		font-size: 1.6rem;
-		left: 0;
-		line-height: 1.2;
-		padding: 10px 12px;
-		position: absolute;
-		text-align: left;
-		top: 0;
-	}
-
-	/* login */
-	.galleryItem .trigger-authenticate {
-		background: rgba(0, 0, 0, .3);
-		bottom: 0;
-		box-sizing: border-box;
-		cursor: pointer;
-		display: block;
-		height: 225px; /* same as gallery thumb */
-		left: 0;
-		margin: calc(2.5% + 8px); /* same as gallery thumb */
-		padding-top: 100px;
-		position: absolute;
-		right: 0;
-		text-align: center;
-		top: 0;
-		transition: all .25s ease; /* same as gallery thumb */
-		vertical-align: middle;
-	}
-		#slider .galleryItem .trigger-authenticate {
-			height: 275px; /* same as slider thumb */
-		}
-		.galleryItem .trigger-authenticate:hover {
-			background: rgba(0, 0, 0, .7);
-		}
-		.galleryItem .trigger-authenticate span {
-			background: rgba(255, 255, 255, .9);
-			font-size: 1.25em;
-			padding: 4px 7px;
-		}
-
-	#loginForm {
-		padding: 100px 0;
-	}
-	#loginForm label {
-		display: block;
-		margin-bottom: 10px;
-	}	
-	#loginForm input[type="text"] {
-		border: solid 1px #e0e0e0;
-		font-size: 1rem;
-		padding: 3px;
-	}
-	#loginForm input[type="button"] {
-		background: #333;
-		border: solid 1px #333;
-		color: #fff;
-		font-size: 1rem;
-		padding: 3px 5px;
-	}
-	#loginForm input[type="button"]:hover {
-		background: #666;
-	}
-
-/* lightwindow content */	
-
-.galleryContent {
-	color: #fff;
-	display: none; /* revealed via js */
-	left: 0;
-	max-height: 100vh;
-	overflow-x: auto;
-	overflow-y: auto;
-	position: fixed;
-	text-align: center;
-	top: 0;
-	width: 100%;
-	z-index: 20; /* above overlay */
-}
-	.galleryContentWrap {
-		display: inline-block;
-		margin: 0 50px;
-		position: relative;
-		max-width: 1100px;
-	}
-		.galleryContent-text .galleryContentWrap  {
-			background: #fff;
-			color: #222;
-			padding: 12px;
-		}
-		.galleryContentWrap img {
-			background: #fff;
-			box-shadow: 0 0 20px #333;
-			display: block;
-			padding: 1px;
-		}
-
-		@media (max-width: 800px) {
-			.galleryContentWrap {
-				margin: 50px 0 0 0; /* height of close btn */
-				width: 100%;
-			}
-		}
-
-	.galleryContent button {
-		border: none;
-	}
-
-	.galleryContent_description {
-		font-size: 1em;
-		margin: .5em 0;
-	}
-		@media (max-width: 800px) {
-			.galleryContent_description {
-				display: none;
-			}
-		}
-
-.galleryOverlay {
+.offcanvas-portfolio .carousel-control-next, 
+.offcanvas-portfolio .carousel-control-prev {
 	background: #000;
-	content: ' ';
-	height: 100%;
-	left: 0;
-	opacity: .8;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10;
+	color: #000;
+	padding: 0;
+	top: auto;
+    bottom: 5px;
+    width: auto;	
 }
-
-.galleryPrev,
-.galleryNext {
-	background: none;
-	border: none;
-	color: #fff;
-	font-size: 2em;
-	height: 30vh;
-	position: fixed;
-	top: 35vh;
+.offcanvas-portfolio .carousel-control-prev {
+	left: 5px;
 }
-	.galleryPrev svg,
-	.galleryNext svg {
-		fill: #fff;
-		opacity: .5;
-	}
-	.galleryPrev:hover svg,
-	.galleryNext:hover svg {
-		opacity: 1;
-	}
-	.galleryPrev {
-		left: 0px;
-	}
-	.galleryNext {
-		right: 15px;
-	}
-
-.galleryClose {
-	background: none;
-	border: none;
-	position: fixed;
+.offcanvas-portfolio .carousel-control-next {
 	right: 25px;
-	top: 10px;
-	z-index: 30; /* above overlay */
-	}
-	.galleryClose svg {
-		fill: #ccc;
-	}
-	.galleryClose:hover svg {
-		fill: #fff;
-	}
-
-	@media (max-width: 800px) {
-		.galleryClose {
-			background: #222;
-			display: block;
-			height: 50px;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: 100%;
-			z-index: 999;
-		}
-		.galleryClose svg {
-			display: inline-block;
-			float: none;
-			height: 1rem;
-			margin-right: 5px;
-			margin-top: -3px;
-			vertical-align: middle;
-			width: 1rem;
-		}
-		.galleryClose::after {
-			color: #fff;
-			content: "Close";
-			display: inline-block;
-			font-family: 'Julius Sans One', sans-serif;
-			vertical-align: middle;
-		}
-	}
+}
 
 /* ---------- */
 /* case study */
 
-.caseStudy_section {
-	background: #fff;
-	box-sizing: border-box;
-	color: #222;
-	margin: 15px auto;
-	padding: 2.5rem;
-	text-align: left;
+.caseStudy_section h3 {
+	color: #d7601b;
 }
-	.caseStudy_section hr {
-		background: #e0e0e0;
-		border: none;
-		display: block;
-		height: 1px;
-	}
-
-	.caseStudy_section h1 {
-		font-size: 2.25rem;
-		text-align: left;
-	}
-	.caseStudy_section h2 {
-		font-size: 1.75rem;
-		text-align: left;
-	}
-	.caseStudy_section h3 {
-		color: #d7601b;
-		font-size: 1.5rem;
-		text-align: left;
-	}
-
-	.caseStudy_section img {
-		box-shadow: none;
-		margin: 0 auto;
-	}
-	.caseStudy_section img.frame {
-		border: solid 3px #f1f1f1;
-		margin: 15px auto;
-	}
 
 .caseStudy_mainHeading {
+	font-size: 1.8rem;
 	margin-bottom: 0;
 	margin-top: 0;
 }
 .caseStudy_mainSubheading {
 	color: #d7601b;
+	font-size: 1.4rem;
 	margin-bottom: 1.5rem !important;
 	margin-top: .25rem !important;
 }
 
 .caseStudy_headingContainer {
-	flex-basis: 30%;
+	flex-basis: 225px;
 	flex-shrink: 0;
-	padding: 2.5rem 2.5rem 2.5rem 0;
+	padding: 1.5rem 2.5rem 2rem 0;
 }
 	.caseStudy_headingContainer :first-child {
 		margin-top: 0;
@@ -371,32 +76,24 @@ button svg {
 .caseStudy_row {
 	display: flex;
 	align-items: flex-start; 
+	padding: 0 1rem;
 }
 	.caseStudy_row-images {
 		align-items: center;
 		margin: 2.5rem 0;
 	}
 
-.caseStudy_img {
-	margin: 0 15px;
-}
-	.caseStudy_img:first-child {
-		margin-left: 0;
-	}
-	.caseStudy_img:last-child {
-		margin-right: 0;
-}
-
 .caseStudy_content {
 	flex-grow: 1;
-	margin: 2.5rem 0;
+	margin: 1.5rem 0 0 0;
 }
 	.caseStudy_content :first-child {
 		margin-top: 0;
 	}
-	.caseStudy_content :last-child {
-		margin-bottom: 0;
-	}
+	
+.caseStudy_content img {
+	margin-bottom: 15px;
+}
 
 .caseStudy_words {
 	margin: 2.5rem 0;
@@ -412,68 +109,6 @@ button svg {
 	}
 }
 
-/* ------------------ */
-/* ----- slider ----- */
-
-#slider {
-	margin: 0 auto;
-	position: relative;
-	width: calc(100% - 6rem);
-}
-#sliderViewport {
-	overflow: hidden;
-	position: relative;
-}
-
-#slider .thumb {
-	height: 275px;
-}
-	
-.js-sliderContent {
-	position: absolute;
-	}
-	.js-sliderContent::after {
-		clear: both;
-		content: " ";
-		display: block;
-		height: 0;
-	}
-
-#sliderNav {
-	display: block;
-	left: 0;
-	position: absolute;
-	top: 50%;
-	width: 100%;
-}
-	#sliderPrev,
-	#sliderNext {
-		height: 3rem;
-		margin-top: -1.5rem;
-		opacity: .3;
-		position: absolute;
-		width: 3rem;
-	}
-		#sliderPrev.is-active,
-		#sliderNext.is-active {
-			cursor: pointer;
-			opacity: .5;
-		}
-		#sliderPrev.is-active:hover,
-		#sliderNext.is-active:hover {
-			opacity: 1;
-		}
-		#sliderPrev {
-			left: -3rem;
-		}
-		#sliderNext {
-			right: -3rem;
-		}
-	#sliderNav svg {
-		height: 100%;
-		width: 100%;
-	}
-
 /* -------------------- */
 /* ----- timeline ----- */
 
@@ -481,6 +116,7 @@ button svg {
 	display: block;
 	margin: 0 auto;
 	padding-bottom: 50px;
+	padding-top: 50px;
 	position: relative;
 	text-align: center;
 	width: 80%;
@@ -489,11 +125,11 @@ button svg {
 		background: #ccc;
 		content: " ";
 		display: block;
-		height: 100%;
-		left: 50%;
 		position: absolute;
-		top: 0;
+		height: 100%;
 		width: 1px;
+		left: 50%;
+		top: 120px;
 		z-index: -1;
 	}
 	.timeline::after {
@@ -513,6 +149,13 @@ button svg {
 	line-height: 4em;
 	margin: 0 auto;
 	width: 4em;
+}
+.tl-subheading {
+	clear: both;
+	font-size: 1.25rem;
+    font-weight: bold;
+	margin: 0;
+	padding: 2rem 0 1.5rem 0;
 }
 
 .timeline ul {
@@ -534,12 +177,19 @@ button svg {
 		.timeline li.tl-left {
 			clear: left;
 			float: left;
+			display: flex;
+			align-items: flex-start;
 			text-align: right;
 		}
 		.timeline li.tl-right {
 			clear: right;
 			float: right;
 			text-align: left;
+		}
+
+		.timeline li.tl-left .btn {
+			position: relative;
+			left: -20px;
 		}
 
 		.timeline li::before {
@@ -563,7 +213,6 @@ button svg {
 	background: #fff;
 	display: block;
 	padding: .5em;
-	width: 80%;
 }
 	.tl-left .tl-content {
 		float: right;
@@ -597,29 +246,4 @@ button svg {
 			margin: 0 !important;
 			width: auto;
 		}
-	}
-	
-/* --------- */
-/* portfolio */
-
-.portfolio {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-}
-	.portfolio::after {
-		clear: both;
-		content: " ";
-		display: block;
-	}
-
-	.portfolio_container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	.portfolio .galleryItem {
-		display: inline-block;
-		float: none;
-		flex-basis: 400px;
 	}
